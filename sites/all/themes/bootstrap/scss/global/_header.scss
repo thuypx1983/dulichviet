@@ -1,0 +1,67 @@
+.region-header{
+  .block{
+    height: 90px;
+  }
+  .block-logo{
+    .block-content{
+
+    }
+  }
+  .block-search {
+    .block-content{
+      margin-top: 28px;
+      padding-left: 15px;
+    }
+  }
+  .block-support{
+    position: relative;
+    cursor: pointer;
+    .block-title{
+      display: block;
+      margin-top: 28px;
+      padding: 8px 10px;
+      border: 1px solid #cccccc ;
+      .fa{
+        float: right;
+        font-size: 20px;
+      }
+    }
+    .block-content{
+      display: none;
+      position: absolute;
+      top: 65px;
+      padding: 15px 10px;
+      border: 1px solid #cccccc ;
+      background-color: $color_white;
+      z-index: 2;
+      width: calc(100% - 30px);
+    }
+    &:hover{
+      .block-content{
+        display: block;
+      }
+    }
+  }
+  .block-depart-tour{
+    @extend .block-support;
+  }
+}
+#header-top{
+  background-color: $color-silver;
+  .block-menu-top{
+    ul{
+      li{
+        display: block;
+        float: left;
+        a{
+          color: $color_black;
+        }
+      }
+    }
+  }
+  .block-text-top{
+    p{
+      padding: 10px 0px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.home-banner{
+  position: relative;
+}
+.block-tour-filter{
+  bottom: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  .block-title{
+    padding: 10px 15px;
+    background-color: rgba(17, 17, 17, 0.69);
+    color: $color_white;
+    font-size: 18px;
+    display: inline-block;
+    .fa{
+      font-size: 25px;
+    }
+  }
+  .block-content{
+    background-color: rgba(17, 17, 17, 0.69);
+    padding: 20px 20px 20px 70px ;
+    label{
+      color: $color_white;
+      font-weight: normal;
+    }
+  }
+}
