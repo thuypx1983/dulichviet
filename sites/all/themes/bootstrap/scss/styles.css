@@ -161,6 +161,19 @@ body.html {
       color: #ffffff;
       font-weight: normal; }
 
+.item-tour-hot {
+  position: relative; }
+  .item-tour-hot .tour-info {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 5px;
+    background-color: rgba(17, 17, 17, 0.6); }
+    .item-tour-hot .tour-info .views-field-field-duration {
+      display: none; }
+    .item-tour-hot .tour-info .views-field-field-departure-day {
+      display: none; }
+
 /*page*/
 .product-list .views-row {
   margin-bottom: 10px;
