@@ -1,229 +1,59 @@
-@font-face {
-  font-family: "SFUFuturaBold";
-  src: url("../fonts/sfu-futura/SFUFuturaBold.ttf") format("truetype");
-  font-weight: bold; }
-@font-face {
-  font-family: "SFUFuturaBoldOblique";
-  src: url("../fonts/sfu-futura/SFUFuturaBoldOblique.ttf") format("truetype"); }
-/*/////////////////////////////*/
-@font-face {
-  font-family: "SFUFuturaBook";
-  src: url("../fonts/sfu-futura/SFUFuturaBook.ttf") format("truetype"); }
-@font-face {
-  font-family: "SFUFuturaBookOblique";
-  src: url("../fonts/sfu-futura/SFUFuturaBookOblique.ttf") format("truetype"); }
-/*/////////////////////////////*/
-@font-face {
-  font-family: "SFUFuturaExtraBold";
-  src: url("../fonts/sfu-futura/SFUFuturaExtraBold.ttf") format("truetype");
-  font-weight: bold; }
-@font-face {
-  font-family: "SFUFuturaExtraBoldOblique";
-  src: url("../fonts/sfu-futura/SFUFuturaExtraBoldOblique.ttf") format("truetype"); }
-/*/////////////////////////////*/
-@font-face {
-  font-family: "SFUFuturaHeavy";
-  src: url("../fonts/sfu-futura/SFUFuturaHeavy.ttf") format("truetype"); }
-@font-face {
-  font-family: "SFUFuturaHeavyOblique";
-  src: url("../fonts/sfu-futura/SFUFuturaHeavyOblique.ttf") format("truetype"); }
-/*/////////////////////////////*/
-@font-face {
-  font-family: "SFUFuturaLight";
-  src: url("../fonts/sfu-futura/SFUFuturaLight.ttf") format("truetype"); }
-@font-face {
-  font-family: "SFUFuturaLightOblique";
-  src: url("../fonts/sfu-futura/SFUFuturaLightOblique.ttf") format("truetype"); }
-/*/////////////////////////////*/
-@font-face {
-  font-family: "SFUFuturaObliqueTTF";
-  src: url("../fonts/sfu-futura/SFUFuturaObliqueTTF.ttf") format("truetype"); }
-/*/////////////////////////////*/
-@font-face {
-  font-family: "SFUFuturaRegular";
-  src: url("../fonts/sfu-futura/SFUFuturaRegular.ttf") format("truetype"); }
-/* Variables */
-/* Break point */
-/* Mixin */
-/* Mixin style */
-/* animation */
-/* appearance */
-/* border radius */
-/* box-shadow */
-/* custome font */
-/* filter */
-/* transform */
-/* transition */
-/* placeholder */
-/* opacity */
-/* breakpoint with one condition(min or max) */
-/* breakpoint with two conditions (min and max) */
-/*global*/
-body.html {
-  font-family: "SFUFuturaBook"; }
-  body.html .container {
-    width: 90%;
-    min-width: 1024px; }
-  body.html .form-control {
-    border-radius: 0px;
-    box-shadow: none; }
+/*
+Error: File to import not found or unreadable: components/block-tour.
+        on line 20 of styles.scss
 
-.region-header .block {
-  height: 90px; }
-.region-header .block-search .block-content {
-  margin-top: 28px;
-  padding-left: 15px; }
-.region-header .block-support, .region-header .block-depart-tour {
-  position: relative;
-  cursor: pointer; }
-  .region-header .block-support .block-title, .region-header .block-depart-tour .block-title {
-    display: block;
-    margin-top: 28px;
-    padding: 8px 10px;
-    border: 1px solid #cccccc; }
-    .region-header .block-support .block-title .fa, .region-header .block-depart-tour .block-title .fa {
-      float: right;
-      font-size: 20px; }
-  .region-header .block-support .block-content, .region-header .block-depart-tour .block-content {
-    display: none;
-    position: absolute;
-    top: 65px;
-    padding: 15px 10px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-    z-index: 2;
-    width: calc(100% - 30px); }
-  .region-header .block-support:hover .block-content, .region-header .block-depart-tour:hover .block-content {
-    display: block; }
+15: /*components*\/
+16: @import "components/main-menu";
+17: @import "components/block-tour-filter";
+18: @import "components/block-tour-hot";
+19: @import "components/updated-news";
+20: @import "components/block-tour";
+21: 
+22: /*page*\/
+23: @import "pages/product_list";
 
-#header-top {
-  background-color: #f2f1f1; }
-  #header-top .block-menu-top ul li {
-    display: block;
-    float: left; }
-    #header-top .block-menu-top ul li a {
-      color: #000000; }
-  #header-top .block-text-top p {
-    padding: 10px 0px; }
-
-/*components*/
-.navigation {
-  background-color: #e30050; }
-  .navigation .tb-megamenu {
-    background-color: transparent; }
-    .navigation .tb-megamenu .nav > li > a {
-      border-right: none;
-      border-left: 1px solid #fff;
-      background-color: transparent;
-      font-size: 15px;
-      font-weight: normal;
-      text-transform: uppercase;
-      color: #ffffff; }
-      .navigation .tb-megamenu .nav > li > a:hover {
-        background-color: #3f51b5; }
-    .navigation .tb-megamenu .nav > li.active > a.dropdown-toggle {
-      background-color: #3f51b5;
-      border-left: 1px solid #fff; }
-
-.mega-group-title {
-  color: #000000 !important; }
-
-.tb-megamenu-item li {
-  border-bottom: 0px !important; }
-  .tb-megamenu-item li a {
-    color: #000000 !important;
-    background-color: transparent !important;
-    background-image: none !important; }
-    .tb-megamenu-item li a:hover {
-      background-image: none !important; }
-
-.home-banner {
-  position: relative; }
-
-.block-tour-filter {
-  bottom: 0px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto; }
-  .block-tour-filter .block-title {
-    padding: 10px 15px;
-    background-color: rgba(17, 17, 17, 0.69);
-    color: #ffffff;
-    font-size: 18px;
-    display: inline-block; }
-    .block-tour-filter .block-title .fa {
-      font-size: 25px; }
-  .block-tour-filter .block-content {
-    background-color: rgba(17, 17, 17, 0.69);
-    padding: 20px 20px 20px 70px; }
-    .block-tour-filter .block-content label {
-      color: #ffffff;
-      font-weight: normal; }
-
-.item-tour-hot {
-  position: relative; }
-  .item-tour-hot .tour-info {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    padding: 10px 5px;
-    background-color: rgba(17, 17, 17, 0.6); }
-    .item-tour-hot .tour-info .views-field-field-duration {
-      display: none; }
-    .item-tour-hot .tour-info .views-field-field-departure-day {
-      display: none; }
-
-/*page*/
-.product-list .views-row {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  position: relative; }
-  .product-list .views-row:before {
-    background: transparent -moz-linear-gradient(left center, transparent, rgba(0, 0, 0, 0.4), transparent) repeat scroll 0 0;
-    border-radius: 50%;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 1px;
-    position: absolute;
-    width: 100%; }
-  .product-list .views-row ul {
-    padding-left: 15px; }
-  .product-list .views-row .views-field-field-price span {
-    display: inline-block; }
-  .product-list .views-row .views-field-field-price div {
-    color: #D9230F;
-    display: inline-block;
-    margin-left: 5px; }
-  .product-list .views-row .views-field-title h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 0;
-    color: #13673F; }
-  .product-list .views-row .views-field-view-node {
-    margin-top: 5px; }
-
-.page-san-phamhtml .page-header span, .page-taxonomy .page-header span, .node-type-page .page-header span {
-  background: #03337d none repeat scroll 0 0;
-  border-radius: 10px 5px 5px 0;
-  box-shadow: 0 1px 2px #452c79;
-  display: inline-block;
-  letter-spacing: 1px;
-  margin-left: -25px;
-  padding: 10px 10px 10px 30px;
-  font-size: 22px;
-  color: #ffffff;
-  position: relative; }
-  .page-san-phamhtml .page-header span:after, .page-taxonomy .page-header span:after, .node-type-page .page-header span:after {
-    background: #351c6d none repeat scroll 0 0;
-    border-bottom-left-radius: 10px;
-    top: 44px;
-    content: "";
-    display: block;
-    height: 10px;
-    left: 0px;
-    position: absolute;
-    width: 10px; }
-
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+styles.scss:20
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
+C:/Ruby23-x64/bin/scss:23:in `load'
+C:/Ruby23-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: components/block-tour.\A         on line 20 of styles.scss\A \A 15: /*components*/\A 16: @import \"components/main-menu\";\A 17: @import \"components/block-tour-filter\";\A 18: @import \"components/block-tour-hot\";\A 19: @import \"components/updated-news\";\A 20: @import \"components/block-tour\";\A 21: \A 22: /*page*/\A 23: @import \"pages/product_list\";"; }

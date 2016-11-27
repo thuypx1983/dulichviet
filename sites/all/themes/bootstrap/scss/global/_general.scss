@@ -1,4 +1,4 @@
-body.html{
+body{
   font-family: "SFUFuturaBook";
   .container{
     width: 90%;
@@ -7,6 +7,10 @@ body.html{
   .form-control{
     border-radius: 0px;
     box-shadow: none;
+  }
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a{
+    color: $color-title;
+    font-family: "SFUFuturaBook";
   }
 }
 .block{
@@ -29,4 +33,11 @@ a{
   &:hover{
     text-decoration: none;
   }
+}
+.before-footer{
+  padding-top: 50px;
+}
+h1.page-header span{
+  font-size: 22px;
+  color: $backgound-buttom;
 }

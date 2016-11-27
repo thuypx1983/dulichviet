@@ -1,0 +1,154 @@
+.view-id-tours_list{
+  position: relative;
+  display: table;
+  width: 100%;
+  .view-filters{
+    display: table-cell;
+    vertical-align: top;
+    width: 280px;
+    padding-right: 5px;
+    #views-exposed-form-tours-list-page{
+      border:1px solid $color-box;
+      padding-left: 30px;
+    }
+    #edit-field-departure-point-tid-wrapper{
+      float: none;
+      .form-control{
+        height: 100%;
+        border: none;
+      }
+      input[type=checkbox]{
+        width: auto;
+        display: inline-block;
+      }
+      .option{
+        display: inline-block;
+        font-weight: normal;
+      }
+    }
+
+    #edit-sort-bef-combine-wrapper{
+      position: absolute;
+      top:0px;
+      left: 280px;
+      width: calc(100% - 280px);
+      background-color: $color_silver;
+      padding: 5px;
+      .form-item{
+        display: inline-block;
+      }
+      .control-label{
+        font-weight: normal;
+        font-size: 12px;
+      }
+    }
+    #edit-sort-bef-combine{
+      display: inline-block;
+      a{
+        color:$color-link;
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+  .view-content{
+    display: table-cell;
+    padding-top: 60px;
+    .views-row{
+      border: 1px solid $color_box;
+      margin: 15px 0px;
+      display: block;
+      padding: 10px 5px ;
+    }
+
+  }
+}
+.view-tours-list{
+  .views-row{
+    .view-row-content{
+      display: table;
+      width: 100%;
+      .views-field-field-image{
+        display: table-cell;
+        vertical-align: top;
+        width: 40%;
+        border: 1px solid $color_box;
+        img{
+          width: 100%;
+        }
+      }
+      .right{
+        position:relative;
+        vertical-align: top;
+        display: table-cell;
+        padding-left: 10px;
+        .views-field-title{
+          h2{
+            font-size: 15px;
+            color: $color_link;
+            margin-top: 0px;
+            margin-bottom: 15px;
+          }
+        }
+        .views-field{
+          &>*{
+            display: inline-block;
+          }
+          .views-label{
+            padding-right: 10px;
+          }
+          font-size: 12px;
+        }
+        .views-field-field-duration{
+          margin: 10px 0px;
+          .views-label{
+            background-color: #e7e7e7;
+            border: 1px solid #ddd;
+            color: #555;
+            padding: 5px 10px;
+          }
+          .field-content{
+            background-color: #555;
+            border: 1px solid #555;
+            color: #fff;
+            padding: 5px 10px;
+          }
+        }
+        .views-field-field-journey{
+          font-weight: bold;
+        }
+        .views-field-view-node{
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          background-color: $backgound-buttom;
+
+          padding: 6px 10px;
+          a{
+            color: #fff;
+          }
+        }
+        .views-field-field-price{
+          position: absolute;
+          right: 10px;
+          top: 40%;
+          transform: translate(0,-40%);
+          .views-label{
+            line-height: 25px;
+          }
+          .field-content{
+            color:$backgound-buttom;
+            font-size: 25px;
+            font-weight: bold;
+          }
+        }
+        .views-field-field-promotion{
+          color:$backgound-buttom;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  }
+}

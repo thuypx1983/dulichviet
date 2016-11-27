@@ -1,7 +1,7 @@
 
 (function ($) {
     $(document).ready(function () {
-        $('.view-product-hot .views-row,.view-news-hot .views-row').matchHeight({
+        $('.view-product-hot .views-row,.view-news-hot .views-row,.region-before-footer section').matchHeight({
             byRow: true,
             property: 'height',
             target: null,
@@ -13,7 +13,7 @@
                     target: null,
                     remove: false
          });
-
+        $('#webform-client-form-16 .form-actions').appendTo('#webform-client-form-16 .webform-component-email');
     })
 
 

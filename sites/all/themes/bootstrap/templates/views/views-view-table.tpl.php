@@ -53,3 +53,17 @@
 <?php if ($responsive): ?>
   </div>
 <?php endif; ?>
+<script type="text/javascript">
+
+    (function ($) {
+        $(document).ready(function () {
+            $(function(){
+                $('.view-domestic-tour .view-content').slimScroll({
+                    height: '350px'
+                });
+            });
+        })
+
+
+    })(jQuery)
+</script>

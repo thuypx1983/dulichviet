@@ -2,9 +2,11 @@ name = Bootstrap
 description = Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.
 core = 7.x
 
+stylesheets[all][] = js/chosen_v1.6.2/chosen.min.css
 stylesheets[all][] = css/custom_style.css
 
 scripts[]=js/jquery.matchHeight.js
+scripts[]=js/jquery.slimscroll.js
 scripts[]=js/script.js
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -27,9 +29,11 @@ regions[help]           = 'Help'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
-regions[footer_col_1]         = 'Footer column 1'
-regions[footer_col_2]         = 'Footer column 2'
-regions[footer_col_3]         = 'Footer column 3'
+regions[after_content] = 'After content'
+regions[before_footer] = 'Before footer'
+regions[footer_1]         = 'Footer  1'
+regions[footer_2]         = 'Footer  2'
+regions[footer_3]         = 'Footer  3'
 regions[footer_bottom]         = 'Footer bottom'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'

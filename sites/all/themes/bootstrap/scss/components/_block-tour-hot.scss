@@ -12,6 +12,15 @@
         display: inline-block;
       }
     }
+    .views-field-field-image{
+      .field-content {
+        display: block;
+        img{
+          width: 100%;
+        }
+      }
+
+    }
     .tour-info{
       position: absolute;
       bottom: 0px;
@@ -24,6 +33,10 @@
       span{
         color: $color_white;
       }
+      div{
+        color: $color_white;
+      }
+
       .views-field-title{
         a{
           font-size: 17px;
