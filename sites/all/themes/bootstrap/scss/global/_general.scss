@@ -37,7 +37,13 @@ a{
 .before-footer{
   padding-top: 50px;
 }
-h1.page-header span{
-  font-size: 22px;
-  color: $backgound-buttom;
+h1.page-header {
+  margin:0px;
+  padding:0px;
+  line-height: 22px;
+  border-bottom: 0px;
+  span{
+    font-size: 22px;
+    color: $backgound-buttom;
+  }
 }

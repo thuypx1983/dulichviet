@@ -128,9 +128,6 @@ function slick_example_views_default_views() {
     'skin_thumbnail' => '',
     'skin_arrows' => '',
     'skin_dots' => '',
-    'asnavfor_main' => '',
-    'asnavfor_thumbnail' => '',
-    'asnavfor_auto' => 0,
     'image_style' => 'slick_600x460',
     'thumbnail_style' => '',
     'thumbnail_hover' => 1,
@@ -199,9 +196,6 @@ function slick_example_views_default_views() {
     'skin_thumbnail' => '',
     'skin_arrows' => '',
     'skin_dots' => '',
-    'asnavfor_main' => '',
-    'asnavfor_thumbnail' => '',
-    'asnavfor_auto' => 0,
     'image_style' => 'slick_1280',
     'thumbnail_style' => 'slick_140x80',
     'thumbnail_hover' => 1,
@@ -261,7 +255,6 @@ function slick_example_views_default_views() {
   $handler->display->display_options['style_options']['slide_thumbnail'] = 'field_images_1';
   $handler->display->display_options['style_options']['slide_field_wrapper'] = 1;
   $handler->display->display_options['style_options']['id'] = 'slick-asnavfor';
-  $handler->display->display_options['style_options']['asnavfor_auto'] = 1;
   $handler->display->display_options['style_options']['optionset'] = 'x_slick_for';
   $handler->display->display_options['style_options']['optionset_thumbnail'] = 'x_slick_nav';
   $handler->display->display_options['style_options']['skin'] = 'classic';
@@ -353,7 +346,6 @@ function slick_example_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'slick';
   $handler->display->display_options['style_options']['slide_field_wrapper'] = 1;
   $handler->display->display_options['style_options']['id'] = 'slick-carousel';
-  $handler->display->display_options['style_options']['asnavfor_auto'] = 0;
   $handler->display->display_options['style_options']['optionset'] = 'x_carousel';
   $handler->display->display_options['style_options']['skin'] = 'rounded';
   $handler->display->display_options['style_options']['slide_caption'] = array(
@@ -435,14 +427,12 @@ function slick_example_views_default_views() {
     'skin_thumbnail' => '',
     'skin_arrows' => '',
     'skin_dots' => '',
-    'asnavfor_main' => '',
-    'asnavfor_thumbnail' => '',
-    'asnavfor_auto' => 0,
     'image_style' => 'slick_1280',
     'thumbnail_style' => '',
     'thumbnail_hover' => 1,
     'slide_layout' => 'stage-zebra',
     'thumbnail_caption' => '',
+    'background' => 1,
     'media_switch' => '',
     'colorbox_style' => '',
     'slide_caption' => array(
@@ -482,7 +472,6 @@ function slick_example_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'slick';
   $handler->display->display_options['style_options']['slide_field_wrapper'] = 1;
   $handler->display->display_options['style_options']['id'] = 'slick-grid';
-  $handler->display->display_options['style_options']['asnavfor_auto'] = 0;
   $handler->display->display_options['style_options']['optionset'] = 'x_grid';
   $handler->display->display_options['style_options']['skin'] = 'grid';
   $handler->display->display_options['style_options']['slide_caption'] = array(

@@ -14,6 +14,7 @@
                     remove: false
          });
         $('#webform-client-form-16 .form-actions').appendTo('#webform-client-form-16 .webform-component-email');
+        $('.node-type-tour .page-header').prependTo('.node-type-tour .group-right');
     })
 
 
