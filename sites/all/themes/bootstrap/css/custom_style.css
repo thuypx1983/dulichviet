@@ -224,6 +224,13 @@ body.html .footer-3 {
     .tb-megamenu-item li a:hover {
       background-image: none !important; }
 
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0px;
+  padding-left: 0px; }
+  .breadcrumb a {
+    color: #0493b4; }
+
 .home-banner {
   position: relative; }
 
