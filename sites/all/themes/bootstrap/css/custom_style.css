@@ -541,6 +541,45 @@ body.html .footer-3 {
   width: 90px;
   text-align: center; }
 
+.view-news .grid-item {
+  width: 25%;
+  padding: 10px 5px; }
+  .view-news .grid-item .view-row-content {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-top: 10px; }
+    .view-news .grid-item .view-row-content .views-field-title a {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333; }
+    .view-news .grid-item .view-row-content .views-field-field-image {
+      padding: 0px 5px 10px 5px; }
+    .view-news .grid-item .view-row-content .views-field-title {
+      padding: 0px 5px 10px 5px; }
+    .view-news .grid-item .view-row-content .views-field-body {
+      padding: 0px 5px 10px 5px; }
+    .view-news .grid-item .view-row-content .statistics-info {
+      background-color: #f8f8ed;
+      border-top: 1px solid #ddd;
+      display: table;
+      padding: 5px;
+      width: 100%; }
+      .view-news .grid-item .view-row-content .statistics-info .views-field-created {
+        float: left; }
+      .view-news .grid-item .view-row-content .statistics-info .views-field-totalcount {
+        float: right;
+        position: relative;
+        padding-left: 20px;
+        display: block;
+        width: 40px;
+        color: #333; }
+        .view-news .grid-item .view-row-content .statistics-info .views-field-totalcount:before {
+          position: absolute;
+          content: "\f070";
+          font-family: "FontAwesome";
+          left: 0px;
+          color: #000000; }
+
 /*page*/
 .node-type-tour .node-tour {
   border: 1px solid #ddd;
