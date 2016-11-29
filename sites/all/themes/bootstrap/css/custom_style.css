@@ -228,16 +228,22 @@ body.html .footer-3 {
   position: relative; }
 
 .block.block-tour-filter {
+  margin: auto;
+  min-width: 1024px;
+  width: 90%;
   bottom: 0px;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto; }
+  .block.block-tour-filter .block-wapper {
+    padding: 0px 15px; }
   .block.block-tour-filter .block-title {
     padding: 10px 15px;
     color: #ffffff;
     font-size: 17px;
     display: inline-block;
+    margin-bottom: 0px;
     background-color: rgba(17, 17, 17, 0.69); }
     .block.block-tour-filter .block-title .fa {
       font-size: 25px; }
@@ -247,6 +253,13 @@ body.html .footer-3 {
     .block.block-tour-filter .block-content label {
       color: #ffffff;
       font-weight: normal; }
+
+.block-tour-filter-clone {
+  background-color: rgba(17, 17, 17, 0.69);
+  padding: 5px; }
+  .block-tour-filter-clone label {
+    color: #ffffff;
+    font-weight: normal; }
 
 .item-tour-hot {
   padding-bottom: 30px; }
@@ -385,6 +398,15 @@ body.html .footer-3 {
   position: relative;
   display: table;
   width: 100%; }
+  .view-id-tours_list .view-header {
+    position: absolute;
+    left: 280px;
+    top: 0px; }
+    .view-id-tours_list .view-header h2 {
+      font-size: 20px;
+      padding: 0px;
+      margin: 0px;
+      color: #eb004f; }
   .view-id-tours_list .view-filters {
     display: table-cell;
     vertical-align: top;
@@ -406,7 +428,7 @@ body.html .footer-3 {
         font-weight: normal; }
     .view-id-tours_list .view-filters #edit-sort-bef-combine-wrapper {
       position: absolute;
-      top: 0px;
+      top: 30px;
       left: 280px;
       width: calc(100% - 280px);
       background-color: #f2f1f1;
@@ -414,13 +436,11 @@ body.html .footer-3 {
       .view-id-tours_list .view-filters #edit-sort-bef-combine-wrapper .form-item {
         display: inline-block; }
       .view-id-tours_list .view-filters #edit-sort-bef-combine-wrapper .control-label {
-        font-weight: normal;
-        font-size: 12px; }
+        font-weight: normal; }
     .view-id-tours_list .view-filters #edit-sort-bef-combine {
       display: inline-block; }
       .view-id-tours_list .view-filters #edit-sort-bef-combine a {
         color: #0493b4;
-        font-size: 12px;
         padding-left: 5px;
         padding-right: 5px; }
   .view-id-tours_list .view-content {
@@ -452,12 +472,10 @@ body.html .footer-3 {
       color: #0493b4;
       margin-top: 0px;
       margin-bottom: 15px; }
-    .view-tours-list .views-row .view-row-content .right .views-field {
-      font-size: 12px; }
-      .view-tours-list .views-row .view-row-content .right .views-field > * {
-        display: inline-block; }
-      .view-tours-list .views-row .view-row-content .right .views-field .views-label {
-        padding-right: 10px; }
+    .view-tours-list .views-row .view-row-content .right .views-field > * {
+      display: inline-block; }
+    .view-tours-list .views-row .view-row-content .right .views-field .views-label {
+      padding-right: 10px; }
     .view-tours-list .views-row .view-row-content .right .views-field-field-duration {
       margin: 10px 0px; }
       .view-tours-list .views-row .view-row-content .right .views-field-field-duration .views-label {
@@ -495,6 +513,27 @@ body.html .footer-3 {
       color: #eb004f;
       margin-bottom: 10px; }
 
+.view-search-tour .views-table thead {
+  background-color: #3f51b5; }
+  .view-search-tour .views-table thead .views-field {
+    color: #ffffff;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #ffffff; }
+.view-search-tour .views-table tbody .views-field-title a {
+  color: #eb004f; }
+.view-search-tour .views-table tbody .views-field-field-price {
+  color: #eb004f;
+  font-size: 16px; }
+.view-search-tour .views-table tbody .btn-product-cart {
+  padding: 0px 5px;
+  background-color: #3f51b5;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 90px;
+  text-align: center; }
+
 /*page*/
 .node-type-tour .node-tour {
   border: 1px solid #ddd;
@@ -503,6 +542,8 @@ body.html .footer-3 {
   float: left;
   width: 30%; }
 .node-type-tour .group-right {
+  min-height: 300px;
+  position: relative;
   float: left;
   width: 70%;
   padding-left: 40px; }
@@ -528,6 +569,10 @@ body.html .footer-3 {
     margin-bottom: 15px; }
     .node-type-tour .group-right .field-name-field-journey .field-item {
       font-weight: bold; }
+  .node-type-tour .group-right .field-name-body {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px; }
 .node-type-tour .group-price-detail {
   display: table;
   width: 100%;
@@ -554,34 +599,62 @@ body.html .footer-3 {
       float: left;
       display: block;
       width: 60%; }
-.node-type-tour .group-detail-row {
-  display: table;
+.node-type-tour .group-detail-row .field-group-format-wrapper {
+  display: table !important;
   width: 100%; }
-  .node-type-tour .group-detail-row .group-detail-left {
+  .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-left {
     display: table-cell;
     padding-right: 15px;
     vertical-align: top; }
-  .node-type-tour .group-detail-row .group-detail-right {
+  .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right {
     display: table-cell;
     width: 350px;
     vertical-align: top;
     border: 1px solid #ccc; }
-    .node-type-tour .group-detail-row .group-detail-right .node-tour {
+    .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right .node-tour {
       border: none; }
-    .node-type-tour .group-detail-row .group-detail-right .field-type-node-reference {
+    .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right .field-type-node-reference {
       padding: 10px; }
-      .node-type-tour .group-detail-row .group-detail-right .field-type-node-reference > .field-label {
+      .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right .field-type-node-reference > .field-label {
         border-bottom: 1px solid #ccc;
         font-size: 18px;
         padding: 10px 0px 0px 0px;
         text-transform: uppercase; }
-      .node-type-tour .group-detail-row .group-detail-right .field-type-node-reference .node-tour {
+      .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right .field-type-node-reference .node-tour {
         padding: 0px; }
-      .node-type-tour .group-detail-row .group-detail-right .field-type-node-reference header h2 a {
+      .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right .field-type-node-reference header h2 a {
         color: #eb004f;
         font-size: 16px;
         font-weight: bold;
         line-height: 16px; }
+.node-type-tour .form-group .btn-product-cart {
+  padding: 10px;
+  background-color: #eb004f;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 5px;
+  right: 15px; }
+.node-type-tour .field-name-field-price {
+  position: absolute;
+  bottom: 50px;
+  right: 15px; }
+  .node-type-tour .field-name-field-price .field-label {
+    line-height: 31px; }
+  .node-type-tour .field-name-field-price .field-item {
+    color: #eb004f;
+    font-size: 22px; }
+.node-type-tour .field-name-field-departure-day {
+  margin-bottom: 10px; }
+.node-type-tour .field-name-field-departure-day {
+  margin-bottom: 10px; }
+.node-type-tour .field-name-field-departure-point {
+  margin-bottom: 10px; }
+.node-type-tour .field-name-field-promotion {
+  margin-top: 30px; }
+  .node-type-tour .field-name-field-promotion .field-item {
+    color: #eb004f; }
 
 .mda-table {
   width: 100%; }

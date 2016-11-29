@@ -47,14 +47,16 @@
 ?>
 <section id="<?php print $block_html_id; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print render($title_prefix); ?>
-  <?php if ($title): ?>
-    <span class="block-title"><?php print $block->title; ?></span>
-  <?php endif;?>
-  <?php print render($title_suffix); ?>
+  <div class="block-wapper">
+    <?php print render($title_prefix); ?>
+    <?php if ($title): ?>
+      <span class="block-title"><?php print $block->title; ?></span>
+    <?php endif;?>
+    <?php print render($title_suffix); ?>
 
-  <div class="block-content">
-    <?php print $content ?>
+    <div class="block-content">
+      <?php print $content ?>
+    </div>
   </div>
 
 </section>

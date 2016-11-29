@@ -2,6 +2,17 @@
   position: relative;
   display: table;
   width: 100%;
+  .view-header{
+    position: absolute;
+    left: 280px;
+    top: 0px;
+    h2{
+      font-size: 20px;
+      padding: 0px;
+      margin: 0px;
+      color: $backgound-buttom;
+    }
+  }
   .view-filters{
     display: table-cell;
     vertical-align: top;
@@ -29,7 +40,7 @@
 
     #edit-sort-bef-combine-wrapper{
       position: absolute;
-      top:0px;
+      top:30px;
       left: 280px;
       width: calc(100% - 280px);
       background-color: $color_silver;
@@ -39,14 +50,12 @@
       }
       .control-label{
         font-weight: normal;
-        font-size: 12px;
       }
     }
     #edit-sort-bef-combine{
       display: inline-block;
       a{
         color:$color-link;
-        font-size: 12px;
         padding-left: 5px;
         padding-right: 5px;
       }
@@ -98,7 +107,6 @@
           .views-label{
             padding-right: 10px;
           }
-          font-size: 12px;
         }
         .views-field-field-duration{
           margin: 10px 0px;

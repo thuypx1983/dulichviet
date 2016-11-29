@@ -8,6 +8,8 @@
     width: 30%;
   }
   .group-right{
+    min-height: 300px;
+    position: relative;
     float: left;
     width: 70%;
     padding-left: 40px;
@@ -45,7 +47,11 @@
         font-weight: bold;
       }
     }
-
+    .field-name-body{
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
   }
   .group-price-detail{
     display: table;
@@ -82,45 +88,90 @@
     }
   }
   .group-detail-row{
-    display: table;
-    width: 100%;
-    .group-detail-left{
+    .field-group-format-wrapper{
+      display: table !important;
+      width: 100%;
+      .group-detail-left{
         display: table-cell;
         padding-right: 15px;
-      vertical-align: top;
-    }
-    .group-detail-right{
-      display: table-cell;
-      width: 350px;
-      vertical-align: top;
-      border: 1px solid #ccc;
-      .node-tour{
-        border: none;
+        vertical-align: top;
       }
-      .field-type-node-reference{
-        padding: 10px;
-        &>.field-label{
-          border-bottom: 1px solid #ccc;
-          font-size: 18px;
-          padding: 10px 0px 0px 0px;
-          text-transform: uppercase;
-        }
+      .group-detail-right{
+        display: table-cell;
+        width: 350px;
+        vertical-align: top;
+        border: 1px solid #ccc;
         .node-tour{
-          padding: 0px;
+          border: none;
         }
-        header{
-          h2{
-           a{
-             color: $backgound-buttom;
-             font-size: 16px;
-             font-weight: bold;
-             line-height: 16px;
-           }
+        .field-type-node-reference{
+          padding: 10px;
+          &>.field-label{
+            border-bottom: 1px solid #ccc;
+            font-size: 18px;
+            padding: 10px 0px 0px 0px;
+            text-transform: uppercase;
+          }
+          .node-tour{
+            padding: 0px;
+          }
+          header{
+            h2{
+              a{
+                color: $backgound-buttom;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 16px;
+              }
+            }
           }
         }
       }
     }
+
   }
+  .form-group{
+
+    .btn-product-cart{
+      padding: 10px;
+      background-color: $backgound-buttom;
+      color:$color-white;
+      font-size: 16px;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 5px;
+      right: 15px;
+    }
+  }
+  .field-name-field-price{
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    .field-label{
+      line-height: 31px;
+    }
+    .field-item{
+      color: $backgound-buttom;
+      font-size: 22px;
+    }
+  }
+  .field-name-field-departure-day{
+    margin-bottom: 10px;
+  }
+  .field-name-field-departure-day{
+    margin-bottom: 10px;
+  }
+  .field-name-field-departure-point{
+    margin-bottom: 10px;
+  }
+
+  .field-name-field-promotion{
+    margin-top: 30px;
+    .field-item{
+      color: $backgound-buttom;
+    }
+  }
+
 }
 .mda-table{
   width: 100%;

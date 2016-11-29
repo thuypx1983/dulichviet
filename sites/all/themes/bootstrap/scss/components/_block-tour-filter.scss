@@ -3,16 +3,24 @@
 }
 .block{
   &.block-tour-filter{
+
+    margin:auto;
+    min-width: 1024px;
+    width: 90%;
     bottom: 0px;
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
+    .block-wapper{
+      padding: 0px 15px;
+    }
     .block-title{
       padding: 10px 15px;
       color: $color_white;
       font-size: 17px;
       display: inline-block;
+      margin-bottom: 0px;
       background-color: rgba(17, 17, 17, 0.69);
       .fa{
         font-size: 25px;
@@ -27,4 +35,12 @@
       }
     }
   }
+}
+.block-tour-filter-clone{
+  background-color: rgba(17, 17, 17, 0.69);
+  label{
+    color: $color_white;
+    font-weight: normal;
+  }
+  padding: 5px;
 }
