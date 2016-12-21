@@ -520,6 +520,29 @@ body.html .footer-3 {
       color: #eb004f;
       margin-bottom: 10px; }
 
+.view-product-list-1 .view-category-detail {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px; }
+  .view-product-list-1 .view-category-detail .mda-facebook {
+    display: inline-block;
+    line-height: 12px; }
+  .view-product-list-1 .view-category-detail .mda-google {
+    display: inline-block; }
+  .view-product-list-1 .view-category-detail #fivestar-custom-widget .fivestar-widget-5 {
+    display: inline-block;
+    padding-left: 10px; }
+  .view-product-list-1 .view-category-detail #fivestar-custom-widget .help-block {
+    display: inline-block;
+    padding-left: 5px; }
+  .view-product-list-1 .view-category-detail .views-row .views-field-field-social-share {
+    display: inline-block; }
+  .view-product-list-1 .view-category-detail .views-row .views-field-field-star {
+    display: inline-block; }
+
+.page-taxonomy-term h1.page-header {
+  margin-bottom: 15px; }
+
 .view-search-tour .views-table thead {
   background-color: #3f51b5; }
   .view-search-tour .views-table thead .views-field {
