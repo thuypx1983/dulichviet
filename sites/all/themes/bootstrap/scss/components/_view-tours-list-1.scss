@@ -31,9 +31,105 @@
     }
 
   }
+  .slick-track{
+    .slick__slide{
+      padding-right: 5px;
+      padding-left: 5px;
+      .slide__content{
+        position: relative;
+        .views-field-field-duration{
+          border-top: 5px solid #b35e14;
+          position: absolute;
+          top: 0px;
+          left: 10px;
+          padding: 10px;
+          text-transform: uppercase;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+  .tour-hot-info{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 5px;
+    background-color: $backgound;
+    a{
+      color: $color_white;
+    }
+    span{
+      color: $color_white;
+    }
+    div{
+      color: $color_white;
+    }
+
+    .views-field-title{
+      a{
+        font-size: 17px;
+        line-height: 17px;
+      }
+    }
+    .views-field-field-duration{
+      display: none;
+    }
+    .views-field-field-price{
+      .field-content{
+        color: $color-yellow;
+      }
+    }
+    .views-field-field-departure-day{
+      display: none;
+    }
+    span.views-label{
+      padding-right: 5px;
+    }
+  }
 }
-.page-taxonomy-term{
+.page-tour-list-1{
   h1.page-header{
     margin-bottom: 15px;
+  }
+}
+.page-tour-list-1{
+  .region-content {
+    .block{
+      .block-title {
+        overflow: hidden;
+        text-align: center;
+        display: block;
+
+      }
+      .block-title{
+        &:before{
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          content: "";
+          display: inline-block;
+          height: 8px;
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+          right: 0.5em;
+          margin-left: -50%;
+        }
+        &:after{
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          content: "";
+          display: inline-block;
+          height: 8px;
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+          left: 0.5em;
+          margin-right: -50%;
+        }
+      }
+    }
+    .block-tour{
+      width: 100%;
+    }
   }
 }
