@@ -614,6 +614,8 @@ body.html .footer-3 {
   #block-views-product-list-1-block .views-row {
     padding: 0px;
     border: 1px solid #ffffff; }
+    #block-views-product-list-1-block .views-row .tour-hot-info {
+      background-color: transparent; }
 
 .view-search-tour .views-table thead {
   background-color: #3f51b5; }

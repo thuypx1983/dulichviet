@@ -140,5 +140,8 @@
   .views-row{
     padding: 0px;
     border:1px solid $color-white;
+    .tour-hot-info{
+      background-color: transparent;
+    }
   }
 }
