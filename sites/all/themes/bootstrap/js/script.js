@@ -2,7 +2,7 @@
 (function ($) {
 
     $(document).ready(function () {
-        $('.view-product-hot .views-row,.view-news-hot .views-row,.region-before-footer section').matchHeight({
+        $('.view-product-hot .views-row,.view-news-hot .views-row,.region-before-footer section, #block-views-product-list-1-block-2 .views-row').matchHeight({
             byRow: true,
             property: 'height',
             target: null,
