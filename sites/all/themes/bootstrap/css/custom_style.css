@@ -657,6 +657,9 @@ body.html .footer-3 {
         color: #eb004f;
         font-size: 20px; }
 
+.view-display-id-page_1 .view-content {
+  display: none; }
+
 .view-search-tour .views-table thead {
   background-color: #3f51b5; }
   .view-search-tour .views-table thead .views-field {
