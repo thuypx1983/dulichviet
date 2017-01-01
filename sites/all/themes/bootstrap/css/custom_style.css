@@ -629,6 +629,10 @@ body.html .footer-3 {
     #block-views-product-list-1-block .views-row .tour-hot-info {
       background-color: transparent; }
 
+#block-views-product-list-1-block-2 .tour-hot-info {
+  position: relative;
+  background-color: #ffffff; }
+
 .view-search-tour .views-table thead {
   background-color: #3f51b5; }
   .view-search-tour .views-table thead .views-field {
