@@ -608,8 +608,12 @@ body.html .footer-3 {
 .page-tour-list-1 .region-content .block-tour {
   width: 100%; }
 
-#block-views-product-list-1-block .views-row {
-  padding: 0px; }
+#block-views-product-list-1-block {
+  margin-left: 5px;
+  margin-right: 5px; }
+  #block-views-product-list-1-block .views-row {
+    padding: 0px;
+    border: 1px solid #ffffff; }
 
 .view-search-tour .views-table thead {
   background-color: #3f51b5; }

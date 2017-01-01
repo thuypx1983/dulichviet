@@ -135,7 +135,10 @@
 }
 
 #block-views-product-list-1-block{
+  margin-left: 5px;
+  margin-right: 5px;
   .views-row{
     padding: 0px;
+    border:1px solid $color-white;
   }
 }
