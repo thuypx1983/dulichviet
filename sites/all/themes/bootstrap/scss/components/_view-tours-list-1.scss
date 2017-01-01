@@ -174,8 +174,11 @@
           display: block;
           color: #000000;
           .field-content{
-            color: #000000;
-            font-weight: bold;
+            .date-display-single{
+              color: #000000;
+              font-weight: bold;
+            }
+
           }
         }
         .views-field-field-price{
