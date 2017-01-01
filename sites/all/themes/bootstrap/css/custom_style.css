@@ -99,6 +99,18 @@ h1.page-header {
     font-size: 22px;
     color: #eb004f; }
 
+.space-15 {
+  margin-top: 15px; }
+
+.space-20 {
+  margin-top: 20px; }
+
+.space-25 {
+  margin-top: 25px; }
+
+.space-30 {
+  margin-top: 30px; }
+
 .region-header .block {
   height: 90px; }
 .region-header .block-search .block-content {
