@@ -147,12 +147,26 @@
 }
 #block-views-product-list-1-block-2{
   .views-row{
-
+    margin-bottom: 15px;
     .view-row-content{
       border: 1px solid #cccccc;
+      height: 100%;
       .tour-hot-info{
         position: relative;
         background-color: $color_white;
+        .views-field-title{
+          a{
+            color: #000000;
+          }
+        }
+        .views-field-field-duration{
+          display: block;
+          color: #000000;
+        }
+        .views-field-field-departure-day{
+          display: block;
+          color: #000000;
+        }
       }
     }
 
