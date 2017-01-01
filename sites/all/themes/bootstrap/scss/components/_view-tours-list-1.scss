@@ -147,10 +147,13 @@
 }
 #block-views-product-list-1-block-2{
   .views-row{
-    border: 1px solid #cccccc;
-    .tour-hot-info{
-      position: relative;
-      background-color: $color_white;
+
+    .view-row-content{
+      border: 1px solid #cccccc;
+      .tour-hot-info{
+        position: relative;
+        background-color: $color_white;
+      }
     }
 
   }
