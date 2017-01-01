@@ -644,9 +644,15 @@ body.html .footer-3 {
       #block-views-product-list-1-block-2 .views-row .view-row-content .tour-hot-info .views-field-field-duration {
         display: block;
         color: #000000; }
+        #block-views-product-list-1-block-2 .views-row .view-row-content .tour-hot-info .views-field-field-duration .field-content {
+          color: #000000;
+          font-weight: bold; }
       #block-views-product-list-1-block-2 .views-row .view-row-content .tour-hot-info .views-field-field-departure-day {
         display: block;
         color: #000000; }
+        #block-views-product-list-1-block-2 .views-row .view-row-content .tour-hot-info .views-field-field-departure-day .field-content {
+          color: #000000;
+          font-weight: bold; }
       #block-views-product-list-1-block-2 .views-row .view-row-content .tour-hot-info .views-field-field-price .field-content {
         color: #eb004f;
         font-size: 20px; }

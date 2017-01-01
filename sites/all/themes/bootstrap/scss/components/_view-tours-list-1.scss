@@ -165,10 +165,18 @@
         .views-field-field-duration{
           display: block;
           color: #000000;
+          .field-content{
+            color: #000000;
+            font-weight: bold;
+          }
         }
         .views-field-field-departure-day{
           display: block;
           color: #000000;
+          .field-content{
+            color: #000000;
+            font-weight: bold;
+          }
         }
         .views-field-field-price{
           .field-content{
