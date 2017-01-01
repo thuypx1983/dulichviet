@@ -660,6 +660,10 @@ body.html .footer-3 {
 .view-display-id-page_1 .view-content {
   display: none; }
 
+.page-taxonomy-term #block-views-domestic-tour-block-1 {
+  margin-left: -10px;
+  margin-right: -10px; }
+
 .view-search-tour .views-table thead {
   background-color: #3f51b5; }
   .view-search-tour .views-table thead .views-field {
