@@ -97,10 +97,10 @@ function product_cart_menu()
 }
 function _product_change_quantity(){
     if($_POST['type']=='product'){
-        $nid = $_POST['nid'];
+        $nid = $_POST['pdid'];
         $_SESSION['product_cart'][$nid]['quantity']=$_POST['quantity'];
     }elseif($_POST['type']=='option'){
-        $_SESSION['product_cart_option'][$_POST['nid']]['quantity']=$_POST['quantity'];
+        $_SESSION['product_cart_option'][$_POST['pdid']]['quantity']=$_POST['quantity'];
     }
 }
 function _product_change_duration(){
@@ -166,12 +166,11 @@ function _product_cart_add()
     */
 
     $nid = $_POST['nid'];
+    $quantity = $_POST['quantity'];
     drupal_session_start();
     if (!isset($_SESSION['product_cart'])) $_SESSION['product_cart'] = array();
     if($nid){
-        if(!$_SESSION['product_cart'][$nid]){
-            $_SESSION['product_cart'][$nid]=array('nid'=>$nid,'quantity'=>1,'duration'=>1,'date'=>date('Y-m-d'));
-        }
+        $_SESSION['product_cart'][$nid]=array('nid'=>$nid,'quantity'=>$quantity,'duration'=>1,'date'=>date('Y-m-d'));
     }
 
     $block = block_load('product_cart', 'product_cart_block');
@@ -179,16 +178,11 @@ function _product_cart_add()
     $json['block_cart']=@drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
 
     #popup
-    $nids=array_keys($_SESSION['product_cart']);
-    if(count($nids)>0){
-        $item_list=node_load_multiple($nids);
-
-        $items=array();
-        foreach($item_list as $item){
-            $items[$item->field_category['und'][0]['tid']][]=$item;
-        }
+    $items=$_SESSION['product_cart'];
+    foreach($items as &$item){
+        $item['node']=node_load($item['nid']);
     }
-
+    unset($item);
 
 
     $json['popup_cart']= theme('product_cart_popup', array(
@@ -518,10 +512,10 @@ function _product_cart_page(){
 function product_cart_form_alter( &$form, &$form_state,$form_id ){
 
     // you'll want to limit your altering to specific forms
-    if ($form_id == 'webform_client_form_30') {
+    if ($form_id == 'webform_client_form_21') {
 
         drupal_session_start();
-        $form['submitted']['step_content']['step_1']['step1_content']['products']['#value'] =json_encode(array('product_cart'=>$_SESSION['product_cart'],'product_cart_option'=>$_SESSION['product_cart_option']));
+        $form['submitted']['product_list']['products']['#value'] =json_encode($_SESSION['product_cart']);
 
         #if(!isset($_SESSION['product_cart'])) return;
         $current_lang= $GLOBALS['language']->language;
@@ -531,194 +525,61 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
         if(count($item_list)>0){
             $products=node_load_multiple(array_keys($item_list));
         }
-
-
-        $form['submitted']['step_content']['step_1']['step1_content']['items'] = array(
-            '#type' => 'item',
-            '#markup' => theme('product_form_items', array(
-                    'session' => $_SESSION,
-                    'products' => $products,
-                    'options' => $_SESSION['product_cart_option'],
-                    'language' => $GLOBALS['language']->language,
-                )
-            ),
-            '#weight' => -100,
+        $form['submitted']['product_list']['table']=array(
+            '#prefix'=>'<table class="table table-bordered">',
+            '#suffix'=>'</table>',
         );
-        $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']=array(
-            '#prefix'=>'<div class="choose-dates">',
-            '#suffix'=>'</div>',
+        $form['submitted']['product_list']['table']['each_item']['product_1']['product-header']=array(
+            '#prefix'=>'<thead><tr>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+                <th>XÓa</th>',
+            '#suffix'=>'</tr></thead>',
         );
-        $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']=array(
-            '#prefix'=>'<div class="each-item">',
-            '#suffix'=>'</div>',
-        );
-
-        #header
-        $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_header']=array(
-            '#prefix'=>'<div class="product-row-header">',
-            '#suffix'=>'</div>',
-        );
-        $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_header']['product_header_category']=array(
-            '#prefix'=>'<div class="row-header product-taxonony">'.t('Type machine'),
-            '#suffix'=>'</div>',
-        );
-        $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_header']['product_header_name']=array(
-            '#prefix'=>'<div class="row-header product-name">'.t('Modèle'),
-            '#suffix'=>'</div>',
-        );
-
-        $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_header']['product_header_duration']=array(
-            '#prefix'=>'<div class="row-header form-type-date">'.t('Dèbut de chantier'),
-            '#suffix'=>'</div>',
-        );
-
-        $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_header']['product_header_date']=array(
-            '#prefix'=>'<div class="row-header on_date">'.t('Durée'),
-            '#suffix'=>'</div>',
-        );
-
-
-
-        $ops=array(0=>t('-'));
-        for($i=1;$i<=31;$i++){
-            if($i==1) {
-                $ops[$i]=t($i.' '.t('jour'));
-            }
-            else {
-                $ops[$i]=t($i.' '.t('jours'));
-            }
-           
-        }
+        $total=0;
 
         foreach($products as $product){
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$product->nid]=array(
-                '#prefix'=>'<div class="product-row">',
-                '#suffix'=>'</div>',
+            $subtotal=$product->field_price['und'][0]['value']*$item_list[$product->nid]['quantity'];
+            $total+=$subtotal;
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]=array(
+                '#prefix'=>'<tr class="product-item" data-pid="'.$product->nid.'">',
+                '#suffix'=>'</tr>',
             );
-
-            $term = taxonomy_term_load($product->field_category['und'][0]['tid']);
-
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$product->nid]['product-category']=
+             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-name']=
                 array(
-                    '#prefix'=>'<div class="row_item product-taxonony">'.$term->name,
-                    '#suffix'=>'</div>',
+                    '#prefix'=>'<td>'.$product->title,
+                    '#suffix'=>'</td>',
                 );
-             $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$product->nid]['product-name']=
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product_quantity']=
                 array(
-                    '#prefix'=>'<div class="row_item product-name">'.$product->title,
-                    '#suffix'=>'</div>',
+                    '#prefix'=>'<td class="row_item product-quanity"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
+                    '#suffix'=>'</td>',
                 );
-
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$product->nid]['product-date']=array(
-                '#type' => 'date',
-                '#title' => '',
-                '#description' =>'',
-                '#theme'=>'webform_date',
-                '#timezone'=>'user',
-                '#process'=>array('webform_expand_date'),
-                '#element_validate'=>array('webform_validate_date'),
-                '#datepicker'=>true,
-                '#default_value'=>'00:00:0000',
-                '#start_date'=>'-0 years',
-                '#end_date'=>'+2 years',
-            );
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$product->nid]['product-days']=
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-price']=
                 array(
-                    '#type' => 'select',
-
-                    '#title' => '',
-
-                    '#value' => $_SESSION['product_cart'][$product->nid]['duration'],
-
-                    '#options'=>$ops,
-
-                    '#attributes'=>array('data-pid'=>$product->nid,'type'=>'product','key'=>'duration'),
+                    '#prefix'=>'<td class="row_item product-price " data-price="'.$product->field_price['und'][0]['value'].'">'.number_format($product->field_price['und'][0]['value']),
+                    '#suffix'=>'</td>',
                 );
-                /*array(
-                '#type' => 'textfield',
-
-                '#title' => '',
-
-                '#value' => $_SESSION['product_cart'][$product->nid]['duration'],
-
-                '#size' => 10,
-
-                '#attributes'=>array('data-pid'=>$product->nid,'type'=>'product','key'=>'duration'),
-
-            );
-                */
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-subtotal']=
+                array(
+                    '#prefix'=>'<td class="row_item product-subtotal">'.number_format($subtotal),
+                    '#suffix'=>'</td>',
+                );
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-remove']=
+                array(
+                    '#prefix'=>'<td class="row_item product-remove"><i class="fa fa-trash"></i>',
+                    '#suffix'=>'</td>',
+                );
 
         }
-        foreach ($_SESSION['product_cart_option'] as $option){
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]=array(
-                '#prefix'=>'<div class="product-row">',
-                '#suffix'=>'</div>',
-            );
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]['product-category']=
-                array(
-                    '#prefix'=>'<div class="row_item product-taxonony">'.$option['category_product'][$current_lang]->name,
-                    '#suffix'=>'</div>',
-                );
-
-
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]['product-name']=
-                array(
-                    '#prefix'=>'<div class="row_item product-name product-more-option">'.$option['energy'][$current_lang]->name,
-                    '#suffix'=>'</div>',
-                );
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]['product-date']=array(
-                '#type' => 'date',
-                '#title' => '',
-                '#description' =>'',
-                '#theme'=>'webform_date',
-                '#timezone'=>'user',
-                '#process'=>array('webform_expand_date'),
-                '#element_validate'=>array('webform_validate_date'),
-                '#datepicker'=>true,
-                '#default_value'=>'00:00:0000',
-                '#start_date'=>'-0 years',
-                '#end_date'=>'+2 years',
-            );
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]['product-days']=
-                array(
-                    '#type' => 'select',
-
-                    '#title' => '',
-
-                    '#value' => $option['duration'],
-
-                    '#options'=>$ops,
-
-                    '#attributes'=>array('data-pid'=>$option['id'],'type'=>'option','key'=>'duration'),
-                );
-        }
-
-        /*$form['submitted']['step_content']['step_2']['step_2_bottom']['step_2_bottom_content']['items'] = array(
-            '#type' => 'item',
-            '#markup' => theme('product_form_items_quantity', array(
-                    'products' => $products,
-                    'options' => $_SESSION['product_cart_option'],
-                    'language' => $GLOBALS['language']->language,
-                )
-            ),
-            '#weight' => -400,
-        );*/
-
-
-        $form['submitted']['step_content']['step_1']['step1_content']['step_1_filter']['product_filter'] = array(
-            '#type' => 'item',
-            '#markup' => theme('product_filter', array(
-                    'products' => $products)
-            ),
-            '#weight' => -100,
+        $form['submitted']['product_list']['table']['each_item']['product_2']['product-footer']=array(
+            '#prefix'=>'<tfoot><tr>
+                <th colspan="4" style="text-align: right">Thành tiền</th>
+                <th class="cart-total" style="color: #e43a3d">'.number_format($total).'đ</th>',
+            '#suffix'=>'</tr></tfoot>',
         );
-        $form['submitted']['step_header']['step_1']['step1_content'] = array(
-            '#type' => 'item',
-            '#markup' => theme('product_form_header_step', array()
-            ),
-            '#weight' => -100,
-        );
-
 
        }
 }
@@ -733,7 +594,7 @@ function product_cart_mail_alter(&$message){
 
 function sutunam_webform_submission_render_alter(&$renderable) {
     if($renderable['#node']->nid==30){
-        $product=$renderable['step_content']['step_1']['step1_content']['products']['#value'];
+        $product=$renderable['product_list']['step_1']['step1_content']['products']['#value'];
         $product=json_decode($product,true);
         if($product){
             #product list
@@ -798,8 +659,8 @@ function sutunam_webform_submission_render_alter(&$renderable) {
                 }
             }
 
-            $renderable['step_content']['step_1']['step1_content']['products']['#format']='text';
-            $renderable['step_content']['step_1']['step1_content']['products']['#value']=$product_lists;
+            $renderable['product_list']['step_1']['step1_content']['products']['#format']='text';
+            $renderable['product_list']['step_1']['step1_content']['products']['#value']=$product_lists;
         }
     }
 }
