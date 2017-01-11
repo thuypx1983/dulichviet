@@ -249,9 +249,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'dulichviet',
-      'username' => 'root',
-      'password' => 'root',
+      'database' => 'dulichviet_dev_oms_vn',
+      'username' => 'dulichviet.dev.o',
+      'password' => 'Xvc3WM2zpCiuB6cq',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',

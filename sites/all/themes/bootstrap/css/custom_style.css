@@ -207,7 +207,7 @@ body.html .footer-3 {
 
 /*components*/
 .navigation {
-  background-color: #e30050; }
+  background-color: #5ca038; }
   .navigation .tb-megamenu {
     background-color: transparent; }
     .navigation .tb-megamenu .nav > li > a {
@@ -346,7 +346,7 @@ body.html .footer-3 {
   border: 1px solid #000000; }
 
 .after-content {
-  background-color: #e30050; }
+  background-color: #5ca038; }
 
 .why-us {
   margin-bottom: 40px; }
@@ -977,4 +977,4 @@ body.html .footer-3 {
       padding: 7px 15px;
       text-align: right; }
 
-/*# sourceMappingURL=custom_style.css.map */
+/*# sourceMappingURL=stylesheet.css.map */
