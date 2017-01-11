@@ -953,6 +953,13 @@ body.html .footer-3 {
   .node-type-tour .field-name-field-price .field-item {
     color: #eb004f;
     font-size: 22px; }
+.node-type-tour .field-name-field-price-old {
+  position: absolute;
+  bottom: 100px;
+  right: 15px; }
+  .node-type-tour .field-name-field-price-old .field-item {
+    color: #eb004f;
+    font-size: 22px; }
 .node-type-tour .field-name-field-departure-day {
   margin-bottom: 10px; }
 .node-type-tour .field-name-field-departure-day {
