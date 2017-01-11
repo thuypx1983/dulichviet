@@ -160,8 +160,12 @@
     bottom: 100px;
     right: 15px;
     .field-item{
-      color: $backgound-buttom;
-      font-size: 22px;
+      color: #333;
+      display: block;
+      font-size: 17px;
+      font-weight: normal;
+      position: absolute;
+      text-decoration: line-through;
     }
   }
   .field-name-field-departure-day{
