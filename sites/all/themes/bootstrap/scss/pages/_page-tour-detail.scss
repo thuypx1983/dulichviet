@@ -188,7 +188,13 @@
       color: $backgound-buttom;
     }
   }
-
+  .group-detail-row{
+    .horizontal-tab-button{
+      &.selected{
+        color: $color_price;
+      }
+    }
+  }
 }
 .mda-table{
   width: 100%;
