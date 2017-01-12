@@ -990,8 +990,9 @@ body.html .footer-3 {
   margin-top: 30px; }
   .node-type-tour .field-name-field-promotion .field-item {
     color: #eb004f; }
-.node-type-tour .group-detail-row .horizontal-tab-button.selected {
-  color: #D9230F; }
+
+.node-type-tour .horizontal-tabs ul.horizontal-tabs-list .selected {
+  background-color: #D9230F; }
 
 .mda-table {
   width: 100%; }

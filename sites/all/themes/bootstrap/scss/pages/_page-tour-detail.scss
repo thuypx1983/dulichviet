@@ -188,13 +188,11 @@
       color: $backgound-buttom;
     }
   }
-  .group-detail-row{
-    .horizontal-tab-button{
-      &.selected{
-        color: $color_price;
-      }
-    }
-  }
+
+}
+
+.node-type-tour .horizontal-tabs ul.horizontal-tabs-list .selected {
+    background-color: $color_price;
 }
 .mda-table{
   width: 100%;
