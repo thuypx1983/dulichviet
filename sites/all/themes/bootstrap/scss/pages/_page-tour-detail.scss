@@ -155,8 +155,9 @@
       font-size: 22px;
     }
   }
+
   .field-name-field-price-old{
-    >div{
+    &>div{
       float:none;
     }
     position: absolute;
