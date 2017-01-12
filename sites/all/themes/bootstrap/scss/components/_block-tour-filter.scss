@@ -46,6 +46,12 @@
           width: 100%;
           .views-exposed-widget {
             display: table-cell;
+            input{
+              max-width:100%;
+            }
+            select{
+              max-width:100%;
+            }
           }
         }
       }
