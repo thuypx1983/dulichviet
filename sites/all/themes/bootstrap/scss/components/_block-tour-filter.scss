@@ -44,3 +44,14 @@
   }
   padding: 5px;
 }
+@include bp(min-width, $bp-tablet+1) {
+  .block-tour-filter{
+    .views-exposed-widgets{
+      display: table;
+      width: 100%;
+      .views-exposed-widget{
+        display: table-cell;
+      }
+    }
+  }
+}

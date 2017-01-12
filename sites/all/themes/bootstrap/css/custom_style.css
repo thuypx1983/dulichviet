@@ -280,6 +280,12 @@ body.html .footer-3 {
     color: #ffffff;
     font-weight: normal; }
 
+@media only screen and (min-width: 992px) {
+  .block-tour-filter .views-exposed-widgets {
+    display: table;
+    width: 100%; }
+    .block-tour-filter .views-exposed-widgets .views-exposed-widget {
+      display: table-cell; } }
 .item-tour-hot {
   padding-bottom: 30px; }
   .item-tour-hot .view-row-content {
