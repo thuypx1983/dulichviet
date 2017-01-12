@@ -961,14 +961,14 @@ body.html .footer-3 {
 .node-type-tour .field-name-field-price {
   bottom: 87px;
   position: absolute;
-  right: 111px; }
+  right: 100px; }
   .node-type-tour .field-name-field-price .field-label {
     line-height: 31px; }
   .node-type-tour .field-name-field-price .field-item {
     color: #eb004f;
     font-size: 22px; }
 .node-type-tour .field-name-field-price-old {
-  bottom: 135px;
+  bottom: 130px;
   position: absolute;
   right: 231px; }
   .node-type-tour .field-name-field-price-old > div {
