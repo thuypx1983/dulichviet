@@ -111,6 +111,9 @@ h1.page-header {
 .space-30 {
   margin-top: 30px; }
 
+.views-field-field-price {
+  color: #fff600; }
+
 .region-header .block {
   height: 90px; }
 .region-header .block-search .block-content {
