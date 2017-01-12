@@ -47,12 +47,14 @@
 .block{
   .block-tour-filter {
     display: none !important;
-    .views-exposed-form {
-      .views-exposed-widgets {
-        display: table;
-        width: 100%;
-        .views-exposed-widget {
-          display: table-cell;
+    .block-content{
+      .views-exposed-form {
+        .views-exposed-widgets {
+          display: table;
+          width: 100%;
+          .views-exposed-widget {
+            display: table-cell;
+          }
         }
       }
     }
