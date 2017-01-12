@@ -414,20 +414,16 @@ body.html .footer-3 span {
   font-weight: normal;
 }
 
-@media only screen and (min-width: 992px) {
-    .block-tour-filter{
-        display: none !important;
-    }
-  /* line 50, ../scss/components/_block-tour-filter.scss */
-  .block-tour-filter .views-exposed-form .views-exposed-widgets {
-    display: table;
-    width: 100%;
-  }
-  /* line 53, ../scss/components/_block-tour-filter.scss */
-  .block-tour-filter .views-exposed-form .views-exposed-widgets .views-exposed-widget {
-    display: table-cell;
-  }
+/* line 49, ../scss/components/_block-tour-filter.scss */
+.block.block-tour-filter .views-exposed-form .views-exposed-widgets {
+  display: table;
+  width: 100%;
 }
+/* line 52, ../scss/components/_block-tour-filter.scss */
+.block.block-tour-filter .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+  display: table-cell;
+}
+
 /* line 2, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot {
   padding-bottom: 30px;
