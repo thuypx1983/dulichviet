@@ -36,17 +36,9 @@
     }
   }
 }
-.block-tour-filter-clone{
-  background-color: rgba(17, 17, 17, 0.69);
-  label{
-    color: $color_white;
-    font-weight: normal;
-  }
-  padding: 5px;
-}
+
 .block{
-  .block-tour-filter {
-    display: none !important;
+  &.block-tour-filter {
     .block-content{
       .views-exposed-form {
         .views-exposed-widgets {
@@ -59,4 +51,13 @@
       }
     }
   }
+}
+
+.block-tour-filter-clone{
+  background-color: rgba(17, 17, 17, 0.69);
+  label{
+    color: $color_white;
+    font-weight: normal;
+  }
+  padding: 5px;
 }

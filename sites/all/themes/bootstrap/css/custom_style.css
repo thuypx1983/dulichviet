@@ -403,29 +403,25 @@ body.html .footer-3 span {
   font-weight: normal;
 }
 
-/* line 39, ../scss/components/_block-tour-filter.scss */
+/* line 44, ../scss/components/_block-tour-filter.scss */
+.block.block-tour-filter .block-content .views-exposed-form .views-exposed-widgets {
+  display: table;
+  width: 100%;
+}
+/* line 47, ../scss/components/_block-tour-filter.scss */
+.block.block-tour-filter .block-content .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+  display: table-cell;
+}
+
+/* line 56, ../scss/components/_block-tour-filter.scss */
 .block-tour-filter-clone {
   background-color: rgba(17, 17, 17, 0.69);
   padding: 5px;
 }
-/* line 41, ../scss/components/_block-tour-filter.scss */
+/* line 58, ../scss/components/_block-tour-filter.scss */
 .block-tour-filter-clone label {
   color: #ffffff;
   font-weight: normal;
-}
-
-/* line 48, ../scss/components/_block-tour-filter.scss */
-.block .block-tour-filter {
-  display: none !important;
-}
-/* line 52, ../scss/components/_block-tour-filter.scss */
-.block .block-tour-filter .block-content .views-exposed-form .views-exposed-widgets {
-  display: table;
-  width: 100%;
-}
-/* line 55, ../scss/components/_block-tour-filter.scss */
-.block .block-tour-filter .block-content .views-exposed-form .views-exposed-widgets .views-exposed-widget {
-  display: table-cell;
 }
 
 /* line 2, ../scss/components/_block-tour-hot.scss */
