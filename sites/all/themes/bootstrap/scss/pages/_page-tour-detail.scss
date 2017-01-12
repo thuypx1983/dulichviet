@@ -156,6 +156,9 @@
     }
   }
   .field-name-field-price-old{
+    >div{
+      float:none;
+    }
     position: absolute;
     bottom: 100px;
     right: 15px;

@@ -971,6 +971,8 @@ body.html .footer-3 {
   position: absolute;
   bottom: 100px;
   right: 15px; }
+  .node-type-tour .field-name-field-price-old > div {
+    float: none; }
   .node-type-tour .field-name-field-price-old .field-item {
     color: #333;
     display: block;
