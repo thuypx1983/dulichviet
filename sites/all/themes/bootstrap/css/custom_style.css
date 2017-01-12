@@ -968,9 +968,9 @@ body.html .footer-3 {
     color: #eb004f;
     font-size: 22px; }
 .node-type-tour .field-name-field-price-old {
+  bottom: 135px;
   position: absolute;
-  bottom: 100px;
-  right: 111px; }
+  right: 231px; }
   .node-type-tour .field-name-field-price-old > div {
     float: none; }
   .node-type-tour .field-name-field-price-old .field-item {
