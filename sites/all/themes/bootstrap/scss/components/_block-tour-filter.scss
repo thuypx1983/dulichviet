@@ -36,23 +36,26 @@
     }
   }
 }
-
-.block{
-  &.block-tour-filter {
-    .block-content{
-      .views-exposed-form {
-        .views-exposed-widgets {
-          display: table;
-          width: 100%;
-          .views-exposed-widget {
-            display: table-cell;
-            width: 16.6666%;
+@include bp(min-width, $bp-tablet) {
+  .block{
+    &.block-tour-filter {
+      .block-content{
+        .views-exposed-form {
+          .views-exposed-widgets {
+            display: table;
+            width: 100%;
+            .views-exposed-widget {
+              display: table-cell;
+              width: 16.6666%;
+            }
           }
         }
       }
     }
   }
+
 }
+
 
 .block-tour-filter-clone{
   background-color: rgba(17, 17, 17, 0.69);
