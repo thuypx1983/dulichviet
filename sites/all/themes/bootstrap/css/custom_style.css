@@ -992,7 +992,10 @@ body.html .footer-3 {
     color: #eb004f; }
 
 .node-type-tour .horizontal-tabs ul.horizontal-tabs-list .selected {
-  background-color: #D9230F; }
+  background-color: #008fea; }
+
+.node-type-tour .horizontal-tabs ul.horizontal-tabs-list .selected a {
+  color: #ffffff; }
 
 .mda-table {
   width: 100%; }
