@@ -111,8 +111,10 @@ h1.page-header {
 .space-30 {
   margin-top: 30px; }
 
-.view-domestic-tour .views-field-field-price {
-  color: #fff600; }
+.view-domestic-tour {
+  display: none; }
+  .view-domestic-tour .views-field-field-price {
+    color: #fff600; }
 
 .region-header .block {
   height: 90px; }
