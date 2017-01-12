@@ -414,7 +414,10 @@ body.html .footer-3 span {
   font-weight: normal;
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
+    .block-tour-filter{
+        display: none !important;
+    }
   /* line 50, ../scss/components/_block-tour-filter.scss */
   .block-tour-filter .views-exposed-form .views-exposed-widgets {
     display: table;
