@@ -1,0 +1,205 @@
+.view-product-list-1{
+  .view-category-detail{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    .mda-facebook{
+      display: inline-block;
+      line-height: 12px;
+    }
+    .mda-google{
+      display: inline-block;
+    }
+    #fivestar-custom-widget{
+      .fivestar-widget-5{
+        display: inline-block;
+        padding-left: 10px;
+      }
+      .help-block{
+        display: inline-block;
+        padding-left: 5px;
+      }
+    }
+
+    .views-row{
+      .views-field-field-social-share{
+        display: inline-block;
+      }
+      .views-field-field-star{
+        display: inline-block;
+      }
+    }
+
+  }
+  .slick-track{
+    .slick__slide{
+      padding-right: 5px;
+      padding-left: 5px;
+      .slide__content{
+        position: relative;
+        .views-field-field-duration{
+          border-top: 5px solid #b35e14;
+          position: absolute;
+          top: 0px;
+          left: 10px;
+          padding: 10px;
+          text-transform: uppercase;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+  .tour-hot-info{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 5px;
+    background-color: $backgound;
+    a{
+      color: $color_white;
+    }
+    span{
+      color: $color_white;
+    }
+    div{
+      color: $color_white;
+    }
+
+    .views-field-title{
+      a{
+        font-size: 17px;
+        line-height: 17px;
+      }
+    }
+    .views-field-field-duration{
+      display: none;
+    }
+    .views-field-field-price{
+      .field-content{
+        color: $color-yellow;
+      }
+    }
+    .views-field-field-departure-day{
+      display: none;
+    }
+    span.views-label{
+      padding-right: 5px;
+    }
+  }
+}
+.page-tour-list-1{
+  h1.page-header{
+    margin-bottom: 15px;
+  }
+}
+.page-tour-list-1{
+  .region-content {
+    .block{
+      .block-title {
+        overflow: hidden;
+        text-align: center;
+        display: block;
+
+      }
+      .block-title{
+        &:before{
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          content: "";
+          display: inline-block;
+          height: 8px;
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+          right: 0.5em;
+          margin-left: -50%;
+        }
+        &:after{
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          content: "";
+          display: inline-block;
+          height: 8px;
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+          left: 0.5em;
+          margin-right: -50%;
+        }
+      }
+    }
+    .block-tour{
+      width: 100%;
+    }
+  }
+}
+
+#block-views-product-list-1-block{
+  margin-left: 5px;
+  margin-right: 5px;
+  .views-row{
+    padding: 0px;
+    border:1px solid $color-white;
+    .tour-hot-info{
+      background-color: transparent;
+    }
+  }
+}
+#block-views-product-list-1-block-2{
+  .views-row{
+    margin-bottom: 15px;
+    .view-row-content{
+      border: 1px solid #cccccc;
+      height: 100%;
+      .tour-hot-info{
+        .views-label{
+          color: #000000;
+        }
+        position: relative;
+        background-color: $color_white;
+        .views-field-title{
+          a{
+            color: #000000;
+          }
+        }
+        .views-field-field-duration{
+          display: block;
+          color: #000000;
+          .field-content{
+            color: #000000;
+            font-weight: bold;
+          }
+        }
+        .views-field-field-departure-day{
+          display: block;
+          color: #000000;
+          .field-content{
+            .date-display-single{
+              color: #000000;
+              font-weight: bold;
+            }
+
+          }
+        }
+        .views-field-field-price{
+          .field-content{
+            color: #eb004f;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+  }
+}
+.view-display-id-page_1{
+  &>.view-content{
+    display: none;
+  }
+}
+.page-taxonomy-term{
+  #block-views-domestic-tour-block-1{
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}

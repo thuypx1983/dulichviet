@@ -1,0 +1,19 @@
+#webform-client-form-16{
+  padding: 5px;
+  .webform-component-email{
+    display: table;
+    width: 100%;
+    clear: both;
+    &>input{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .form-actions{
+      padding-left: 10px;
+      display: table-cell;
+      width: 80px;
+      vertical-align: middle;
+
+    }
+  }
+}

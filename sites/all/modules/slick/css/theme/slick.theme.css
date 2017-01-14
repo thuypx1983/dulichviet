@@ -2,6 +2,11 @@
  * @file.
  * Provided basic layout and styling for the Slick based on custom settings.
  */
+ 
+ /* AnhNQ custom */
+.slick--float .slick__slide {
+	margin: 2px !important;
+}
 
 .slick-wrapper,
 .slick,

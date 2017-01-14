@@ -1,0 +1,67 @@
+.home-banner{
+  position: relative;
+}
+.block{
+  &.block-tour-filter{
+
+    margin:auto;
+    min-width: 1024px;
+    width: 90%;
+    bottom: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    .block-wapper{
+      padding: 0px 15px;
+    }
+    .block-title{
+      padding: 10px 15px;
+      color: $color_white;
+      font-size: 17px;
+      display: inline-block;
+      margin-bottom: 0px;
+      background-color: rgba(17, 17, 17, 0.69);
+      .fa{
+        font-size: 25px;
+      }
+    }
+    .block-content{
+      background-color: rgba(17, 17, 17, 0.69);
+      padding: 20px 20px 20px 70px ;
+      label{
+        color: $color_white;
+        font-weight: normal;
+      }
+    }
+  }
+}
+@include bp(min-width, $bp-tablet) {
+  .block{
+    &.block-tour-filter {
+      .block-content{
+        .views-exposed-form {
+          .views-exposed-widgets {
+            display: table;
+            width: 100%;
+            .views-exposed-widget {
+              display: table-cell;
+              width: 16.6666%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.block-tour-filter-clone{
+  background-color: rgba(17, 17, 17, 0.69);
+  label{
+    color: $color_white;
+    font-weight: normal;
+  }
+  padding: 5px;
+}

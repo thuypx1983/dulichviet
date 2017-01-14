@@ -1,0 +1,35 @@
+
+@import "fonts";
+/* Variables */
+@import "vars";
+
+/* Mixin */
+@import "mixin";
+
+/*global*/
+@import "global/general";
+@import "global/header";
+@import "global/body";
+@import "global/footer";
+
+/*components*/
+@import "components/main-menu";
+@import "components/breadcrumb";
+@import "components/block-tour-filter";
+@import "components/block-tour-hot";
+@import "components/updated-news";
+@import "components/block-tour";
+@import "components/why-us";
+@import "components/block-review";
+@import "components/news-subcription";
+@import "components/view-tours-list";
+@import "components/view-tours-list-1";
+@import "components/view-search-tour";
+@import "components/news-list";
+@import "components/cart_popup";
+@import "components/shopping-cart";
+@import "components/news-detail";
+
+/*page*/
+@import "pages/product_list";
+@import "pages/page-tour-detail";

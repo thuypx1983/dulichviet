@@ -3,6 +3,11 @@
  * Stylesheet for the Contextual module.
  */
 
+/* AnhNQ Custom */ 
+#block-views-home-slider-block img {
+	width: 100% !important;
+}
+
 /**
  * Contextual links regions.
  */
