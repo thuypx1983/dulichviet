@@ -68,6 +68,16 @@
             list-style: none;
           }
         }
+        li.mda-share-more{
+          ul.mda-share-childr{
+            display: none;
+          }
+          &:hover{
+            ul.mda-share-childr{
+              display: block;
+            }
+          }
+        }
       }
     }
   }
