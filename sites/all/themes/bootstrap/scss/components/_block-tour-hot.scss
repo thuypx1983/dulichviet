@@ -69,7 +69,10 @@
           }
         }
         li.mda-share-more{
+          position: relative;
           ul.mda-share-childr{
+            position: absolute;
+
             display: none;
           }
           &:hover{
