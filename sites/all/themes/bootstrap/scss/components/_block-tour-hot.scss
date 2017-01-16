@@ -61,6 +61,7 @@
         position: absolute;
         top: 0px;
         right: 15px;
+        display: none;
       }
     }
   }
@@ -73,6 +74,9 @@
           display: block;
         }
         .views-field-field-departure-day{
+          display: block;
+        }
+        .views-field-nothing{
           display: block;
         }
       }

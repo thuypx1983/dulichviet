@@ -511,18 +511,23 @@ body.html .footer-3 span {
   position: absolute;
   top: 0px;
   right: 15px;
+  display: none;
 }
-/* line 69, ../scss/components/_block-tour-hot.scss */
+/* line 70, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot:hover .view-row-content .tour-info {
   padding-top: 70px;
   height: 100%;
 }
-/* line 72, ../scss/components/_block-tour-hot.scss */
+/* line 73, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot:hover .view-row-content .tour-info .views-field-field-duration {
   display: block;
 }
-/* line 75, ../scss/components/_block-tour-hot.scss */
+/* line 76, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot:hover .view-row-content .tour-info .views-field-field-departure-day {
+  display: block;
+}
+/* line 79, ../scss/components/_block-tour-hot.scss */
+.item-tour-hot:hover .view-row-content .tour-info .views-field-nothing {
   display: block;
 }
 
