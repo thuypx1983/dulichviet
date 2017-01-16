@@ -513,20 +513,28 @@ body.html .footer-3 span {
   right: 15px;
   display: none;
 }
-/* line 70, ../scss/components/_block-tour-hot.scss */
+/* line 65, ../scss/components/_block-tour-hot.scss */
+.item-tour-hot .view-row-content .tour-info .views-field-nothing ul {
+  padding-left: 0px;
+}
+/* line 67, ../scss/components/_block-tour-hot.scss */
+.item-tour-hot .view-row-content .tour-info .views-field-nothing ul li {
+  list-style: none;
+}
+/* line 76, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot:hover .view-row-content .tour-info {
   padding-top: 70px;
   height: 100%;
 }
-/* line 73, ../scss/components/_block-tour-hot.scss */
+/* line 79, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot:hover .view-row-content .tour-info .views-field-field-duration {
   display: block;
 }
-/* line 76, ../scss/components/_block-tour-hot.scss */
+/* line 82, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot:hover .view-row-content .tour-info .views-field-field-departure-day {
   display: block;
 }
-/* line 79, ../scss/components/_block-tour-hot.scss */
+/* line 85, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot:hover .view-row-content .tour-info .views-field-nothing {
   display: block;
 }
