@@ -158,11 +158,9 @@ h1.page-header {
   #header-top .block-text-top p {
     padding: 10px 0px; }
 
-#page-header {
-  display: none !important; }
+@media only screen and (min-widh: 992px) {
   #page-header #block-block-1 {
-    padding-right: 0px; }
-
+    padding-right: 0px; } }
 footer.footer {
   border-top: none;
   margin-top: 0px;
