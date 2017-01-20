@@ -160,3 +160,56 @@
 
   }
 }
+@include bp(max-width,$bp-tablet){
+  .view-id-tours_list{
+
+    display: block;
+    .view-filters{
+      display: block;
+      width: 100%;
+
+      #edit-sort-bef-combine-wrapper{
+        display: block;width: 100%;
+        position: relative;
+        left: 0px;
+      }
+      #views-exposed-form-tours-list-page{
+        padding-left: 0px;
+        .views-exposed-widget{
+          .form-item{
+            display: inline-block;
+            padding: 5px;
+          }
+
+        }
+        #edit-sort-bef-combine-wrapper{
+          display: none;
+        }
+      }
+    }
+    .view-header{
+      display: block;
+      width: 100%;
+      position: relative;
+      left: 0px;
+      margin-bottom: 20px;
+    }
+    .view-content{
+      padding-top: 10px;
+    }
+  }
+}
+@include bp(max-width,$bp-mobile){
+ .view-tours-list{
+   .view-content{
+     .view-row-content{
+       display: inline-block;
+       width: 100%;
+       &>div.right{
+         display: block;
+       }
+     }
+
+   }
+ }
+}
