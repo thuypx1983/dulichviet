@@ -87,6 +87,20 @@
             margin: 0;
             padding: 0;
             width: auto;
+            a{
+              color: #555;
+              display: inline-block;
+              float: right;
+              font-weight: bold;
+              padding: 9px;
+            }
+            span.fa-share-alt{
+              color: #eb004f;
+              display: inline-block;
+              float: right;
+              font-size: 19px;
+              padding: 10px;
+            }
           }
           ul.mda-share-childr{
             li{

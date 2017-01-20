@@ -361,6 +361,18 @@ body.html .footer-3 {
           margin: 0;
           padding: 0;
           width: auto; }
+          .item-tour-hot .view-row-content .tour-info .views-field-nothing ul.mda-share > li a {
+            color: #555;
+            display: inline-block;
+            float: right;
+            font-weight: bold;
+            padding: 9px; }
+          .item-tour-hot .view-row-content .tour-info .views-field-nothing ul.mda-share > li span.fa-share-alt {
+            color: #eb004f;
+            display: inline-block;
+            float: right;
+            font-size: 19px;
+            padding: 10px; }
         .item-tour-hot .view-row-content .tour-info .views-field-nothing ul.mda-share ul.mda-share-childr li {
           background-color: rgba(221, 221, 221, 0.75);
           border-right: 0 solid #555 !important;
