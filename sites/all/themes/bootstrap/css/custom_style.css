@@ -343,6 +343,18 @@ body.html .footer-3 {
           padding-left: 0px; }
           .item-tour-hot .view-row-content .tour-info .views-field-nothing ul li {
             list-style: none; }
+        .item-tour-hot .view-row-content .tour-info .views-field-nothing ul.mda-share ul.mda-share-childr li {
+          background-color: rgba(221, 221, 221, 0.75);
+          border-right: 0 solid #555 !important;
+          border-top: 1px solid #555;
+          display: block;
+          padding: 5px;
+          position: relative;
+          text-align: center;
+          width: 37px;
+          z-index: 111; }
+          .item-tour-hot .view-row-content .tour-info .views-field-nothing ul.mda-share ul.mda-share-childr li i {
+            font-size: 20px; }
         .item-tour-hot .view-row-content .tour-info .views-field-nothing li.mda-share-more {
           position: relative; }
           .item-tour-hot .view-row-content .tour-info .views-field-nothing li.mda-share-more ul.mda-share-childr {
@@ -359,18 +371,6 @@ body.html .footer-3 {
       display: block; }
     .item-tour-hot:hover .view-row-content .tour-info .views-field-nothing {
       display: block; }
-      .item-tour-hot:hover .view-row-content .tour-info .views-field-nothing .mda-share .mda-share-childr li {
-        background-color: rgba(221, 221, 221, 0.75);
-        border-right: 0 solid #555 !important;
-        border-top: 1px solid #555;
-        display: block;
-        padding: 5px;
-        position: relative;
-        text-align: center;
-        width: 37px;
-        z-index: 111; }
-        .item-tour-hot:hover .view-row-content .tour-info .views-field-nothing .mda-share .mda-share-childr li i {
-          font-size: 20px; }
 
 .updated-news .views-field-field-image {
   float: left;
