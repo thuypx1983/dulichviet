@@ -57,6 +57,31 @@
       span.views-label{
         padding-right: 5px;
       }
+      .views-field-nothing{
+        position: absolute;
+        top: 0px;
+        right: 15px;
+        display: none;
+        ul{
+          padding-left: 0px;
+          li{
+            list-style: none;
+          }
+        }
+        li.mda-share-more{
+          position: relative;
+          ul.mda-share-childr{
+            position: absolute;
+
+            display: none;
+          }
+          &:hover{
+            ul.mda-share-childr{
+              display: block;
+            }
+          }
+        }
+      }
     }
   }
   &:hover{
@@ -68,6 +93,9 @@
           display: block;
         }
         .views-field-field-departure-day{
+          display: block;
+        }
+        .views-field-nothing{
           display: block;
         }
       }

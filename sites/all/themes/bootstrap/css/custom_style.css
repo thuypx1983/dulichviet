@@ -334,12 +334,30 @@ body.html .footer-3 {
         display: none; }
       .item-tour-hot .view-row-content .tour-info span.views-label {
         padding-right: 5px; }
+      .item-tour-hot .view-row-content .tour-info .views-field-nothing {
+        position: absolute;
+        top: 0px;
+        right: 15px;
+        display: none; }
+        .item-tour-hot .view-row-content .tour-info .views-field-nothing ul {
+          padding-left: 0px; }
+          .item-tour-hot .view-row-content .tour-info .views-field-nothing ul li {
+            list-style: none; }
+        .item-tour-hot .view-row-content .tour-info .views-field-nothing li.mda-share-more {
+          position: relative; }
+          .item-tour-hot .view-row-content .tour-info .views-field-nothing li.mda-share-more ul.mda-share-childr {
+            position: absolute;
+            display: none; }
+          .item-tour-hot .view-row-content .tour-info .views-field-nothing li.mda-share-more:hover ul.mda-share-childr {
+            display: block; }
   .item-tour-hot:hover .view-row-content .tour-info {
     padding-top: 70px;
     height: 100%; }
     .item-tour-hot:hover .view-row-content .tour-info .views-field-field-duration {
       display: block; }
     .item-tour-hot:hover .view-row-content .tour-info .views-field-field-departure-day {
+      display: block; }
+    .item-tour-hot:hover .view-row-content .tour-info .views-field-nothing {
       display: block; }
 
 .updated-news .views-field-field-image {
