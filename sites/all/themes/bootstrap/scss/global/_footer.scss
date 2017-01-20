@@ -63,10 +63,26 @@ body.html{
     }
   }
 }
-.region-footer-1,.region-footer-2,.region-footer-3,.region-footer-bottom{
-  min-width: 1024px;
-  width: 90%;
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
+
+@include bp(min-width,$bp-laptop){
+  .region-footer-1,.region-footer-2,.region-footer-3,.region-footer-bottom{
+    width: 90%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@include bp(max-width,$bp-tablet){
+  .footer{
+    .footer-1{
+      display: none;
+    }
+  }
+  #block-block-13{
+    display: none;
+  }
+  #block-block-9{
+    display: none;
+  }
 }

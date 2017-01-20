@@ -3,10 +3,7 @@
 }
 .block{
   &.block-tour-filter{
-
     margin:auto;
-    min-width: 1024px;
-    width: 90%;
     bottom: 0px;
     position: absolute;
     left: 0;
@@ -64,4 +61,29 @@
     font-weight: normal;
   }
   padding: 5px;
+}
+@include bp(min-width,$bp-tablet+1) {
+  .block {
+    &.block-tour-filter {
+      margin: auto;
+      width: 90%;
+      bottom: 0px;
+    }
+  }
+}
+@include bp(max-width,$bp-tablet){
+  .block {
+    &.block-tour-filter {
+      position: relative;
+      margin-top: -46px;
+    }
+  }
+  #block-views-exp-search-tour-page{
+    .block-wapper{
+      .block-content{
+        padding-left:10px;
+        padding-right: 0px;
+      }
+    }
+  }
 }

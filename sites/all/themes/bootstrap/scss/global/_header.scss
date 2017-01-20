@@ -78,3 +78,22 @@
     }
   }
 }
+@include bp(max-width,$bp-tablet){
+  #page-header{
+    .block-support{
+      display: none;
+    }
+    .block-search{
+      display: none;
+    }
+    .block-depart-tour{
+      display: none;
+    }
+  }
+  .block-menu-top{
+    display: none;
+  }
+  .navigation{
+    display: none;
+  }
+}

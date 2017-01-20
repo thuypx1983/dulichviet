@@ -78,7 +78,7 @@
            <?php print render($page['header_top']); ?>
     </div>
 </div>
-<header role="banner" id="page-header">
+<div role="banner" id="page-header">
    <div class="container">
        <div class="row">
            <?php print render($page['header']); ?>
@@ -92,7 +92,7 @@
     <div class="home-banner">
         <?php print render($page['home_banner']); ?>
     </div>
-</header> <!-- /#page-header -->
+</div> <!-- /#page-header -->
 
 <div class="main-container <?php print $container_class; ?>">
   <div class="row">
