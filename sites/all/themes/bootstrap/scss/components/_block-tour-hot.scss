@@ -69,6 +69,25 @@
           }
         }
         ul.mda-share{
+          &>li{
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            background-color: rgba(221, 221, 221, 0.75);
+            border-color: -moz-use-text-color #222 -moz-use-text-color -moz-use-text-color;
+            border-image: none;
+            border-style: none solid none none;
+            border-width: medium 1px medium medium;
+            box-shadow: none;
+            cursor: pointer;
+            display: block;
+            float: left;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            width: auto;
+          }
           ul.mda-share-childr{
             li{
               background-color: rgba(221, 221, 221, 0.75);
