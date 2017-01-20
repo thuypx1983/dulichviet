@@ -924,6 +924,14 @@ body.html .footer-3 {
   display: block;
   margin-top: 10px; }
 
+.mda-hotle {
+  background-color: rgba(2, 2, 2, 0.75);
+  bottom: 0;
+  height: 45px;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+
 /*page*/
 .node-type-tour .node-tour {
   border: 1px solid #ddd;
