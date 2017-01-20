@@ -97,6 +97,24 @@
         }
         .views-field-nothing{
           display: block;
+          .mda-share{
+            .mda-share-childr{
+              li{
+                background-color: rgba(221, 221, 221, 0.75);
+                border-right: 0 solid #555 !important;
+                border-top: 1px solid #555;
+                display: block;
+                padding: 5px;
+                position: relative;
+                text-align: center;
+                width: 37px;
+                z-index: 111;
+                i{
+                  font-size: 20px;
+                }
+              }
+            }
+          }
         }
       }
     }
