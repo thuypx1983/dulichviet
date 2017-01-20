@@ -1,7 +1,4 @@
 .region-header{
-  .block{
-    height: 90px;
-  }
   .block-logo{
     .block-content{
 		padding-right:0;
@@ -72,6 +69,11 @@
 }
 
 @include bp(min-width,$bp-tablet+1){
+  .region-header{
+    .block{
+      height: 90px;
+    }
+  }
   #page-header{
     #block-block-1{
       padding-right: 0px;
@@ -79,11 +81,9 @@
   }
 }
 @include bp(max-width,$bp-tablet){
+
   #page-header{
     .block-support{
-      display: none;
-    }
-    .block-search{
       display: none;
     }
     .block-depart-tour{
@@ -95,5 +95,12 @@
   }
   .navigation{
     display: none;
+  }
+  .block-logo{
+    text-align: center;
+    padding-bottom: 10px;
+    img{
+      height: 50px;
+    }
   }
 }

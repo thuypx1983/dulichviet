@@ -34,3 +34,10 @@
     }
   }
 }
+@include bp(max-width,$bp-tablet){
+  .why-us{
+    ul{
+      padding-left: 0px;
+    }
+  }
+}

@@ -46,3 +46,28 @@
   }
 
 }
+
+
+@include bp(min-width,$bp-tablet+1) {
+  .block-menu-mobile{
+    display: none;
+  }
+}
+@include bp(max-width,$bp-tablet){
+  .block-menu-mobile{
+    width: 70px;
+    a{
+      cursor: pointer;
+      .fa-bars{
+        font-size: 30px;
+        line-height: 60px;
+      }
+    }
+  }
+  #block-search-form{
+    .block-content{
+      margin-top:5px;
+    }
+  }
+
+}
