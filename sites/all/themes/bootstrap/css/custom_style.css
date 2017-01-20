@@ -159,6 +159,9 @@ h1.page-header {
     padding: 10px 0px; }
 
 @media only screen and (min-widh: 992px) {
+  .html {
+    background-color: red; }
+
   #page-header #block-block-1 {
     padding-right: 0px; } }
 footer.footer {
