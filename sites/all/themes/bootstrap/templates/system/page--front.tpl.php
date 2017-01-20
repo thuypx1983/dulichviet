@@ -132,7 +132,30 @@
     </div>
 </div>
 <?php endif;?>
+<?php
+echo '<nav id="mobile-menu">';
+function render_menu_tree($menu_tree) {
+    print '<ul>';
+    foreach ($menu_tree as $link) {
+        print '<li>';
+        $link_path = '#';
+        $link_title = $link['link']['link_title'];
+        if($link['link']['link_path']) {
+            $link_path = drupal_get_path_alias($link['link']['link_path']);
+        }
+        print '<a href="/' . $link_path . '">' . $link_title . '</a>';
+        if(count($link['below']) > 0) {
+            render_menu_tree($link['below']);
+        }
+        print '</li>';
+    }
+    print '</ul>';
+}
+$main_menu_tree = menu_tree_all_data('main-menu', null, 3);
 
+render_menu_tree($main_menu_tree);
+echo '</nav>';
+?>
 <footer class="footer">
 
         <?php if($page['footer_1']):?>

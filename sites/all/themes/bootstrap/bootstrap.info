@@ -3,11 +3,13 @@ description = Built to use Bootstrap, a sleek, intuitive, and powerful front-end
 core = 7.x
 
 stylesheets[all][] = js/chosen_v1.6.2/chosen.min.css
+stylesheets[all][] = js/jQuery.mmenu/dist/css/jquery.mmenu.all.css
 stylesheets[all][] = css/custom_style.css
 
 scripts[]=js/jquery.matchHeight.js
 scripts[]=js/jquery.slimscroll.js
 scripts[]=js/masonry.pkgd.min.js
+scripts[]=js/jQuery.mmenu/dist/js/jquery.mmenu.min.js
 scripts[]=js/script.js
 
 ;;;;;;;;;;;;;;;;;;;;;
