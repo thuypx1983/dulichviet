@@ -71,10 +71,7 @@
   }
 }
 
-@include bp(min-widh,$bp-tablet+1){
-  .html{
-    background-color: red;
-  }
+@include bp(min-width,$bp-tablet+1){
   #page-header{
     #block-block-1{
       padding-right: 0px;
