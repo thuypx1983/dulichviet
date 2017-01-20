@@ -601,7 +601,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
 
 
 function product_cart_mail_alter(&$message){
-    if ($message['module'] == 'webform' && $message['params']['node']->nid==30){
+    if ($message['module'] == 'webform' && $message['params']['node']->nid==21){
         unset($_SESSION['product_cart']);
         unset($_SESSION['product_cart_option']);
     }
