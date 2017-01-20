@@ -72,10 +72,11 @@
 }
 
 @include bp(min-widh,$bp-tablet+1){
-  #page-header{
-    display: none !important;
-    #block-block-1{
-      padding-right: 0px;
-    }
+
+}
+#page-header{
+  display: none !important;
+  #block-block-1{
+    padding-right: 0px;
   }
 }
