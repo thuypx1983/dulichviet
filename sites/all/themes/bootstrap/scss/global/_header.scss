@@ -72,7 +72,9 @@
 }
 
 @include bp(min-widh,$bp-tablet+1){
-  #block-block-1{
-    padding-right: 0px;
+  #page-header{
+    #block-block-1{
+      padding-right: 0px;
+    }
   }
 }
