@@ -1867,4 +1867,52 @@ body.html .footer-3 span {
   text-align: right;
 }
 
+@media only screen and (max-width: 991px) {
+  /* line 219, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-left {
+    float: none;
+    width: 100%;
+  }
+  /* line 223, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-right {
+    float: none;
+    width: 100%;
+    padding-left: 0px;
+  }
+  /* line 231, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left {
+    display: none;
+  }
+  /* line 234, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left-right {
+    float: none;
+    width: 100%;
+  }
+  /* line 242, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-detail-row .field-group-format-wrapper {
+    display: block !important;
+  }
+  /* line 244, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-left {
+    display: block;
+    padding-right: 0px;
+  }
+  /* line 248, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right {
+    display: block;
+    padding-right: 0px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 261, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-right .field-name-field-price-old {
+    position: inherit;
+  }
+  /* line 264, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-right .field-name-field-price {
+    position: inherit;
+  }
+}
+
 /*# sourceMappingURL=custom_style.css.map */

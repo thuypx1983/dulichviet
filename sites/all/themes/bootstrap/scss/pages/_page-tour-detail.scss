@@ -213,3 +213,57 @@
     }
   }
 }
+
+@include bp(max-width,$bp-tablet){
+  .node-type-tour{
+    .group-left{
+      float: none;
+      width: 100%;
+    }
+    .group-right{
+      float: none;
+      width: 100%;
+      padding-left: 0px;
+    }
+
+    .group-price-detail{
+      &>.field-group-format-wrapper{
+        .group-price-left{
+          display: none;
+        }
+        .group-price-left-right{
+          float: none;
+          width: 100%;
+        }
+      }
+
+    }
+    .group-detail-row {
+      .field-group-format-wrapper{
+        display: block !important;
+        .group-detail-left{
+            display: block;
+            padding-right:0px
+        }
+        .group-detail-right{
+            display: block;
+            padding-right:0px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include bp(max-width,$bp-small){
+  .node-type-tour{
+    .group-right{
+      .field-name-field-price-old{
+        position: inherit;
+      }
+      .field-name-field-price{
+        position: inherit;
+      }
+    }
+  }
+}
