@@ -87,3 +87,30 @@
     }
   }
 }
+
+@include bp(max-width,376px){
+  .block {
+    &.block-tour-filter {
+      .views-exposed-form {
+        .views-exposed-widget{
+          width: 100%;
+          .container-inline-date {
+            .form-item{
+              float: none;
+              display: block;
+              margin-right:0px;
+              .date-padding{
+                float: none;
+                width: 100%;
+                input{
+                  width: 100%;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

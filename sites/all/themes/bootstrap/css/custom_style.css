@@ -545,6 +545,27 @@ body.html .footer-3 span {
     padding-right: 0px;
   }
 }
+@media only screen and (max-width: 376px) {
+  /* line 95, ../scss/components/_block-tour-filter.scss */
+  .block.block-tour-filter .views-exposed-form .views-exposed-widget {
+    width: 100%;
+  }
+  /* line 98, ../scss/components/_block-tour-filter.scss */
+  .block.block-tour-filter .views-exposed-form .views-exposed-widget .container-inline-date .form-item {
+    float: none;
+    display: block;
+    margin-right: 0px;
+  }
+  /* line 102, ../scss/components/_block-tour-filter.scss */
+  .block.block-tour-filter .views-exposed-form .views-exposed-widget .container-inline-date .form-item .date-padding {
+    float: none;
+    width: 100%;
+  }
+  /* line 105, ../scss/components/_block-tour-filter.scss */
+  .block.block-tour-filter .views-exposed-form .views-exposed-widget .container-inline-date .form-item .date-padding input {
+    width: 100%;
+  }
+}
 /* line 2, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot {
   padding-bottom: 30px;
@@ -789,6 +810,19 @@ body.html .footer-3 span {
   /* line 39, ../scss/components/_why-us.scss */
   .why-us ul {
     padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 47, ../scss/components/_why-us.scss */
+  .why-us ul {
+    display: block;
+  }
+  /* line 49, ../scss/components/_why-us.scss */
+  .why-us ul li {
+    width: 50%;
+    float: left;
+    display: block;
+    margin-bottom: 15px;
   }
 }
 /* line 1, ../scss/components/_block-review.scss */

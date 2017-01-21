@@ -38,6 +38,20 @@
   .why-us{
     ul{
       padding-left: 0px;
+
+    }
+  }
+}
+@include bp(max-width,$bp-mobile){
+  .why-us{
+    ul{
+      display: block;
+      li{
+        width: 50%;
+        float: left;
+        display: block;
+        margin-bottom: 15px;
+      }
     }
   }
 }
