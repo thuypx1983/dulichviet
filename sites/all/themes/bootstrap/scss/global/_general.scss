@@ -61,7 +61,9 @@ h1.page-header {
     color: $custom-orange;
   }
 }
-
+.hidden-all{
+  display: none !important;
+}
 @include bp(min-width,$bp-laptop+1){
   .container{
     width: 90%;

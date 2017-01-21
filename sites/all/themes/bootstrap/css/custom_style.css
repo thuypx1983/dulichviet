@@ -151,8 +151,13 @@ h1.page-header span {
   color: #e27a1a;
 }
 
+/* line 64, ../scss/global/_general.scss */
+.hidden-all {
+  display: none !important;
+}
+
 @media only screen and (min-width: 1280px) {
-  /* line 66, ../scss/global/_general.scss */
+  /* line 68, ../scss/global/_general.scss */
   .container {
     width: 90%;
     min-width: 1279px;

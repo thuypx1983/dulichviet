@@ -23,6 +23,43 @@
             // options...
             itemSelector: '.grid-item'
         });
+
+
+
+        var web_url = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
+
+
+        $("body").on("click", ".share-fb", function (event) {
+            var target = $(this).parent().parent().parent().find('.hidden-all a');
+
+            var href = web_url+target.attr("href");
+
+
+            FB.ui({
+                method: 'share',
+                display: 'popup',
+                href: href,
+            }, function (response) { });
+        });
+
+        $("body").on("click", ".share-google", function (event) {
+            var target = $(this).parent().parent().parent().find('.hidden-all a');
+
+            var href = web_url+target.attr("href");
+
+            window.open(href, "Google Plus Share", 'width=800, height=600');
+        });
+
+        $("body").on("click", ".share-chain", function (event) {
+            var target = $(this).parent().parent().parent().find('.hidden-all a');
+
+            var href = web_url+target.attr("href");
+            $.fancybox(
+                {
+                    content:'<h3>Đường dẫn đến tour</h3><p>'+href+'</p>',
+                }
+            );
+        });
     })
 
     $(function() {
