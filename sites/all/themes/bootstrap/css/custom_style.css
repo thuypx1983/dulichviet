@@ -682,7 +682,7 @@ body.html .footer-3 span {
 }
 /* line 97, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot .view-row-content .tour-info .views-field-nothing ul.mda-share > li span.fa-share-alt {
-  color: #eb004f;
+  color: #e27a1a;
   display: inline-block;
   float: right;
   font-size: 19px;
@@ -1319,7 +1319,7 @@ body.html .footer-3 span {
 }
 /* line 185, ../scss/components/_view-tours-list-1.scss */
 #block-views-product-list-1-block-2 .views-row .view-row-content .tour-hot-info .views-field-field-price .field-content {
-  color: #eb004f;
+  color: #e27a1a;
   font-size: 20px;
 }
 
