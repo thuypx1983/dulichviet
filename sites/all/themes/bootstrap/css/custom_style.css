@@ -163,6 +163,12 @@ h1.page-header span {
     min-width: 1279px;
   }
 }
+/* line 75, ../scss/global/_general.scss */
+.html img {
+  max-width: 100%;
+  height: auto !important;
+}
+
 /* line 3, ../scss/global/_header.scss */
 .region-header .block-logo .block-content {
   padding-right: 0;
