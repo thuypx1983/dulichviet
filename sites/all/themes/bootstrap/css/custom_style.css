@@ -123,7 +123,7 @@ h1.page-header {
 /* line 42, ../scss/global/_general.scss */
 h1.page-header span {
   font-size: 22px;
-  color: #eb004f;
+  color: #e27a1a;
 }
 
 /* line 47, ../scss/global/_general.scss */
@@ -902,7 +902,7 @@ body.html .footer-3 span {
   font-size: 20px;
   padding: 0px;
   margin: 0px;
-  color: #eb004f;
+  color: #e27a1a;
 }
 /* line 16, ../scss/components/_view-tours-list.scss */
 .view-id-tours_list .view-filters {
@@ -1040,7 +1040,7 @@ body.html .footer-3 span {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color: #eb004f;
+  background-color: #e27a1a;
   padding: 6px 10px;
 }
 /* line 136, ../scss/components/_view-tours-list.scss */
@@ -1060,13 +1060,13 @@ body.html .footer-3 span {
 }
 /* line 148, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-price .field-content {
-  color: #eb004f;
+  color: #e27a1a;
   font-size: 25px;
   font-weight: bold;
 }
 /* line 154, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-promotion {
-  color: #eb004f;
+  color: #e27a1a;
   margin-bottom: 10px;
 }
 
@@ -1347,11 +1347,11 @@ body.html .footer-3 span {
 }
 /* line 14, ../scss/components/_view-search-tour.scss */
 .view-search-tour .views-table tbody .views-field-title a {
-  color: #eb004f;
+  color: #e27a1a;
 }
 /* line 18, ../scss/components/_view-search-tour.scss */
 .view-search-tour .views-table tbody .views-field-field-price {
-  color: #eb004f;
+  color: #e27a1a;
   font-size: 16px;
 }
 /* line 22, ../scss/components/_view-search-tour.scss */
@@ -1804,7 +1804,7 @@ body.html .footer-3 span {
 }
 /* line 120, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right .field-type-node-reference header h2 a {
-  color: #eb004f;
+  color: #e27a1a;
   font-size: 16px;
   font-weight: bold;
   line-height: 16px;
@@ -1812,7 +1812,7 @@ body.html .footer-3 span {
 /* line 135, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .form-group .btn-product-cart {
   padding: 10px;
-  background-color: #eb004f;
+  background-color: #e27a1a;
   color: #ffffff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1832,7 +1832,7 @@ body.html .footer-3 span {
 }
 /* line 153, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-price .field-item {
-  color: #eb004f;
+  color: #e27a1a;
   font-size: 22px;
 }
 /* line 159, ../scss/pages/_page-tour-detail.scss */
@@ -1872,7 +1872,7 @@ body.html .footer-3 span {
 }
 /* line 187, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-promotion .field-item {
-  color: #eb004f;
+  color: #e27a1a;
 }
 
 /* line 194, ../scss/pages/_page-tour-detail.scss */
