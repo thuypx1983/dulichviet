@@ -221,6 +221,9 @@
       }
     }
   }
+  .comments{
+    display: none;
+  }
 }
 @include bp(max-width,$bp-tablet){
   .node-type-tour{

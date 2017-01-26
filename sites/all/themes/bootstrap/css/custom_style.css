@@ -1918,38 +1918,42 @@ body.html .footer-3 span {
   font-weight: bold;
   line-height: 16px;
 }
+/* line 224, ../scss/pages/_page-tour-detail.scss */
+.group-detail-right .comments {
+  display: none;
+}
 
 @media only screen and (max-width: 991px) {
-  /* line 227, ../scss/pages/_page-tour-detail.scss */
+  /* line 230, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-left {
     float: none;
     width: 100%;
   }
-  /* line 231, ../scss/pages/_page-tour-detail.scss */
+  /* line 234, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right {
     float: none;
     width: 100%;
     padding-left: 0px;
   }
-  /* line 239, ../scss/pages/_page-tour-detail.scss */
+  /* line 242, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left {
     display: none;
   }
-  /* line 242, ../scss/pages/_page-tour-detail.scss */
+  /* line 245, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left-right {
     float: none;
     width: 100%;
   }
-  /* line 250, ../scss/pages/_page-tour-detail.scss */
+  /* line 253, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper {
     display: block !important;
   }
-  /* line 252, ../scss/pages/_page-tour-detail.scss */
+  /* line 255, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-left {
     display: block;
     padding-right: 0px;
   }
-  /* line 256, ../scss/pages/_page-tour-detail.scss */
+  /* line 259, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right {
     display: block;
     padding-right: 0px;
@@ -1957,11 +1961,11 @@ body.html .footer-3 span {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 269, ../scss/pages/_page-tour-detail.scss */
+  /* line 272, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right .field-name-field-price-old {
     position: inherit;
   }
-  /* line 272, ../scss/pages/_page-tour-detail.scss */
+  /* line 275, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right .field-name-field-price {
     position: inherit;
   }
