@@ -161,7 +161,10 @@
       color: $backgound-buttom;
     }
   }
-
+  #comment{
+    display: table;
+    width: 100%;
+  }
 }
 
 .node-type-tour .horizontal-tabs ul.horizontal-tabs-list .selected {
@@ -221,9 +224,7 @@
       }
     }
   }
-  .comments{
-    display: none;
-  }
+
 }
 @include bp(max-width,$bp-tablet){
   .node-type-tour{
