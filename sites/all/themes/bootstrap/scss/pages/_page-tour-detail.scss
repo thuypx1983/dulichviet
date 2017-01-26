@@ -99,37 +99,7 @@
         padding-right: 15px;
         vertical-align: top;
       }
-      .group-detail-right{
-        display: table-cell;
-        width: 350px;
-        vertical-align: top;
-        border: 1px solid #ccc;
-        .node-tour{
-          border: none;
-        }
-        .field-type-node-reference{
-          padding: 10px;
-          &>.field-label{
-            border-bottom: 1px solid #ccc;
-            font-size: 18px;
-            padding: 10px 0px 0px 0px;
-            text-transform: uppercase;
-          }
-          .node-tour{
-            padding: 0px;
-          }
-          header{
-            h2{
-              a{
-                color: $backgound-buttom;
-                font-size: 16px;
-                font-weight: bold;
-                line-height: 16px;
-              }
-            }
-          }
-        }
-      }
+
     }
 
   }
@@ -213,6 +183,38 @@
       border: 1px solid #ccc;
       padding: 7px 15px;
       text-align: right;
+    }
+  }
+}
+.group-detail-right{
+  display: table-cell;
+  width: 350px;
+  vertical-align: top;
+  border: 1px solid #ccc;
+  .node-tour{
+    border: none;
+
+  }
+  .field-type-node-reference{
+    padding: 10px;
+    &>.field-label{
+      border-bottom: 1px solid #ccc;
+      font-size: 18px;
+      padding: 10px 0px 0px 0px;
+      text-transform: uppercase;
+    }
+    .node-tour{
+      padding: 0px;
+    }
+    header{
+      h2{
+        a{
+          color: $backgound-buttom;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 16px;
+        }
+      }
     }
   }
 }
