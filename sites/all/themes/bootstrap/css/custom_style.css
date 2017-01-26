@@ -1936,25 +1936,29 @@ body.html .footer-3 span {
     width: 100%;
     padding-left: 0px;
   }
-  /* line 243, ../scss/pages/_page-tour-detail.scss */
+  /* line 241, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .group-price-detail {
+    display: block;
+  }
+  /* line 244, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left {
     display: none;
   }
-  /* line 246, ../scss/pages/_page-tour-detail.scss */
+  /* line 247, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left-right {
     float: none;
     width: 100%;
   }
-  /* line 254, ../scss/pages/_page-tour-detail.scss */
+  /* line 255, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper {
     display: block !important;
   }
-  /* line 256, ../scss/pages/_page-tour-detail.scss */
+  /* line 257, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-left {
     display: block;
     padding-right: 0px;
   }
-  /* line 260, ../scss/pages/_page-tour-detail.scss */
+  /* line 261, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right {
     display: block;
     padding-right: 0px;
@@ -1962,11 +1966,11 @@ body.html .footer-3 span {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 273, ../scss/pages/_page-tour-detail.scss */
+  /* line 274, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right .field-name-field-price-old {
     position: inherit;
   }
-  /* line 276, ../scss/pages/_page-tour-detail.scss */
+  /* line 277, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right .field-name-field-price {
     position: inherit;
   }
