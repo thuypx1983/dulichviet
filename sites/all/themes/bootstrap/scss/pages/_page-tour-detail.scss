@@ -52,10 +52,10 @@
       padding-bottom: 15px;
       margin-bottom: 15px;
     }
-    .field-name-field-price{
-      position: relative;;
-    }
+
+
   }
+
   .group-price-detail{
     display: table;
     width: 100%;
@@ -216,7 +216,11 @@
     }
   }
 }
-
+.group-detail-right{
+  .field-name-field-price{
+    position: relative;;
+  }
+}
 @include bp(max-width,$bp-tablet){
   .node-type-tour{
     .group-left{
