@@ -193,7 +193,11 @@
   border: 1px solid #ccc;
   .node-tour{
     border: none;
-
+    .field-name-field-price{
+      bottom: inherit;
+      position: inherit;
+      right: inherit;
+    }
   }
   .field-type-node-reference{
     padding: 10px;
