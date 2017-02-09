@@ -1999,6 +1999,11 @@ body.html .footer-3 span {
   .node-type-tour .group-right .field-name-field-price {
     position: inherit;
   }
+
+  /* line 296, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .horizontal-tabs ul.horizontal-tabs-list {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=custom_style.css.map */
