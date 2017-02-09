@@ -274,6 +274,7 @@ h1.page-header span {
 /* line 103, ../scss/global/_header.scss */
 .block-logo img {
   height: 80px !important;
+  width: auto !important;
 }
 
 /* line 1, ../scss/global/_footer.scss */
