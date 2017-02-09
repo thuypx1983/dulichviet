@@ -133,7 +133,7 @@
                         })
                         break;
                     default:
-                        destination.find('option').hide();
+                        destination.find('option').show();
                         break;
                 }
             }
