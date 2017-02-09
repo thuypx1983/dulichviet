@@ -247,29 +247,30 @@ h1.page-header span {
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 86, ../scss/global/_header.scss */
+  /* line 85, ../scss/global/_header.scss */
   #page-header .block-support, #page-header .region-header .block-depart-tour, .region-header #page-header .block-depart-tour {
     display: none;
   }
-  /* line 89, ../scss/global/_header.scss */
+  /* line 88, ../scss/global/_header.scss */
   #page-header .block-depart-tour {
     display: none;
   }
 
-  /* line 93, ../scss/global/_header.scss */
+  /* line 92, ../scss/global/_header.scss */
   .block-menu-top {
     display: none;
   }
 
-  /* line 96, ../scss/global/_header.scss */
+  /* line 95, ../scss/global/_header.scss */
   .navigation {
     display: none;
   }
 
-  /* line 99, ../scss/global/_header.scss */
+  /* line 98, ../scss/global/_header.scss */
   .block-logo {
     text-align: center;
     padding-bottom: 10px;
+    display: none !important;
   }
   /* line 102, ../scss/global/_header.scss */
   .block-logo img {
