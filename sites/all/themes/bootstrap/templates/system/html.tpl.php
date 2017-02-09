@@ -105,7 +105,7 @@
             var type=$('#views-exposed-form-search-tour-page #edit-field-type-value');
             var destination=$('#views-exposed-form-search-tour-page #edit-term-node-tid-depth');
             type.change(function(){
-                alert(type.val());
+
                 filterDiemDen(type.val());
             })
 
@@ -133,6 +133,7 @@
                         })
                         break;
                     default:
+                        alert(type.val());
                         destination.find('option').hide();
                         break;
                 }
