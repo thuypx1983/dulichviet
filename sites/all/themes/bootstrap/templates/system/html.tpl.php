@@ -99,5 +99,18 @@
   <script src="https://apis.google.com/js/platform.js" async defer>
     {lang: 'vi'}
   </script>
+
+    <script type="text/javascript">
+        (function($){
+            var type=$('#views-exposed-form-search-tour-page .edit-field-type-value');
+            type.change(function(){
+                filterDiemDen(type.val());
+            })
+
+            function filterDiemDen(type){
+                alert(type);
+            }
+        })(jQuery)
+    </script>
 </body>
 </html>
