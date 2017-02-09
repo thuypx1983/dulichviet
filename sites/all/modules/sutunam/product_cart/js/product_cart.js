@@ -7,7 +7,8 @@ var mobilesize=1280;
 
     $(document).ready(function(){
         //add to cart
-        $(document).on('click','.btn-product-cart',function(){
+        $(document).on('click','.btn-product-cart',function(e){
+            e.preventDefault();
             var pdid=$(this).attr("data-pid");
             var type=$(this).attr("type");
             var quantity=$('.quantity-detail').val();
