@@ -73,20 +73,22 @@
 /*global*/
 /* line 1, ../scss/global/_general.scss */
 body {
-  font-family: "SFUFuturaBook";
+  /*font-family: "SFUFuturaBook";*/
+  font-family: "Arial", "Sans Serif";
 }
-/* line 4, ../scss/global/_general.scss */
+/* line 5, ../scss/global/_general.scss */
 body .form-control {
   border-radius: 0px;
   box-shadow: none;
 }
-/* line 8, ../scss/global/_general.scss */
+/* line 9, ../scss/global/_general.scss */
 body h1, body h2, body h3, body h4, body h5, body h6, body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body a {
   color: #333;
-  font-family: "SFUFuturaBook";
+  /*font-family: "SFUFuturaBook";*/
+  font-family: "Arial", "Sans Serif";
 }
 
-/* line 14, ../scss/global/_general.scss */
+/* line 16, ../scss/global/_general.scss */
 .block .block-title {
   display: inline-block;
   color: #333;
@@ -98,72 +100,72 @@ body h1, body h2, body h3, body h4, body h5, body h6, body .h1, body .h2, body .
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-/* line 24, ../scss/global/_general.scss */
+/* line 26, ../scss/global/_general.scss */
 .block .block-title .fa {
   margin-right: 5px;
 }
 
-/* line 30, ../scss/global/_general.scss */
+/* line 32, ../scss/global/_general.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 34, ../scss/global/_general.scss */
+/* line 36, ../scss/global/_general.scss */
 .before-footer {
   padding-top: 50px;
 }
 
-/* line 37, ../scss/global/_general.scss */
+/* line 39, ../scss/global/_general.scss */
 h1.page-header {
   margin: 0px;
   padding: 0px;
   line-height: 22px;
   border-bottom: 0px;
 }
-/* line 42, ../scss/global/_general.scss */
+/* line 44, ../scss/global/_general.scss */
 h1.page-header span {
   font-size: 22px;
   color: #e27a1a;
 }
 
-/* line 47, ../scss/global/_general.scss */
+/* line 49, ../scss/global/_general.scss */
 .space-15 {
   margin-top: 15px;
 }
 
-/* line 50, ../scss/global/_general.scss */
+/* line 52, ../scss/global/_general.scss */
 .space-20 {
   margin-top: 20px;
 }
 
-/* line 53, ../scss/global/_general.scss */
+/* line 55, ../scss/global/_general.scss */
 .space-25 {
   margin-top: 25px;
 }
 
-/* line 56, ../scss/global/_general.scss */
+/* line 58, ../scss/global/_general.scss */
 .space-30 {
   margin-top: 30px;
 }
 
-/* line 60, ../scss/global/_general.scss */
+/* line 62, ../scss/global/_general.scss */
 .view-domestic-tour .views-field-field-price {
   color: #e27a1a;
 }
 
-/* line 64, ../scss/global/_general.scss */
+/* line 66, ../scss/global/_general.scss */
 .hidden-all {
   display: none !important;
 }
 
 @media only screen and (min-width: 1280px) {
-  /* line 68, ../scss/global/_general.scss */
+  /* line 70, ../scss/global/_general.scss */
   .container {
     width: 90%;
     min-width: 1279px;
   }
 }
-/* line 75, ../scss/global/_general.scss */
+/* line 77, ../scss/global/_general.scss */
 .html img {
   max-width: 100%;
   height: auto !important;
