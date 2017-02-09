@@ -282,6 +282,16 @@
     .node{
       &.node-tour{
         padding: 15px 5px;
+        .field-group-format-wrapper{
+          .form-group{
+            .btn-product-cart{
+              position: relative;
+              right: 0px;
+              bottom: -10px;
+            }
+          }
+        }
+
       }
     }
     .group-right{

@@ -1994,16 +1994,22 @@ body.html .footer-3 span {
   .node-type-tour .node.node-tour {
     padding: 15px 5px;
   }
-  /* line 288, ../scss/pages/_page-tour-detail.scss */
+  /* line 287, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .node.node-tour .field-group-format-wrapper .form-group .btn-product-cart {
+    position: relative;
+    right: 0px;
+    bottom: -10px;
+  }
+  /* line 298, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right .field-name-field-price-old {
     position: inherit;
   }
-  /* line 291, ../scss/pages/_page-tour-detail.scss */
+  /* line 301, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right .field-name-field-price {
     position: inherit;
   }
 
-  /* line 296, ../scss/pages/_page-tour-detail.scss */
+  /* line 306, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .horizontal-tabs ul.horizontal-tabs-list li {
     width: 100% !important;
     border-bottom: 1px solid #ffffff;
