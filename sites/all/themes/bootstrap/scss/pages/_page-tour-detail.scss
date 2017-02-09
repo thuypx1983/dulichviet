@@ -270,6 +270,11 @@
 
 @include bp(max-width,$bp-small){
   .node-type-tour{
+    .node{
+      &.node-tour{
+        padding: 15px 5px;
+      }
+    }
     .group-right{
       .field-name-field-price-old{
         position: inherit;

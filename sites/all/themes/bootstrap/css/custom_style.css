@@ -1984,10 +1984,14 @@ body.html .footer-3 span {
 }
 @media only screen and (max-width: 480px) {
   /* line 274, ../scss/pages/_page-tour-detail.scss */
+  .node-type-tour .node.node-tour {
+    padding: 15px 5px;
+  }
+  /* line 279, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right .field-name-field-price-old {
     position: inherit;
   }
-  /* line 277, ../scss/pages/_page-tour-detail.scss */
+  /* line 282, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right .field-name-field-price {
     position: inherit;
   }
