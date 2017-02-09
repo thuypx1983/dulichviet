@@ -277,12 +277,6 @@ h1.page-header span {
     width: auto !important;
   }
 }
-/* line 111, ../scss/global/_header.scss */
-.menu-mobile a {
-  display: block;
-  padding-top: 27px;
-}
-
 /* line 1, ../scss/global/_footer.scss */
 footer.footer {
   border-top: none;
@@ -453,15 +447,17 @@ body.html .footer-3 span {
   }
   /* line 59, ../scss/components/_main-menu.scss */
   .block-menu-mobile a {
+    display: block;
+    padding-top: 27px;
     cursor: pointer;
   }
-  /* line 61, ../scss/components/_main-menu.scss */
+  /* line 63, ../scss/components/_main-menu.scss */
   .block-menu-mobile a .fa-bars {
     font-size: 30px;
     line-height: 60px;
   }
 
-  /* line 68, ../scss/components/_main-menu.scss */
+  /* line 70, ../scss/components/_main-menu.scss */
   #block-search-form .block-content {
     margin-top: 5px;
   }

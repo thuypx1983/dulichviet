@@ -57,6 +57,8 @@
   .block-menu-mobile{
     width: 70px;
     a{
+      display: block;
+      padding-top: 27px;
       cursor: pointer;
       .fa-bars{
         font-size: 30px;
