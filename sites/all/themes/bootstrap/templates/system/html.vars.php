@@ -59,15 +59,27 @@ function bootstrap_preprocess_html(&$variables) {
 
 
   //add custom script
+    $trongnuoc=array(1);
+    $nuocngoai=array(9);
     $vid = taxonomy_vocabulary_machine_name_load("location")->vid;
-    $trongnuoc=taxonomy_get_tree($vid,9);
+    $t=taxonomy_get_tree($vid,1);
+    foreach($t as $item){
+        array_push($trongnuoc,$item->tid);
+    };
+
+    $vid = taxonomy_vocabulary_machine_name_load("location")->vid;
+    $t=taxonomy_get_tree($vid,9);
+    foreach($t as $item){
+        array_push($nuocngoai,$item->tid);
+    };
+
     //print_r($trongnuoc);
     $script = array(
         '#tag' => 'script',
         '#attributes' => array('type' => 'text/javascript'),
         '#value' => '
-        var diem_den_trong_nuoc=[]
-        var diem_den_nuoc_ngoai=[]
+        var diem_den_trong_nuoc='.json_encode($trongnuoc).';
+        var diem_den_nuoc_ngoai='.json_encode($nuocngoai).';
         ',
     );
     drupal_add_html_head($script, 'script');
