@@ -1,6 +1,5 @@
 .view-news{
   .grid-item {
-    width: 25%;
     padding: 10px 5px;
     .view-row-content{
       border: 1px solid #ddd;
@@ -48,5 +47,20 @@
         }
       }
     }
+  }
+}
+@include bp(min-width,$bp-mobile+1){
+  .grid-item{
+    width: 25%;
+  }
+}
+@include bp(max-width,$bp-small){
+  .grid-item {
+    width: 100%;
+  }
+}
+@include small-bp($bp-small+1,$bp-mobile){
+  .grid-item {
+    width: 50%;
   }
 }

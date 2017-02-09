@@ -1373,34 +1373,33 @@ body.html .footer-3 span {
 
 /* line 2, ../scss/components/_news-list.scss */
 .view-news .grid-item {
-  width: 25%;
   padding: 10px 5px;
 }
-/* line 5, ../scss/components/_news-list.scss */
+/* line 4, ../scss/components/_news-list.scss */
 .view-news .grid-item .view-row-content {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding-top: 10px;
 }
-/* line 10, ../scss/components/_news-list.scss */
+/* line 9, ../scss/components/_news-list.scss */
 .view-news .grid-item .view-row-content .views-field-title a {
   font-size: 16px;
   font-weight: bold;
   color: #333;
 }
-/* line 16, ../scss/components/_news-list.scss */
+/* line 15, ../scss/components/_news-list.scss */
 .view-news .grid-item .view-row-content .views-field-field-image {
   padding: 0px 5px 10px 5px;
 }
-/* line 19, ../scss/components/_news-list.scss */
+/* line 18, ../scss/components/_news-list.scss */
 .view-news .grid-item .view-row-content .views-field-title {
   padding: 0px 5px 10px 5px;
 }
-/* line 22, ../scss/components/_news-list.scss */
+/* line 21, ../scss/components/_news-list.scss */
 .view-news .grid-item .view-row-content .views-field-body {
   padding: 0px 5px 10px 5px;
 }
-/* line 25, ../scss/components/_news-list.scss */
+/* line 24, ../scss/components/_news-list.scss */
 .view-news .grid-item .view-row-content .statistics-info {
   background-color: #f8f8ed;
   border-top: 1px solid #ddd;
@@ -1408,11 +1407,11 @@ body.html .footer-3 span {
   padding: 5px;
   width: 100%;
 }
-/* line 31, ../scss/components/_news-list.scss */
+/* line 30, ../scss/components/_news-list.scss */
 .view-news .grid-item .view-row-content .statistics-info .views-field-created {
   float: left;
 }
-/* line 34, ../scss/components/_news-list.scss */
+/* line 33, ../scss/components/_news-list.scss */
 .view-news .grid-item .view-row-content .statistics-info .views-field-totalcount {
   float: right;
   position: relative;
@@ -1421,7 +1420,7 @@ body.html .footer-3 span {
   width: 40px;
   color: #333;
 }
-/* line 41, ../scss/components/_news-list.scss */
+/* line 40, ../scss/components/_news-list.scss */
 .view-news .grid-item .view-row-content .statistics-info .views-field-totalcount:before {
   position: absolute;
   content: "\f070";
@@ -1430,6 +1429,24 @@ body.html .footer-3 span {
   color: #000000;
 }
 
+@media only screen and (min-width: 768px) {
+  /* line 53, ../scss/components/_news-list.scss */
+  .grid-item {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 58, ../scss/components/_news-list.scss */
+  .grid-item {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* line 63, ../scss/components/_news-list.scss */
+  .grid-item {
+    width: 50%;
+  }
+}
 /* line 3, ../scss/components/_cart_popup.scss */
 #webform-client-form-21 .webform-component--product-list--products {
   display: none;
