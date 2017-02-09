@@ -115,7 +115,7 @@
                         destination.find('option').each(function(){
                             var value=$(this).attr('value');
                             if($.inArray(value, diem_den_trong_nuoc)){
-                                $(this).show();
+                                $(this).hide();
                             }else{
                                 $(this).hide();
                             }
@@ -126,14 +126,14 @@
                         destination.find('option').each(function(){
                             var value=$(this).attr('value');
                             if($.inArray(value, diem_den_nuoc_ngoai)){
-                                $(this).show();
+                                $(this).hide();
                             }else{
                                 $(this).hide();
                             }
                         })
                         break;
                     default:
-                        destination.find('option').show();
+                        destination.find('option').hide();
                         break;
                 }
             }
