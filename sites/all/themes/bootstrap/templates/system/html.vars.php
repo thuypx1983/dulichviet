@@ -56,6 +56,20 @@ function bootstrap_preprocess_html(&$variables) {
       $variables['body_attributes_array']['class'][] = 'navbar-is-static-top';
       break;
   }
+
+
+  //add custom script
+    $script = array(
+        '#tag' => 'script',
+        '#attributes' => array('type' => 'text/javascript'),
+        '#value' => '
+        var diem_den_trong_nuoc=[]
+        var diem_den_nuoc_ngoai=[]
+        ',
+    );
+    drupal_add_html_head($script, 'script');
+
+
 }
 
 /**
