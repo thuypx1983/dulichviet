@@ -165,6 +165,15 @@
     display: table;
     width: 100%;
   }
+  .group-price-detail{
+    .field-name-field-price-detail{
+      .field-items{
+        .field-item{
+          overflow-x: auto !important;
+        }
+      }
+    }
+  }
 }
 
 .node-type-tour .horizontal-tabs ul.horizontal-tabs-list .selected {
