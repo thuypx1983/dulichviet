@@ -64,13 +64,13 @@ function bootstrap_preprocess_html(&$variables) {
     $vid = taxonomy_vocabulary_machine_name_load("location")->vid;
     $t=taxonomy_get_tree($vid,1);
     foreach($t as $item){
-        array_push($trongnuoc,$item->tid);
+        array_push($trongnuoc,(int)$item->tid);
     };
 
     $vid = taxonomy_vocabulary_machine_name_load("location")->vid;
     $t=taxonomy_get_tree($vid,9);
     foreach($t as $item){
-        array_push($nuocngoai,$item->tid);
+        array_push($nuocngoai,(int)$item->tid);
     };
 
     //print_r($trongnuoc);

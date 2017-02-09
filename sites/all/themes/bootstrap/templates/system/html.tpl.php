@@ -102,13 +102,39 @@
 
     <script type="text/javascript">
         (function($){
-            var type=$('#views-exposed-form-search-tour-page .edit-field-type-value');
+            var type=$('#views-exposed-form-search-tour-page #edit-field-type-value');
+            var destination=$('#views-exposed-form-search-tour-page #edit-term-node-tid-depth');
             type.change(function(){
                 filterDiemDen(type.val());
             })
 
             function filterDiemDen(type){
-                alert(type);
+                switch (type){
+                    case 0:
+                        destination.find('option').each(function(){
+                            var value=$(this).attr('value');
+                            if($.inArray(value, diem_den_trong_nuoc)){
+                                $(this).show();
+                            }else{
+                                $(this).hide();
+                            }
+                        })
+
+                        break;
+                    case 1:
+                        destination.find('option').each(function(){
+                            var value=$(this).attr('value');
+                            if($.inArray(value, diem_den_nuoc_ngoai)){
+                                $(this).show();
+                            }else{
+                                $(this).hide();
+                            }
+                        })
+                        break;
+                    default:
+                        destination.find('option').show();
+                        break;
+                }
             }
         })(jQuery)
     </script>
