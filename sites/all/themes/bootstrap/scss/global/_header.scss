@@ -95,17 +95,21 @@
   .navigation{
     display: none;
   }
+  .block-logo{
+    text-align: center;
+    padding-bottom: 10px;
 
-}
-.block-logo{
-  text-align: center;
-  padding-bottom: 10px;
-  a{
-    display: block; padding-top: 27px;
-    img{
-      height: 80px !important;
-      width: auto !important;
-    }
+      img{
+        height: 80px !important;
+        width: auto !important;
+      }
+
   }
 
+}
+.menu-mobile{
+  a {
+    display: block;
+    padding-top: 27px;
+  }
 }
