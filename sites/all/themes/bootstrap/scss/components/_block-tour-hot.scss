@@ -98,7 +98,7 @@
               color: $custom-orange;
               display: inline-block;
               float: right;
-              font-size: 19px;
+              font-size: 20px;
               padding: 10px;
             }
           }
@@ -123,6 +123,7 @@
           position: relative;
           ul.mda-share-childr{
             position: absolute;
+            top: 40px;
             display: none;
           }
           &:hover{
