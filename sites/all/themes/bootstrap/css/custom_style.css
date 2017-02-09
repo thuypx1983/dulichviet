@@ -273,7 +273,7 @@ h1.page-header span {
   }
   /* line 102, ../scss/global/_header.scss */
   .block-logo img {
-    height: 50px;
+    height: 80px !important;
   }
 }
 /* line 1, ../scss/global/_footer.scss */
