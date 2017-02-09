@@ -105,6 +105,7 @@
             var type=$('#views-exposed-form-search-tour-page #edit-field-type-value');
             var destination=$('#views-exposed-form-search-tour-page #edit-term-node-tid-depth');
             type.change(function(){
+                alert('kkk');
                 filterDiemDen(type.val());
             })
 
