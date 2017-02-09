@@ -59,6 +59,8 @@ function bootstrap_preprocess_html(&$variables) {
 
 
   //add custom script
+    $trongnuoc=taxonomy_get_tree('location',9);
+    print_r($trongnuoc);
     $script = array(
         '#tag' => 'script',
         '#attributes' => array('type' => 'text/javascript'),
