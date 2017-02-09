@@ -59,7 +59,8 @@ function bootstrap_preprocess_html(&$variables) {
 
 
   //add custom script
-    $trongnuoc=taxonomy_get_tree('location',9);
+    $vid = taxonomy_vocabulary_machine_name_load("location")->vid;
+    $trongnuoc=taxonomy_get_tree($vid,9);
     print_r($trongnuoc);
     $script = array(
         '#tag' => 'script',
