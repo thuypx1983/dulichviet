@@ -111,9 +111,9 @@
 
             function filterDiemDen(type){
                 switch (type){
-                    case 0:
+                    case "0":
                         destination.find('option').each(function(){
-                            var value=$(this).attr('value');
+                            var value=parseInt($(this).attr('value'));
                             if($.inArray(value, diem_den_trong_nuoc)){
                                 $(this).hide();
                             }else{
@@ -122,9 +122,9 @@
                         })
 
                         break;
-                    case 1:
+                    case "1":
                         destination.find('option').each(function(){
-                            var value=$(this).attr('value');
+                            var value=parseInt($(this).attr('value'));
                             if($.inArray(value, diem_den_nuoc_ngoai)){
                                 $(this).hide();
                             }else{
@@ -133,7 +133,6 @@
                         })
                         break;
                     default:
-                        alert(type);
                         destination.find('option').hide();
                         break;
                 }
