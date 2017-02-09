@@ -100,8 +100,12 @@
 .block-logo{
   text-align: center;
   padding-bottom: 10px;
-  img{
-    height: 80px !important;
-    width: auto !important;
+  a{
+    display: block; padding-top: 27px;
+    img{
+      height: 80px !important;
+      width: auto !important;
+    }
   }
+
 }

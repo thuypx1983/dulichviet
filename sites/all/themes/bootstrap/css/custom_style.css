@@ -272,7 +272,12 @@ h1.page-header span {
   padding-bottom: 10px;
 }
 /* line 103, ../scss/global/_header.scss */
-.block-logo img {
+.block-logo a {
+  display: block;
+  padding-top: 27px;
+}
+/* line 105, ../scss/global/_header.scss */
+.block-logo a img {
   height: 80px !important;
   width: auto !important;
 }
