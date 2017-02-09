@@ -114,7 +114,7 @@
                     case "0":
                         destination.find('option').each(function(){
                             var value=parseInt($(this).attr('value'));
-                            if($.inArray(value, diem_den_trong_nuoc)){
+                            if(diem_den_trong_nuoc.indexOf(value) > -1){
                                 $(this).show();
                             }else{
                                 $(this).hide();
@@ -125,7 +125,7 @@
                     case "1":
                         destination.find('option').each(function(){
                             var value=parseInt($(this).attr('value'));
-                            if($.inArray(value, diem_den_nuoc_ngoai)){
+                            if(diem_den_nuoc_ngoai.indexOf(value) > -1){
                                 $(this).show();
                             }else{
                                 $(this).hide();
