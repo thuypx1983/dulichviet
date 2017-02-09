@@ -265,18 +265,17 @@ h1.page-header span {
   .navigation {
     display: none;
   }
-
-  /* line 98, ../scss/global/_header.scss */
-  .block-logo {
-    text-align: center;
-    padding-bottom: 10px;
-    display: none !important;
-  }
-  /* line 102, ../scss/global/_header.scss */
-  .block-logo img {
-    height: 80px !important;
-  }
 }
+/* line 100, ../scss/global/_header.scss */
+.block-logo {
+  text-align: center;
+  padding-bottom: 10px;
+}
+/* line 103, ../scss/global/_header.scss */
+.block-logo img {
+  height: 80px !important;
+}
+
 /* line 1, ../scss/global/_footer.scss */
 footer.footer {
   border-top: none;
