@@ -2003,6 +2003,7 @@ body.html .footer-3 span {
   /* line 296, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .horizontal-tabs ul.horizontal-tabs-list li {
     width: 100% !important;
+    border-bottom: 1px solid #ffffff;
   }
 }
 
