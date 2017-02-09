@@ -115,7 +115,7 @@
                         destination.find('option').each(function(){
                             var value=parseInt($(this).attr('value'));
                             if($.inArray(value, diem_den_trong_nuoc)){
-                                $(this).hide();
+                                $(this).show();
                             }else{
                                 $(this).hide();
                             }
@@ -126,7 +126,7 @@
                         destination.find('option').each(function(){
                             var value=parseInt($(this).attr('value'));
                             if($.inArray(value, diem_den_nuoc_ngoai)){
-                                $(this).hide();
+                                $(this).show();
                             }else{
                                 $(this).hide();
                             }
