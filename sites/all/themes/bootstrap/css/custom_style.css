@@ -687,7 +687,7 @@ body.html .footer-3 span {
   display: inline-block;
   float: right;
   font-weight: bold;
-  padding: 9px;
+  padding: 10px;
 }
 /* line 97, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot .view-row-content .tour-info .views-field-nothing ul.mda-share > li span.fa-share-alt {
