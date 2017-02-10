@@ -2030,5 +2030,9 @@ body.html .footer-3 span {
     border-bottom: 1px solid #ffffff;
   }
 }
+/* line 3, ../scss/pages/_page-search-node.scss */
+.page-search-node #block-system-main #search-form {
+  display: none;
+}
 
 /*# sourceMappingURL=custom_style.css.map */
