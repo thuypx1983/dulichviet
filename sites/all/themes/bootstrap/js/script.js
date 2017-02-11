@@ -45,7 +45,7 @@
         $("body").on("click", ".share-google", function (event) {
             var target = $(this).parent().parent().parent().find('.hidden-all a');
 
-            var href = 'https://plus.google.com/share?url'+web_url+target.attr("href");
+            var href = 'https://plus.google.com/share?url='+web_url+target.attr("href");
 
             window.open(href, "Google Plus Share", 'width=800, height=600');
         });
