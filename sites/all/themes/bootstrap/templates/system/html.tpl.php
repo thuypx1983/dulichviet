@@ -67,6 +67,76 @@
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
+  <!-- vote rate script -->
+  <?php
+
+  $node = menu_get_object();
+  if ( !empty($node) ) {
+    $fivestar = field_view_field('node', $node, 'field_star');
+    if($fivestar['#items']['0']){
+      if($fivestar['#items']['0']>0){
+        $starScript='<script type="application/ld+json">
+                            {
+                              "@context": "http://schema.org/",
+                              "@type": "Review",
+                              "itemReviewed": {
+                                "@type": "Thing",
+                                "name": "'.$node->title.'"
+                              },
+                              "author": {
+                                "@type": "Person",
+                                "name": "Hoang viet travel" <!--Tên người upload bài-->
+                              },
+                              "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "'.(intval($fivestar['#items'][0]['average']/10)).'",
+                                "bestRating": "10"
+                              },
+                              "publisher": {
+                                "@type": "Organization",
+                                "name": "Du Lịch Hoàng Việt"
+                              }
+                            }
+                            </script>';
+      }
+      echo $starScript;
+    }
+  }
+
+  $termid = arg(2);
+  $term = taxonomy_term_load($termid);
+  if($term){
+    if(property_exists($term, 'field_star')){
+      $field_star=$term->field_star['und'];
+      if($field_star[0]){
+        $starScript='<script type="application/ld+json">
+                            {
+                              "@context": "http://schema.org/",
+                              "@type": "Review",
+                              "itemReviewed": {
+                                "@type": "Thing",
+                                "name": "'.$term->name.'"
+                              },
+                              "author": {
+                                "@type": "Person",
+                                "name": "Hoang viet travel" <!--Tên người upload bài-->
+                              },
+                              "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "'.(intval($field_star[0]['rating']/10)).'",
+                                "bestRating": "10"
+                              },
+                              "publisher": {
+                                "@type": "Organization",
+                                "name": "Du Lịch Hoàng Việt"
+                              }
+                            }
+                            </script>';
+      }
+    }
+
+  }
+  ?>
 </head>
 <body<?php print $body_attributes; ?>>
   <div id="skip-link">
