@@ -777,9 +777,10 @@ body.html .footer-3 span {
   /* line 30, ../scss/components/_updated-news.scss */
   .updated-news .views-field-field-image {
     text-align: center;
+    width: auto;
     float: none;
   }
-  /* line 34, ../scss/components/_updated-news.scss */
+  /* line 35, ../scss/components/_updated-news.scss */
   .updated-news .views-field-body {
     display: none;
   }
