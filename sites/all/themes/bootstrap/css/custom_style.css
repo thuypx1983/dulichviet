@@ -773,6 +773,17 @@ body.html .footer-3 span {
   color: #333;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 30, ../scss/components/_updated-news.scss */
+  .updated-news .views-field-field-image {
+    text-align: center;
+    float: none;
+  }
+  /* line 34, ../scss/components/_updated-news.scss */
+  .updated-news .views-field-body {
+    display: none;
+  }
+}
 /* line 3, ../scss/components/_block-tour.scss */
 .block-tour .block-inner .block-content {
   border: 1px solid #000000;

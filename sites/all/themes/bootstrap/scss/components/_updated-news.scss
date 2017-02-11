@@ -25,3 +25,14 @@
     }
   }
 }
+@include bp(max-width,$bp-mobile){
+  .updated-news{
+    .views-field-field-image{
+      text-align: center;
+      float:none;
+    }
+    .views-field-body{
+      display: none;
+    }
+  }
+}
