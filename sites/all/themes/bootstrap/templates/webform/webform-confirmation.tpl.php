@@ -57,8 +57,8 @@ if (arg(1) == 21) {
                         $node = $item['product'];
                         ?>
                         <li class="product-title">
-                           <span><?php echo $node->title ?></span>
-                            <span class="quantity"> x <?php echo $item['quantity'] ?></span>
+                           <span><?php echo $node->title ?> (<?php echo number_format($node->field_price['und'][0]['value'])?>đ)</span>
+                            <span class="quantity"> x <?php echo $item['quantity'] ?> (<?php echo number_format($node->field_price['und'][0]['value']*$item['quantity'])?>)</span>
                         </li>
                     <?php
                     }
