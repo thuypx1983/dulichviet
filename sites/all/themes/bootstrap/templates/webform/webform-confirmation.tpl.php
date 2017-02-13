@@ -57,8 +57,8 @@ if (arg(1) == 21) {
                         $node = $item['product'];
                         ?>
                         <li class="product-title">
-                            <?php echo $term->name ?> &nbsp; - &nbsp;<span><?php echo $node->title ?></span> <span
-                                class="quantity"> x <?php echo $item['quantity'] ?></span>
+                           <span><?php echo $node->title ?></span>
+                            <span class="quantity"> x <?php echo $item['quantity'] ?></span>
                         </li>
                     <?php
                     }
