@@ -51,19 +51,21 @@ if (arg(1) == 21) {
                 </div>
                 <div class="info"><?php echo t('Quý khách vui lòng đến trụ sở Hoàng việt Travel hoàn tất giao dịch ') ?></div>
                 <div class="result_title"><?php echo t('Hãy hoàn tất thanh toán tại Hoàng Việt Travel') ?></div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-6 " style="text-align: left">
-                        <div><b>Địa chỉ</b></div>
-                        <div>
+                <div style="margin: 0 auto; width: 50%">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 " style="text-align: left">
+                            <div><b>Địa chỉ</b></div>
+                            <div>
                             <span>
                             Số 62, Trần Quốc Toản, P. Trần Hưng Đạo, Q. Hoàn Kiếm, Hà Nội.
                         </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 " style="text-align: left">
-                        <div><b>Đơn hàng</b></div>
-                        <div>
-                            <span>Mã đơn hàng: HVTV<?php echo $sid?></span>
+                        <div class="col-md-6 col-lg-6 " style="text-align: left">
+                            <div><b>Đơn hàng</b></div>
+                            <div>
+                                <span>Mã đơn hàng: HVTV<?php echo $sid?></span>
+                            </div>
                         </div>
                     </div>
                 </div>
