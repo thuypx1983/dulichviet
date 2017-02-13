@@ -77,6 +77,11 @@ var mobilesize=1280;
             })
         }
 
+        var d=$('.node-type-tour .field-name-field-departure-day .field-items .field-item:first');
+        if(d.length==1){
+            $('.node-type-tour .field-name-field-available-seats').after(d);
+
+        }
 
     })
 
