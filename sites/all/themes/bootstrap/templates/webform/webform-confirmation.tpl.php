@@ -29,7 +29,6 @@ if (arg(1) == 21) {
     $sid = (int)$_GET['sid'];
     $submission = webform_get_submissions(array('sid' => $sid));
     $submission = array_shift($submission);
-    print_r($submission->data);
     $data = json_decode($submission->data[2][0], true);
     $products = array();
     if (isset($data)) {
