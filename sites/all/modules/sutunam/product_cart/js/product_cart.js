@@ -83,9 +83,9 @@ var mobilesize=1280;
                 '<div class="field field-label-inline clearfix"><div class="field-label">Khởi hành:&nbsp;</div>'+ d.html()+' <a style="color: #0000cc" class="other-date" href="javascript:void(0)">Ngày khác</a></div>'
             );
             $('.node-type-tour').on('click','.other-date',function(){
-                $('body').scrollTo('.group-detail-row .horizontal-tab .horizontal-tab-button-2');
                 $('.group-detail-row .horizontal-tab .horizontal-tab-button-2').trigger('click');
-                return true;
+                $('html,body').animate({scrollTop: $('.group-detail-row .horizontal-tab .horizontal-tab-button-2').offset().top});
+                return false;
             })
         }
 
