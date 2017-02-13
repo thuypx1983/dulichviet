@@ -80,7 +80,7 @@ var mobilesize=1280;
         var d=$('.node-type-tour .field-name-field-departure-day .field-items .field-item:first');
         if(d.length==1){
             $('.node-type-tour .field-name-field-available-seats').after(
-                '<div class="field field-label-inline clearfix"><div class="field-label">Khởi hành:&nbsp;</div>'+ d.html()+'</div>'
+                '<div class="field field-label-inline clearfix"><div class="field-label">Khởi hành:&nbsp;</div>'+ d.html()+' <a class="other-date" href="javascript:void(0)">Ngày khác</a></div>'
             );
 
 
