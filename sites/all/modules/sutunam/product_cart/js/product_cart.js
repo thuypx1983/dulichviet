@@ -83,6 +83,7 @@ var mobilesize=1280;
                 '<div class="field field-label-inline clearfix"><div class="field-label">Khởi hành:&nbsp;</div>'+ d.html()+'</div>'
             );
 
+
         }
 
     })
