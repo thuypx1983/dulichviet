@@ -10,7 +10,7 @@ var mobilesize=1280;
         $(document).on('click','.btn-product-cart',function(e){
             e.preventDefault();
             var pdid=$(this).attr("data-pid");
-            var type=$(this).attr("type");
+            var type='product';
             var quantity=$('.quantity').val();
             $.ajax({
                 url:'/ajax/product/cart/add',
