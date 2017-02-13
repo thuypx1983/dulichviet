@@ -1801,173 +1801,161 @@ body.html .footer-3 span {
   color: #ffffff;
   font-size: 16px;
   text-transform: uppercase;
-  position: absolute;
-  bottom: 5px;
-  right: 15px;
 }
-/* line 100, ../scss/pages/_page-tour-detail.scss */
-.node-type-tour .field-name-field-price {
-  bottom: 80px;
-  position: absolute;
-  right: 111px;
-}
-/* line 104, ../scss/pages/_page-tour-detail.scss */
+/* line 98, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-price .field-label {
   line-height: 31px;
 }
-/* line 107, ../scss/pages/_page-tour-detail.scss */
+/* line 101, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-price .field-item {
   color: #e27a1a;
   font-size: 22px;
 }
-/* line 113, ../scss/pages/_page-tour-detail.scss */
+/* line 107, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-price-old {
-  bottom: 130px;
-  position: absolute;
   right: 231px;
 }
-/* line 114, ../scss/pages/_page-tour-detail.scss */
+/* line 108, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-price-old > div {
   float: none;
 }
-/* line 120, ../scss/pages/_page-tour-detail.scss */
+/* line 112, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-price-old .field-item {
   color: #333;
   display: block;
   font-size: 17px;
   font-weight: normal;
-  position: absolute;
   text-decoration: line-through;
 }
-/* line 129, ../scss/pages/_page-tour-detail.scss */
+/* line 120, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-departure-day {
   margin-bottom: 10px;
 }
-/* line 132, ../scss/pages/_page-tour-detail.scss */
+/* line 123, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-departure-day {
   margin-bottom: 10px;
 }
-/* line 135, ../scss/pages/_page-tour-detail.scss */
+/* line 126, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-departure-point {
   margin-bottom: 10px;
 }
-/* line 139, ../scss/pages/_page-tour-detail.scss */
+/* line 130, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-promotion {
   margin-top: 30px;
 }
-/* line 141, ../scss/pages/_page-tour-detail.scss */
+/* line 132, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-promotion .field-item {
   color: #e27a1a;
 }
-/* line 145, ../scss/pages/_page-tour-detail.scss */
+/* line 136, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour #comment {
   display: table;
   width: 100%;
 }
-/* line 152, ../scss/pages/_page-tour-detail.scss */
+/* line 143, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .group-price-detail .field-name-field-price-detail .field-items .field-item {
   overflow-x: auto !important;
 }
 
-/* line 160, ../scss/pages/_page-tour-detail.scss */
+/* line 151, ../scss/pages/_page-tour-detail.scss */
 .group-rate {
   display: table;
   width: 100%;
 }
-/* line 163, ../scss/pages/_page-tour-detail.scss */
+/* line 154, ../scss/pages/_page-tour-detail.scss */
 .group-rate .field-name-field-social-share {
   float: left;
 }
-/* line 166, ../scss/pages/_page-tour-detail.scss */
+/* line 157, ../scss/pages/_page-tour-detail.scss */
 .group-rate .field-name-field-star {
   float: left;
 }
-/* line 170, ../scss/pages/_page-tour-detail.scss */
+/* line 161, ../scss/pages/_page-tour-detail.scss */
 .group-rate #fivestar-custom-widget .fivestar-widget-5 {
   display: inline-block;
   padding-left: 10px;
 }
-/* line 174, ../scss/pages/_page-tour-detail.scss */
+/* line 165, ../scss/pages/_page-tour-detail.scss */
 .group-rate #fivestar-custom-widget .help-block {
   display: inline-block;
   padding-left: 5px;
 }
 
-/* line 180, ../scss/pages/_page-tour-detail.scss */
+/* line 171, ../scss/pages/_page-tour-detail.scss */
 .mda-facebook {
   display: inline-block;
   overflow: auto;
 }
 
-/* line 184, ../scss/pages/_page-tour-detail.scss */
+/* line 175, ../scss/pages/_page-tour-detail.scss */
 .mda-google {
   display: inline-block;
 }
 
-/* line 188, ../scss/pages/_page-tour-detail.scss */
+/* line 179, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .horizontal-tabs ul.horizontal-tabs-list .selected {
   background-color: #008fea;
 }
 
-/* line 191, ../scss/pages/_page-tour-detail.scss */
+/* line 182, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .horizontal-tabs ul.horizontal-tabs-list .selected strong {
   color: #ffffff;
 }
 
-/* line 194, ../scss/pages/_page-tour-detail.scss */
+/* line 185, ../scss/pages/_page-tour-detail.scss */
 .mda-table {
   width: 100%;
 }
-/* line 196, ../scss/pages/_page-tour-detail.scss */
+/* line 187, ../scss/pages/_page-tour-detail.scss */
 .mda-table tr {
   background-color: #fbfafa;
 }
-/* line 198, ../scss/pages/_page-tour-detail.scss */
+/* line 189, ../scss/pages/_page-tour-detail.scss */
 .mda-table tr:first-child {
   background: #EDEDED;
   font-weight: bold;
   text-align: right;
 }
-/* line 203, ../scss/pages/_page-tour-detail.scss */
+/* line 194, ../scss/pages/_page-tour-detail.scss */
 .mda-table tr td {
   border: 1px solid #ccc;
   padding: 7px 15px;
   text-align: right;
 }
 
-/* line 210, ../scss/pages/_page-tour-detail.scss */
+/* line 201, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right {
   display: table-cell;
   width: 350px;
   vertical-align: top;
   border: 1px solid #ccc;
 }
-/* line 215, ../scss/pages/_page-tour-detail.scss */
+/* line 206, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .node-tour {
   border: none;
 }
-/* line 217, ../scss/pages/_page-tour-detail.scss */
+/* line 208, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .node-tour .field-name-field-price {
   bottom: inherit;
   position: inherit;
   right: inherit;
 }
-/* line 223, ../scss/pages/_page-tour-detail.scss */
+/* line 214, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .field-type-node-reference {
   padding: 10px;
 }
-/* line 225, ../scss/pages/_page-tour-detail.scss */
+/* line 216, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .field-type-node-reference > .field-label {
   border-bottom: 1px solid #ccc;
   font-size: 18px;
   padding: 10px 0px 0px 0px;
   text-transform: uppercase;
 }
-/* line 231, ../scss/pages/_page-tour-detail.scss */
+/* line 222, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .field-type-node-reference .node-tour {
   padding: 0px;
 }
-/* line 236, ../scss/pages/_page-tour-detail.scss */
+/* line 227, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .field-type-node-reference header h2 a {
   color: #e27a1a;
   font-size: 16px;
@@ -1976,40 +1964,40 @@ body.html .footer-3 span {
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 249, ../scss/pages/_page-tour-detail.scss */
+  /* line 240, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-left {
     float: none;
     width: 100%;
   }
-  /* line 253, ../scss/pages/_page-tour-detail.scss */
+  /* line 244, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right {
     float: none;
     width: 100%;
     padding-left: 0px;
   }
-  /* line 259, ../scss/pages/_page-tour-detail.scss */
+  /* line 250, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail {
     display: block;
   }
-  /* line 262, ../scss/pages/_page-tour-detail.scss */
+  /* line 253, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left {
     display: none;
   }
-  /* line 265, ../scss/pages/_page-tour-detail.scss */
+  /* line 256, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left-right {
     float: none;
     width: 100%;
   }
-  /* line 273, ../scss/pages/_page-tour-detail.scss */
+  /* line 264, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper {
     display: block !important;
   }
-  /* line 275, ../scss/pages/_page-tour-detail.scss */
+  /* line 266, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-left {
     display: block;
     padding-right: 0px;
   }
-  /* line 279, ../scss/pages/_page-tour-detail.scss */
+  /* line 270, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right {
     display: block;
     padding-right: 0px;
@@ -2017,26 +2005,18 @@ body.html .footer-3 span {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 292, ../scss/pages/_page-tour-detail.scss */
+  /* line 283, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .node.node-tour {
     padding: 15px 5px;
   }
-  /* line 296, ../scss/pages/_page-tour-detail.scss */
+  /* line 287, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .node.node-tour .field-group-format-wrapper .form-group .btn-product-cart {
     position: relative;
     right: 0px;
     bottom: -10px;
   }
-  /* line 307, ../scss/pages/_page-tour-detail.scss */
-  .node-type-tour .group-right .field-name-field-price-old {
-    position: inherit;
-  }
-  /* line 310, ../scss/pages/_page-tour-detail.scss */
-  .node-type-tour .group-right .field-name-field-price {
-    position: inherit;
-  }
 
-  /* line 315, ../scss/pages/_page-tour-detail.scss */
+  /* line 298, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .horizontal-tabs ul.horizontal-tabs-list li {
     width: 100% !important;
     border-bottom: 1px solid #ffffff;
