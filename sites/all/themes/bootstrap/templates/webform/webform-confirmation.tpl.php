@@ -57,19 +57,8 @@ if (arg(1) == 21) {
                         $node = $item['product'];
                         ?>
                         <li class="product-title">
-                           <span style="font-weight: normal"><?php echo $node->title ?> (<?php echo number_format($node->field_price['und'][0]['value'])?>đ)</span>
-                            <span  style="font-weight: normal" class="quantity"> x <?php echo $item['quantity'] ?> (<?php echo number_format($node->field_price['und'][0]['value']*$item['quantity'])?>đ)</span>
-                        </li>
-                    <?php
-                    }
-
-                    ?>
-                    <?php
-                    foreach ($options as $item) {
-                        ?>
-                        <li class="product-title">
-                            <?php echo $item['category_product'][$language]['name'] ?> <span
-                                class="quantity"> x <?php echo $item['quantity'] ?></span>
+                           <span style="font-weight: normal;font-size: 11px"><?php echo $node->title ?> (<?php echo number_format($node->field_price['und'][0]['value'])?>đ)</span>
+                            <span  style="font-weight: normal;font-size: 11px" class="quantity"> x <?php echo $item['quantity'] ?> (<?php echo number_format($node->field_price['und'][0]['value']*$item['quantity'])?>đ)</span>
                         </li>
                     <?php
                     }
