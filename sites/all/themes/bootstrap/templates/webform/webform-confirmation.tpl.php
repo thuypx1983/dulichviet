@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file
+ * Customize confirmation screen after successful submission.
+ *
+ * This file may be renamed "webform-confirmation-[nid].tpl.php" to target a
+ * specific webform e-mail on your site. Or you can leave it
+ * "webform-confirmation.tpl.php" to affect all webform confirmations on your
+ * site.
+ *
+ * Available variables:
+ * - $node: The node object for this webform.
+ * - $progressbar: The progress bar 100% filled (if configured). This may not
+ *   print out anything if a progress bar is not enabled for this node.
+ * - $confirmation_message: The confirmation message input by the webform
+ *   author.
+ * - $sid: The unique submission ID of this submission.
+ * - $url: The URL of the form (or for in-block confirmations, the same page).
+ */
+?>
+
+<?php
+if (arg(1) == 21) {
+    $language = $GLOBALS['language']->language;
+    module_load_include('inc', 'webform', 'includes/webform.submissions');
+    $sid = (int)$_GET['sid'];
+    $submission = webform_get_submissions(array('sid' => $sid));
+    $submission = array_shift($submission);
+    $data = json_decode($submission->data[1][0], tr);
+    $options = array();
+    $products = array();
+    if (isset($data['product_cart'])) {
+        foreach ($data['product_cart'] as $item) {
+            if (isset($item['nid'])) {
+                $item['product'] = node_load($item['nid']);
+                $products[] = $item;
+            }
+        }
+    }
+    if (isset($data['product_cart_option'])) {
+        $options = $data['product_cart_option'];
+    }
+
+    ?>
+    <div id="cart-done">
+        <div class="product-cart-view add_tocart_popup">
+            <div class="product-cart-popup">
+                <div class="cart-icon"><img class="img_scroll"
+                                            src="<?php print '/sites/all/themes/hueloc/images/icon_poup_cart.png'; ?>">
+                </div>
+                <div class="product-cart-popup-title comfirm">
+                    <span><?php echo t('votre demande a bien été prise en compte') ?></span>
+                </div>
+                <div class="info"><?php echo t('Vous serez recontacté par notre équipe commerciale sous 24h') ?></div>
+                <div class="result_title"><?php echo t('Recapitulatif de votre devis') ?></div>
+                <ul class="product-cart-lists">
+                    <?php
+                    foreach ($products as $item) {
+                        $term = taxonomy_term_load($item['product']->field_category['und'][0]['tid']);
+                        $node = $item['product'];
+                        ?>
+                        <li class="product-title">
+                            <?php echo $term->name ?> &nbsp; - &nbsp;<span><?php echo $node->title ?></span> <span
+                                class="quantity"> x <?php echo $item['quantity'] ?></span>
+                        </li>
+                    <?php
+                    }
+
+                    ?>
+                    <?php
+                    foreach ($options as $item) {
+                        ?>
+                        <li class="product-title">
+                            <?php echo $item['category_product'][$language]['name'] ?> <span
+                                class="quantity"> x <?php echo $item['quantity'] ?></span>
+                        </li>
+                    <?php
+                    }
+
+                    ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+<?php
+}
+?>
+
+
+
