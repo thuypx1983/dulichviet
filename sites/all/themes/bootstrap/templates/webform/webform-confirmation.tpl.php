@@ -27,7 +27,8 @@ if (arg(1) == 21) {
     $sid = (int)$_GET['sid'];
     $submission = webform_get_submissions(array('sid' => $sid));
     $submission = array_shift($submission);
-    $data = json_decode($submission->data[1][0], tr);
+    print_r($submission->data);
+    $data = json_decode($submission->data[1][0], true);
     $options = array();
     $products = array();
     if (isset($data['product_cart'])) {
@@ -37,9 +38,6 @@ if (arg(1) == 21) {
                 $products[] = $item;
             }
         }
-    }
-    if (isset($data['product_cart_option'])) {
-        $options = $data['product_cart_option'];
     }
 
     ?>
@@ -57,7 +55,6 @@ if (arg(1) == 21) {
                 <ul class="product-cart-lists">
                     <?php
                     foreach ($products as $item) {
-                        $term = taxonomy_term_load($item['product']->field_category['und'][0]['tid']);
                         $node = $item['product'];
                         ?>
                         <li class="product-title">
