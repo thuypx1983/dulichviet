@@ -84,6 +84,7 @@ var mobilesize=1280;
             );
             $('.node-type-tour').on('click','.other-date',function(){
                 $('.group-detail-row .horizontal-tab .horizontal-tab-button-2').trigger('click');
+                alert($('.group-detail-row .horizontal-tab .horizontal-tab-button-2').html());
                 $('html,body').animate({scrollTop: $('.group-detail-row .horizontal-tab .horizontal-tab-button-2').offset().top});
                 return false;
             })
