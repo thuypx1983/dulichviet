@@ -47,13 +47,13 @@ if (arg(1) == 21) {
         <div class="product-cart-view add_tocart_popup">
             <div class="product-cart-popup">
                 <div class="cart-icon"><img class="img_scroll"
-                                            src="<?php print '/sites/all/themes/hueloc/images/icon_poup_cart.png'; ?>">
+                                            src="<?php print '/sites/all/themes/bootstrap/images/icon_poup_cart.png'; ?>">
                 </div>
                 <div class="product-cart-popup-title comfirm">
-                    <span><?php echo t('votre demande a bien été prise en compte') ?></span>
+                    <span><?php echo t('Cảm ơn quý khách đã đặt dịch vụ tại Hoàng Việt Travel') ?></span>
                 </div>
-                <div class="info"><?php echo t('Vous serez recontacté par notre équipe commerciale sous 24h') ?></div>
-                <div class="result_title"><?php echo t('Recapitulatif de votre devis') ?></div>
+                <div class="info"><?php echo t('Quý khách vui lòng đến trụ sở Hoàng việt Travel hoàn tất giao dịch ') ?></div>
+                <div class="result_title"><?php echo t('Hãy hoàn tất thanh toán tại Hoàng Việt Travel') ?></div>
                 <ul class="product-cart-lists">
                     <?php
                     foreach ($products as $item) {
