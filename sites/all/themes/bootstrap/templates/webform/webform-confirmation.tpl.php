@@ -22,6 +22,8 @@
 
 <?php
 if (arg(1) == 21) {
+    drupal_session_start();
+    unset($_SESSION['product_cart']);
     $language = $GLOBALS['language']->language;
     module_load_include('inc', 'webform', 'includes/webform.submissions');
     $sid = (int)$_GET['sid'];
