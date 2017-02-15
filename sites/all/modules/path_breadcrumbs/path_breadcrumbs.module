@@ -333,7 +333,7 @@ function path_breadcrumbs_breadcrumb($variables) {
                 $title=$result[2];
                 $output.='<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
                 $output.='<a itemprop="item" href="'.$url.'">
-                    <span itemprop="name">'.$title.'</span></a>
+                    <span itemprop="name">'.$breadcrumb.$title.'</span></a>
                     <meta itemprop="position" content="'.$i.'" />';
                 $output.='</li>';
                 $i++;
