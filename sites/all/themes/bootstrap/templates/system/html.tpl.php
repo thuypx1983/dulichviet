@@ -103,8 +103,7 @@
     }
   }
 
-  $termid = arg(2);
-  $term = taxonomy_term_load($termid);
+  $term = menu_get_object('taxonomy_term', 2);
   if($term){
     if(property_exists($term, 'field_star')){
       $field_star=$term->field_star['und'];
