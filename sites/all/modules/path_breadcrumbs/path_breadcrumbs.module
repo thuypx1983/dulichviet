@@ -335,7 +335,7 @@ function path_breadcrumbs_breadcrumb($variables) {
             $url=$result[1];
             $title=$result[2];
             if ($term) {
-                if($term->vid=2){
+                if($term->vid=2 && $i>1){
                     $title='Du lịch '.strtolower($title);
                 }
             }
