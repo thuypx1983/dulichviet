@@ -328,15 +328,19 @@ function path_breadcrumbs_breadcrumb($variables) {
         $output=' <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">';
         $i=1;
         foreach($variables['breadcrumb'] as $breadcrumb){
-            preg_match('/<a href=\"([^\"]*)\">(.*)<\/a>/iU', $breadcrumb, $result);
-            $url=$result[1];
-            $title=$result[2];
-            $output.='<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
-            $output.='<a itemprop="item" href="'.$url.'">
+            if(preg_match('/<a href=\"([^\"]*)\">(.*)<\/a>/iU', $breadcrumb, $result)){
+                $url=$result[1];
+                $title=$result[2];
+                $output.='<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
+                $output.='<a itemprop="item" href="'.$url.'">
                     <span itemprop="name">'.$title.'</span></a>
                     <meta itemprop="position" content="'.$i.'" />';
-            $output.='</li>';
-            $i++;
+                $output.='</li>';
+                $i++;
+            }else{
+                $output.='<li>'.$breadcrumb.'</li>';
+            }
+
         }
         $output.='</ol>';
         return $output;
