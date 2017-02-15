@@ -119,7 +119,7 @@
                               },
                               "author": {
                                 "@type": "Person",
-                                "name": "Hoang viet travel" <!--Tên người upload bài-->
+                                "name": "Hoang viet travel"
                               },
                               "reviewRating": {
                                 "@type": "Rating",
