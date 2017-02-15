@@ -201,6 +201,8 @@
   }
 }
 .group-detail-right{
+  display: table-cell;
+  width: 350px;
   vertical-align: top;
   border: 1px solid #ccc;
   .node-tour{

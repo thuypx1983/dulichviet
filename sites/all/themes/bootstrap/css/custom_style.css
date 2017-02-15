@@ -1927,35 +1927,37 @@ body.html .footer-3 span {
 
 /* line 203, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right {
+  display: table-cell;
+  width: 350px;
   vertical-align: top;
   border: 1px solid #ccc;
 }
-/* line 206, ../scss/pages/_page-tour-detail.scss */
+/* line 208, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .node-tour {
   border: none;
 }
-/* line 208, ../scss/pages/_page-tour-detail.scss */
+/* line 210, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .node-tour .field-name-field-price {
   bottom: inherit;
   position: inherit;
   right: inherit;
 }
-/* line 214, ../scss/pages/_page-tour-detail.scss */
+/* line 216, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .field-type-node-reference {
   padding: 10px;
 }
-/* line 216, ../scss/pages/_page-tour-detail.scss */
+/* line 218, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .field-type-node-reference > .field-label {
   border-bottom: 1px solid #ccc;
   font-size: 18px;
   padding: 10px 0px 0px 0px;
   text-transform: uppercase;
 }
-/* line 222, ../scss/pages/_page-tour-detail.scss */
+/* line 224, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .field-type-node-reference .node-tour {
   padding: 0px;
 }
-/* line 227, ../scss/pages/_page-tour-detail.scss */
+/* line 229, ../scss/pages/_page-tour-detail.scss */
 .group-detail-right .field-type-node-reference header h2 a {
   color: #e27a1a;
   font-size: 16px;
@@ -1964,40 +1966,40 @@ body.html .footer-3 span {
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 240, ../scss/pages/_page-tour-detail.scss */
+  /* line 242, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-left {
     float: none;
     width: 100%;
   }
-  /* line 244, ../scss/pages/_page-tour-detail.scss */
+  /* line 246, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-right {
     float: none;
     width: 100%;
     padding-left: 0px;
   }
-  /* line 250, ../scss/pages/_page-tour-detail.scss */
+  /* line 252, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail {
     display: block;
   }
-  /* line 253, ../scss/pages/_page-tour-detail.scss */
+  /* line 255, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left {
     display: none;
   }
-  /* line 256, ../scss/pages/_page-tour-detail.scss */
+  /* line 258, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left-right {
     float: none;
     width: 100%;
   }
-  /* line 264, ../scss/pages/_page-tour-detail.scss */
+  /* line 266, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper {
     display: block !important;
   }
-  /* line 266, ../scss/pages/_page-tour-detail.scss */
+  /* line 268, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-left {
     display: block;
     padding-right: 0px;
   }
-  /* line 270, ../scss/pages/_page-tour-detail.scss */
+  /* line 272, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .group-detail-row .field-group-format-wrapper .group-detail-right {
     display: block;
     padding-right: 0px;
@@ -2005,18 +2007,18 @@ body.html .footer-3 span {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 283, ../scss/pages/_page-tour-detail.scss */
+  /* line 285, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .node.node-tour {
     padding: 15px 5px;
   }
-  /* line 287, ../scss/pages/_page-tour-detail.scss */
+  /* line 289, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .node.node-tour .field-group-format-wrapper .form-group .btn-product-cart {
     position: relative;
     right: 0px;
     bottom: -10px;
   }
 
-  /* line 298, ../scss/pages/_page-tour-detail.scss */
+  /* line 300, ../scss/pages/_page-tour-detail.scss */
   .node-type-tour .horizontal-tabs ul.horizontal-tabs-list li {
     width: 100% !important;
     border-bottom: 1px solid #ffffff;
