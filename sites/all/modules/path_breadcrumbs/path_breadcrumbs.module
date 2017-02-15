@@ -326,10 +326,7 @@ function path_breadcrumbs_breadcrumb($variables) {
     if (!path_is_admin(current_path())) {
         // Do stuff.
         $term = menu_get_object('taxonomy_term', 2);
-        if ($term) {
-            print_r($term);
-            // User is on a taxonomy term page
-        }
+
         $output=' <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">';
         $i=1;
         foreach($variables['breadcrumb'] as $breadcrumb){
@@ -337,6 +334,11 @@ function path_breadcrumbs_breadcrumb($variables) {
 
             $url=$result[1];
             $title=$result[2];
+            if ($term) {
+                if($term->vid=2){
+                    $title='Du lịch '.strtolower($title);
+                }
+            }
             if($url){
                 $output.='<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
                 $output.='<a itemprop="item" href="'.$url.'">
