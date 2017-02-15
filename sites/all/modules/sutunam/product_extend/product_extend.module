@@ -20,12 +20,7 @@ function product_extend_node_view($node, $view_mode, $langcode) {
                 '#markup' =>  '<h1>'.$node->title.'</h1>',
             );
             break;
-        case 'article':
-            $node->content['article_title'] = array(
-                '#type' => 'item',
-                '#title' => '',
-                '#markup' =>  '<h1>'.$node->title.'</h1>',
-            );
+
             break;
     }
 }
@@ -48,13 +43,6 @@ function product_extend_field_extra_fields() {
             'description' => t('Title.'),
             'weight' => 12,
         )
-    );
-    $extra['node']['article']['display'] = array(
-        'article_title' => array(
-            'label' => t('Title'),
-            'description' => t('Title.'),
-            'weight' => 12,
-        ),
     );
     return $extra;
 }
