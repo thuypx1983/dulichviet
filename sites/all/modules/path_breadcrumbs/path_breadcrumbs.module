@@ -325,6 +325,11 @@ function path_breadcrumbs_breadcrumb($variables) {
 
     if (!path_is_admin(current_path())) {
         // Do stuff.
+        $term = menu_get_object('taxonomy_term', 2);
+        if ($term) {
+            print_r($term);
+            // User is on a taxonomy term page
+        }
         $output=' <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">';
         $i=1;
         foreach($variables['breadcrumb'] as $breadcrumb){
