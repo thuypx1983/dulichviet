@@ -1643,6 +1643,11 @@ body.html .footer-3 span {
   color: #ffffff;
 }
 
+/* line 17, ../scss/components/_shopping-cart.scss */
+#webform-client-form-21 table {
+  display: table !important;
+}
+
 /* line 2, ../scss/components/_news-detail.scss */
 .node-article .submitted {
   display: block;
