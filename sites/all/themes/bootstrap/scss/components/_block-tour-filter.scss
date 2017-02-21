@@ -88,7 +88,7 @@
   }
 }
 
-@include bp(max-width,376px){
+@include bp(max-width,$bp-tablet){
   .block {
     &.block-tour-filter {
       .views-exposed-form {
