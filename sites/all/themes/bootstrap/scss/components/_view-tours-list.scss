@@ -62,7 +62,7 @@
     }
   }
   .view-content{
-    display: table-cell;
+    display: table;
     padding-top: 60px;
     .views-row{
       border: 1px solid $color_box;
@@ -71,11 +71,6 @@
       padding: 10px 5px ;
     }
 
-  }
-}
-.view-tours-list.view-dom-id-b5c3bda8285f407e74cae4a4924fbaed {
-  .view-content{
-    display: table !important;
   }
 }
 .view-tours-list{
