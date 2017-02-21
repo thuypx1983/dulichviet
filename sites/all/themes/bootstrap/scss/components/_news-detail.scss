@@ -4,3 +4,20 @@
     margin-top: 10px
   }
 }
+.node-type-article{
+  .field-name-field-social-share-1{
+    padding-top: 15px;
+  }
+  .field-name-field-tags{
+    padding-top: 15px;
+    .field-items{
+      .field-item{
+        display: inline-block;
+        padding-right: 10px;
+        a{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
