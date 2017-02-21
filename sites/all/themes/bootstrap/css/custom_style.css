@@ -1006,67 +1006,72 @@ body.html .footer-3 span {
   padding: 10px 5px;
 }
 
-/* line 78, ../scss/components/_view-tours-list.scss */
+/* line 77, ../scss/components/_view-tours-list.scss */
+.view-tours-list.view-dom-id-b5c3bda8285f407e74cae4a4924fbaed .view-content {
+  display: table !important;
+}
+
+/* line 83, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content {
   display: table;
   width: 100%;
 }
-/* line 81, ../scss/components/_view-tours-list.scss */
+/* line 86, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .views-field-field-image {
   display: table-cell;
   vertical-align: top;
   width: 40%;
   border: 1px solid #ccc;
 }
-/* line 86, ../scss/components/_view-tours-list.scss */
+/* line 91, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .views-field-field-image img {
   width: 100%;
 }
-/* line 90, ../scss/components/_view-tours-list.scss */
+/* line 95, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right {
   position: relative;
   vertical-align: top;
   display: table-cell;
   padding-left: 10px;
 }
-/* line 96, ../scss/components/_view-tours-list.scss */
+/* line 101, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-title h2 {
   font-size: 15px;
   color: #0493b4;
   margin-top: 0px;
   margin-bottom: 15px;
 }
-/* line 104, ../scss/components/_view-tours-list.scss */
+/* line 109, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field > * {
   display: inline-block;
 }
-/* line 107, ../scss/components/_view-tours-list.scss */
+/* line 112, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field .views-label {
   padding-right: 10px;
 }
-/* line 111, ../scss/components/_view-tours-list.scss */
+/* line 116, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-duration {
   margin: 10px 0px;
 }
-/* line 113, ../scss/components/_view-tours-list.scss */
+/* line 118, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-duration .views-label {
   background-color: #e7e7e7;
   border: 1px solid #ddd;
   color: #555;
   padding: 5px 10px;
 }
-/* line 119, ../scss/components/_view-tours-list.scss */
+/* line 124, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-duration .field-content {
   background-color: #555;
   border: 1px solid #555;
   color: #fff;
   padding: 5px 10px;
 }
-/* line 126, ../scss/components/_view-tours-list.scss */
+/* line 131, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-journey {
   font-weight: bold;
 }
-/* line 129, ../scss/components/_view-tours-list.scss */
+/* line 134, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-view-node {
   position: absolute;
   bottom: 10px;
@@ -1074,64 +1079,64 @@ body.html .footer-3 span {
   background-color: #e27a1a;
   padding: 6px 10px;
 }
-/* line 136, ../scss/components/_view-tours-list.scss */
+/* line 141, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-view-node a {
   color: #fff;
 }
-/* line 140, ../scss/components/_view-tours-list.scss */
+/* line 145, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-price {
   position: absolute;
   right: 10px;
   top: 40%;
   transform: translate(0, -40%);
 }
-/* line 145, ../scss/components/_view-tours-list.scss */
+/* line 150, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-price .views-label {
   line-height: 25px;
 }
-/* line 148, ../scss/components/_view-tours-list.scss */
+/* line 153, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-price .field-content {
   color: #e27a1a;
   font-size: 25px;
   font-weight: bold;
 }
-/* line 154, ../scss/components/_view-tours-list.scss */
+/* line 159, ../scss/components/_view-tours-list.scss */
 .view-tours-list .views-row .view-row-content .right .views-field-field-promotion {
   color: #e27a1a;
   margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 164, ../scss/components/_view-tours-list.scss */
+  /* line 169, ../scss/components/_view-tours-list.scss */
   .view-id-tours_list {
     display: block;
   }
-  /* line 167, ../scss/components/_view-tours-list.scss */
+  /* line 172, ../scss/components/_view-tours-list.scss */
   .view-id-tours_list .view-filters {
     display: block;
     width: 100%;
   }
-  /* line 171, ../scss/components/_view-tours-list.scss */
+  /* line 176, ../scss/components/_view-tours-list.scss */
   .view-id-tours_list .view-filters #edit-sort-bef-combine-wrapper {
     display: block;
     width: 100%;
     position: relative;
     left: 0px;
   }
-  /* line 176, ../scss/components/_view-tours-list.scss */
+  /* line 181, ../scss/components/_view-tours-list.scss */
   .view-id-tours_list .view-filters #views-exposed-form-tours-list-page {
     padding-left: 0px;
   }
-  /* line 179, ../scss/components/_view-tours-list.scss */
+  /* line 184, ../scss/components/_view-tours-list.scss */
   .view-id-tours_list .view-filters #views-exposed-form-tours-list-page .views-exposed-widget .form-item {
     display: inline-block;
     padding: 5px;
   }
-  /* line 185, ../scss/components/_view-tours-list.scss */
+  /* line 190, ../scss/components/_view-tours-list.scss */
   .view-id-tours_list .view-filters #views-exposed-form-tours-list-page #edit-sort-bef-combine-wrapper {
     display: none;
   }
-  /* line 190, ../scss/components/_view-tours-list.scss */
+  /* line 195, ../scss/components/_view-tours-list.scss */
   .view-id-tours_list .view-header {
     display: block;
     width: 100%;
@@ -1139,18 +1144,18 @@ body.html .footer-3 span {
     left: 0px;
     margin-bottom: 20px;
   }
-  /* line 197, ../scss/components/_view-tours-list.scss */
+  /* line 202, ../scss/components/_view-tours-list.scss */
   .view-id-tours_list .view-content {
     padding-top: 10px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 205, ../scss/components/_view-tours-list.scss */
+  /* line 210, ../scss/components/_view-tours-list.scss */
   .view-tours-list .view-content .view-row-content {
     display: inline-block;
     width: 100%;
   }
-  /* line 208, ../scss/components/_view-tours-list.scss */
+  /* line 213, ../scss/components/_view-tours-list.scss */
   .view-tours-list .view-content .view-row-content > div.right {
     display: block;
   }
