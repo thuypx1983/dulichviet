@@ -568,7 +568,7 @@ body.html .footer-3 span {
     padding-right: 0px;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 991px) {
   /* line 95, ../scss/components/_block-tour-filter.scss */
   .block.block-tour-filter .views-exposed-form .views-exposed-widget {
     width: 100%;
