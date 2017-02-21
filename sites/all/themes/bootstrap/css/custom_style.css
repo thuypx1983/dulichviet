@@ -1678,6 +1678,10 @@ body.html .footer-3 span {
 .node-type-article .field-name-field-tags .field-items .field-item a {
   font-weight: bold;
 }
+/* line 19, ../scss/components/_news-detail.scss */
+.node-type-article .field-name-field-tags .field-items .field-item a:after {
+  content: ',';
+}
 
 /* line 1, ../scss/components/_hotline.scss */
 .mda-hotle {

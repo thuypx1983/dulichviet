@@ -16,6 +16,9 @@
         padding-right: 10px;
         a{
           font-weight: bold;
+          &:after{
+            content: ',';
+          }
         }
       }
     }
