@@ -79,3 +79,10 @@ h1.page-header {
     height: auto !important;
   }
 }
+
+@include bp(max-width,$bp-small){
+  #back-top{
+    left: -14px !important;
+    right: auto !important;
+  }
+}

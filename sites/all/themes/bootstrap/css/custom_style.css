@@ -171,6 +171,13 @@ h1.page-header span {
   height: auto !important;
 }
 
+@media only screen and (max-width: 480px) {
+  /* line 84, ../scss/global/_general.scss */
+  #back-top {
+    left: -14px !important;
+    right: auto !important;
+  }
+}
 /* line 3, ../scss/global/_header.scss */
 .region-header .block-logo .block-content {
   padding-right: 0;
