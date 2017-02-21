@@ -620,7 +620,7 @@ body.html .footer-3 span {
   bottom: 0px;
   width: 100%;
   padding: 10px 5px;
-  background-color: rgba(17, 17, 17, 0.6);
+  background-color: rgba(88, 0, 152, 0.6);
 }
 /* line 30, ../scss/components/_block-tour-hot.scss */
 .item-tour-hot .view-row-content .tour-info a {
@@ -1213,7 +1213,7 @@ body.html .footer-3 span {
   bottom: 0px;
   width: 100%;
   padding: 10px 5px;
-  background-color: rgba(17, 17, 17, 0.6);
+  background-color: rgba(88, 0, 152, 0.6);
 }
 /* line 58, ../scss/components/_view-tours-list-1.scss */
 .view-product-list-1 .tour-hot-info a {
