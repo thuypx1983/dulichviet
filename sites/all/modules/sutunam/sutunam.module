@@ -10,7 +10,7 @@ function sutunam_views_query_alter(&$view, &$query) {
 
         // User the provider uid to make the results distinct: using a taxonomy field for
         // keyword searches brings up multiple results.
-        $query->groupBy('node.nid');
+        $query->add_groupby('node.nid');
 
     }
 }
