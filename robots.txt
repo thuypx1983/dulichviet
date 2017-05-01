@@ -1,50 +1,25 @@
-
 User-agent: *
-
 Allow: /
-Crawl-delay: 10
-
-
 # CSS, JS, Images
-
 Allow: /misc/*.css$
-
 Allow: /misc/*.css?
-
 Allow: /misc/*.js$
-
 Allow: /misc/*.js?
-
 Allow: /misc/*.gif
-
 Allow: /misc/*.jpg
-
 Allow: /misc/*.jpeg
-
 Allow: /misc/*.png
-
 Allow: /modules/*.css$
-
 Allow: /modules/*.css?
-
 Allow: /modules/*.js$
-
 Allow: /modules/*.js?
-
 Allow: /modules/*.gif
-
 Allow: /modules/*.jpg
-
 Allow: /modules/*.jpeg
-
 Allow: /modules/*.png
-
 Allow: /profiles/*.css$
-
 Allow: /profiles/*.css?
-
 Allow: /profiles/*.js$
-
 Allow: /profiles/*.js?
 
 Allow: /profiles/*.gif
@@ -149,3 +124,4 @@ Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 
 Disallow: /?q=user/logout/
+Sitemap: http://www.hoangviettravel.com.vn/sitemap.xml
