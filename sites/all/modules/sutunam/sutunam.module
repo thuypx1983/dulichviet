@@ -23,3 +23,16 @@ function sutunam_views_pre_execute(&$view)
         $view->build_info['query']->groupby('nid');
     }
 }
+
+/**
+ *  Implementation of hook_form_alter().
+ */
+
+function sutunam_form_views_exposed_form_alter(&$form, &$form_state) {
+
+    if($form['#id'] == 'views-exposed-form-search-tour-page') {
+        $form['field_departure_day_value']['value']['#date_format'] = 'm-d-Y';
+        $form['field_departure_day_value_1']['value']['#date_format'] = 'm-d-Y';
+    }
+
+}
