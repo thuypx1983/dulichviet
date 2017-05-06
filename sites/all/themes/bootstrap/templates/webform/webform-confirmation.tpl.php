@@ -19,77 +19,16 @@
  * - $url: The URL of the form (or for in-block confirmations, the same page).
  */
 ?>
+<?php print $progressbar; ?>
 
-<?php
-if (arg(1) == 21) {
-    drupal_session_start();
-    unset($_SESSION['product_cart']);
-    $language = $GLOBALS['language']->language;
-    module_load_include('inc', 'webform', 'includes/webform.submissions');
-    $sid = (int)$_GET['sid'];
-    $submission = webform_get_submissions(array('sid' => $sid));
-    $submission = array_shift($submission);
-    $data = json_decode($submission->data[2][0], true);
-    $products = array();
-    if (isset($data)) {
-        foreach ($data as $item) {
-            if (isset($item['nid'])) {
-                $item['product'] = node_load($item['nid']);
-                $products[] = $item;
-            }
-        }
-    }
+<div class="webform-confirmation">
+    <?php if ($confirmation_message): ?>
+        <?php print $confirmation_message ?>
+    <?php else: ?>
+        <p><?php print t('Thank you, your submission has been received.'); ?></p>
+    <?php endif; ?>
+</div>
 
-    ?>
-    <div id="cart-done">
-        <div class="product-cart-view add_tocart_popup">
-            <div class="product-cart-popup">
-                <div class="cart-icon"><img class="img_scroll"
-                                            src="<?php print '/sites/all/themes/bootstrap/images/icon_poup_cart.png'; ?>">
-                </div>
-                <div class="product-cart-popup-title comfirm">
-                    <span><?php echo t('Cảm ơn quý khách đã đặt dịch vụ tại Hoàng Việt Travel') ?></span>
-                </div>
-                <div class="info"><?php echo t('Quý khách vui lòng đến trụ sở Hoàng việt Travel hoàn tất giao dịch ') ?></div>
-                <div class="result_title"><?php echo t('Hãy hoàn tất thanh toán tại Hoàng Việt Travel') ?></div>
-                <div style="margin: 0 auto; width: 50%">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 " style="text-align: left">
-                            <div><b>Địa chỉ</b></div>
-                            <div>
-                            <span>
-                            Số 62, Trần Quốc Toản, P. Trần Hưng Đạo, Q. Hoàn Kiếm, Hà Nội.
-                        </span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 " style="text-align: left">
-                            <div><b>Đơn hàng</b></div>
-                            <div>
-                                <span>Mã đơn hàng: HVTV<?php echo $sid?></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="product-cart-lists">
-                    <?php
-                    foreach ($products as $item) {
-                        $node = $item['product'];
-                        ?>
-                        <li class="product-title">
-                           <span style="font-weight: normal;font-size: 11px"><?php echo $node->title ?> (<?php echo number_format($node->field_price['und'][0]['value'])?>đ)</span>
-                            <span  style="font-weight: normal;font-size: 11px" class="quantity"> x <?php echo $item['quantity'] ?> (<?php echo number_format($node->field_price['und'][0]['value']*$item['quantity'])?>đ)</span>
-                        </li>
-                    <?php
-                    }
-
-                    ?>
-                </ul>
-            </div>
-        </div>
-    </div>
-<?php
-}
-?>
-
-
-
+<div class="links">
+    <a href="<?php print $url; ?>"><?php print t('Go back to the form'); ?></a>
+</div>
