@@ -175,12 +175,13 @@
             var destination=$('#views-exposed-form-search-tour-page #edit-term-node-tid-depth');
             type.change(function(){
                 filterDiemDen(type.val());
+              destination.val('All');
             })
             $(function(){
                 filterDiemDen(type.val());
             })
             function filterDiemDen(type){
-                destination.val('All');
+
                 switch (type){
                     case "0":
                         destination.find('option').each(function(){
@@ -188,7 +189,10 @@
                             if(diem_den_trong_nuoc.indexOf(value) > -1){
                                 $(this).show();
                             }else{
-                                $(this).hide();
+                                if($(this).val()!='All'){
+                                  $(this).hide();
+                                }
+
                             }
                         })
 
@@ -199,7 +203,9 @@
                             if(diem_den_nuoc_ngoai.indexOf(value) > -1){
                                 $(this).show();
                             }else{
+                              if($(this).val()!='All'){
                                 $(this).hide();
+                              }
                             }
                         })
                         break;
