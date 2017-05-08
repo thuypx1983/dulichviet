@@ -86,3 +86,221 @@ h1.page-header {
     right: auto !important;
   }
 }
+
+/*
+ * Anhnq Custom Style
+ */
+
+ /* Vars */
+$color-redhightlight: #c51f21;
+$color-brand: #5ca038;
+
+ /* New Styles */
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid $color-redhightlight;
+}
+
+.block.block-tour-filter {
+    width: 100% !important;
+
+	.block-wapper{ padding: 0; }
+	.block-title{ display: none; }
+	.block-content .views-exposed-form .views-exposed-widgets .views-exposed-widget{ width: 14%; }
+}
+
+.item-tour-hot .view-row-content .tour-info {
+    background-color: rgba(92,160, 56,0.6);
+}
+
+.mda-hotle .mda-hotle-img { width: 197px; }
+
+#back-top { display:none; }
+
+.block-review {
+	border:initial;
+
+	.block-content{
+		padding-left: 0;
+		.slide__content{
+			padding: 10px;
+		}
+		.views-field-title{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			line-height: 16px;
+			height: 32px;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			margin-bottom: 15px;
+		}
+		.views-field-body{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			line-height: 16px;
+			max-height: 48px;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			margin-bottom: 10px;
+		}
+	}
+	.block-content:before{
+		display: none;
+	}
+
+}
+
+.why-us {
+	margin: 25px 0;
+	.block-title {
+		margin-top: initial;
+	}
+}
+
+.fixed-filterbar{
+	position: fixed !important;
+	z-index: 10;
+	top: 0;
+	bottom: initial !important;
+}
+
+.view-empty {
+	h2, h3 {
+		text-align: center;
+		font-weight: bold;
+		color: $color-redhightlight;
+	}
+	h2 {margin-top: 50px;}
+	h3 {margin-bottom: 50px;}
+}
+
+.block-weform-subcription{
+	border: initial;
+	.block-wapper {
+		width: 50%;
+		border: 1px solid #ccc;
+		padding: 30px 10px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+#block-views-feedback-block {
+	.slide__content {
+		margin-bottom: 20px;
+
+		.views-field-field-image {
+			height: 200px;
+			overflow: hidden;
+		}
+
+		img {
+			height: 100% !important;
+			object-fit: cover;
+		}
+
+		.views-field.views-field-title {
+			text-align: center;
+			font-weight: bold;
+			margin-top: 10px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			line-height: 16px;
+			height: 32px;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+#block-views-review-block,
+#block-views-feedback-block {
+	.block-title {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 30px;
+		font-weight: bold;
+		font-size: 22px;
+		color: $color-brand;
+	}
+}
+
+.container-inline-date .form-item, .container-inline-date .form-item input{ width: 100%; }
+/*
+ * Trunglh Custom Style
+ */
+
+ /* Vars */
+
+ /* New Styles */
+
+
+ #block-system-main {
+     .view-row-content {
+       text-align: center;
+       img {
+         margin: 0 auto;
+       }
+     }
+ }
+ #back-top {
+	span#button {
+		background-color: initial;
+		opacity: 1;
+		margin-bottom: 70px;
+		margin-left: 18px;
+		&:hover {
+		background-color:initial;
+		}
+		}
+	span#link {
+		display: none;
+		}	
+}
+.input-signup-wrapper .input-signup-block {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+#node-476 .form-actions {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.node-type-tour .group-price-detail > .field-group-format-wrapper .group-price-left-right {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+.field-name-field-prices {
+  th {
+    text-align: center;
+    border: 1px solid !important;
+  }
+  td {
+    border: 1px solid;
+  }
+    button {
+    background-color: #5ca038;
+    border-radius: 5px;
+    color: white;
+  }
+  .field-label {
+    margin-bottom: 10px
+  }
+}
+#quicktabs-related_tours {
+  li.active a{
+    background: #5ca038 !important;
+    border: none !important;
+  }
+  li a:hover {
+    background: #e27a1a;
+    border: none;
+  }
+}

@@ -60,6 +60,21 @@
                 }
             );
         });
+		
+		
+		// Anhnq Custom
+		// Filter bar fixed top after scroll		
+		var filterbar = $('#block-views-exp-search-tour-page');
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 555) {
+				filterbar.addClass('fixed-filterbar');
+			} else {
+				filterbar.removeClass('fixed-filterbar');
+			}
+		});
+		
+		$('#edit-submit-search-tour').html('<span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>');
+		
     })
 
     $(function() {
