@@ -36,3 +36,10 @@ function sutunam_form_views_exposed_form_alter(&$form, &$form_state) {
     }
 
 }
+
+function sutunam_node_view($node, $view_mode, $langcode) {
+
+
+  //unset($node->field_departure_day[LANGUAGE_NONE][0]);
+  //field_attach_update('node', $node);
+}
