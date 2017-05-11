@@ -208,7 +208,7 @@ function modal_forms_comment_reply($js = NULL, $node, $pid = NULL) {
  */
 function modal_forms_view_webform($js = NULL, $node) {
   $output = array();
-
+    //thuypx added
     $nid=(int)$_GET['nid'];
   $n=node_load($nid);
   // Fall back if $js is not set.
@@ -241,7 +241,7 @@ function modal_forms_view_webform($js = NULL, $node) {
   // Pass required parameters.
   $form_state['build_info']['args'] = array($node, FALSE);
 
-    $form_state['build_info']['args'][0]->webform['components'][5]['value']='Tour: '.$n->title.' '.url('node/'.$n->nid);
+    $form_state['build_info']['args'][0]->webform['components'][5]['value']='Tour: '.$n->title.' '.url('node/'.$n->nid).' - Khởi hành ';
 
   $output = ctools_modal_form_wrapper('webform_client_form_' . $node->nid, $form_state);
 

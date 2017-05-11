@@ -97,6 +97,14 @@ function field_collection_table_field_formatter_view($entity_type, $entity, $fie
         $content = $view['field_collection_item'][$field_collection->identifier()];
         $column = array();
         foreach ($field_names as $field_name) {
+
+          //thuypx added
+          if($field_name=='field_book'){
+            $date=date('d/m/Y',strtotime($field_collection->field_start_date['und'][0]['value']));
+            $content[$field_name][0]['#markup']='<button class="btn-product-cart" tour="'.$entity->title.'" date="'.$date.'">Đặt Tour</button>';
+          }
+
+
           if (isset($content[$field_name])) {
             $content[$field_name]['#label_display'] = 'hidden';
           }

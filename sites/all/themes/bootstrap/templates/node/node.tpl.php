@@ -79,6 +79,17 @@
  * @ingroup templates
  */
 ?>
+<?php
+if ($node = menu_get_object()) {
+  // Get the nid
+  $nid = $node->nid;
+  ?>
+  <script type="text/javascript">
+    var nid=<?php echo $nid?>;
+  </script>
+<?php
+}
+?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
