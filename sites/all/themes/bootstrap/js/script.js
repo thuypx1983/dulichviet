@@ -60,6 +60,26 @@
                 }
             );
         });
+
+        $('.view-search-tour .views-field-field-departure-day').each(function(){
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; //January is 0!
+            var yyyy = today.getFullYear();
+
+            if(dd<10) {
+                dd='0'+dd
+            }
+
+            if(mm<10) {
+                mm='0'+mm
+            }
+
+            today = dd+'/'+mm+'/'+yyyy;
+            if($(this).text().indexOf(today) > -1){
+                $(this).addClass('current-date')
+            }
+        })
     })
 
     $(function() {
