@@ -31,8 +31,8 @@ function sutunam_views_pre_execute(&$view)
 function sutunam_form_views_exposed_form_alter(&$form, &$form_state) {
 
     if($form['#id'] == 'views-exposed-form-search-tour-page') {
-        $form['field_departure_day_value']['value']['#date_format'] = 'm-d-Y';
-        $form['field_departure_day_value_1']['value']['#date_format'] = 'm-d-Y';
+        $form['field_departure_day_value']['value']['#date_format'] = 'd/m/Y';
+        $form['field_departure_day_value_1']['value']['#date_format'] = 'd/m/Y';
     }
 
 }
