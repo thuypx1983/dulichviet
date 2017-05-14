@@ -136,6 +136,15 @@
 
   }
   ?>
+
+  <style type="text/css">
+    #block-webform-client-block-470{
+      display: none;
+    }
+    .webform-component--product{
+      display: none !important;
+    }
+  </style>
 </head>
 <body<?php print $body_attributes; ?>>
   <div id="skip-link">
