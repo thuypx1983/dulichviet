@@ -1837,6 +1837,7 @@ body.html .footer-3 span {
   text-transform: uppercase;
   display: inline-block;
   margin-top: 5px;
+  display: none;
 }
 /* line 100, ../scss/pages/_page-tour-detail.scss */
 .node-type-tour .field-name-field-price .field-label {
@@ -2084,9 +2085,6 @@ body.html .footer-3 span {
 .mda-hotle .mda-hotle-img {
   width: 197px; }
 
-#back-top {
-  display: none; }
-
 .block-review {
   border: initial; }
   .block-review .block-content {
@@ -2175,16 +2173,72 @@ body.html .footer-3 span {
 
 .container-inline-date .form-item, .container-inline-date .form-item input {
   width: 100%; }
+  
+.tableheader-processed .btn-product-cart {
+    background-color: #e27a1a;
+    color: #ffffff;
+    text-transform: uppercase;
+	border: initial;
+}
+
+@media only screen and (max-width: 991px) {
+  .block.block-tour-filter {
+    display: none;
+    position: fixed !important;
+    margin-top: initial !important;
+    top: 0;
+    padding: 30px 20px;
+    background-color: rgba(1, 1, 1, 0.5);
+	z-index: 5; }
+    
+	.block.block-tour-filter .block-content .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+      width: 100% !important; }
+	  
+  .block-tour-filter-clone .views-exposed-form .views-exposed-widget {
+    width: 50%; }
+  .block-tour-filter-clone .container-inline-date .date-padding {
+    width: 100%; }
+	
+	p#copyright-text{margin-bottom: 65px;}
+	
+
+  .mobile-footer-toolbar .mobile-footer-toolbar-wrapper {
+    display: table;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 5; }
+    .mobile-footer-toolbar .mobile-footer-toolbar-wrapper a {
+      width: calc(100%/3);
+      background-color: #5ca038;
+      padding: 25px 0;
+      vertical-align: middle;
+      display: table-cell;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      border: 1px solid; } 
+	  
+	  #back-top { display: none !important; }
+	  
+}
+@media only screen and (max-width: 480px) {
+  #back-top {
+    display: none !important; } }
 
   /*
    * Trunglh Custom Style
    */
 
-   
-   #block-system-main .view-row-content {
-     text-align: center; }
-   #block-system-main .view-row-content img {
-     margin: 0 auto; }
+#block-system-main td.views-field-title{
+  text-align: initial; }
+#block-system-main .views-field-title {
+  text-align: center;
+  font-weight: bold; }
+  #block-system-main .views-field-title h2 {
+    text-align: initial; }
+#block-system-main img {
+  margin: 15px auto; }
    #back-top span#button {
 	  background-color: initial;
 	  opacity: 1;
@@ -2213,10 +2267,13 @@ body.html .footer-3 span {
   border: 1px solid !important; }
 .field-name-field-prices td {
   border: 1px solid; }
-  .field-name-field-prices button {
-  background-color: #5ca038;
+.field-name-field-prices .field-items .even a {
+  background: #e27a1a;
   border-radius: 5px;
-  color: white; }
+  color: white;
+  padding: 5px 10px; }
+  .field-name-field-prices .field-items .even a:hover {
+    background: #5ca038; }
 .field-name-field-prices .field-label {
   margin-bottom: 10px; }
 #quicktabs-related_tours li.active a {
@@ -2225,4 +2282,23 @@ body.html .footer-3 span {
 #quicktabs-related_tours li a:hover {
   background: #e27a1a;
   border: none; }
+  li.mda-link {
+  visibility: hidden; }
+  .region-header input {
+  border: 2px solid #dd4814; }
+.region-header span.block-title {
+  border: 2px solid #dd4814 !important;
+  font-weight: bold !important;
+  color: #c51f21; }
+
+.view-id-search_tour .form-actions {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.view-display-id-page_1 > .view-content {
+  display: initial; }
+
+.page-giai-thuonghtml .page-header {
+  text-align: center;
+  margin-bottom: 40px; }
 /*# sourceMappingURL=custom_style.css.map */

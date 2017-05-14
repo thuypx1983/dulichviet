@@ -60,6 +60,56 @@
                 }
             );
         });
+		
+		// AnhNQ Custom
+			// Filter bar stick top when scroll
+			var filterbar = $("#block-views-exp-search-tour-page");
+			var hasBanner = ( $('#block-views-home-slider-block').length != 0 )  ? true : false;
+
+				// Check if the page has banner carousel
+				if ( !hasBanner ) {
+					$('#block-views-exp-search-tour-page').css('position','initial');
+				}
+						
+			if (window.innerWidth > 990) {
+				$(window).scroll(function(){
+					var fixedHeight = ( hasBanner ) ? 555 : 300;
+					var classname = "fixed-filterbar";
+					
+					if ($(this).scrollTop() > fixedHeight) {
+						filterbar.addClass(classname);
+					} else {
+						filterbar.removeClass(classname);
+					}
+				});
+			}			
+			
+			// Button search Icon
+			$('#edit-submit-search-tour').html('<span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>');
+			
+			// Function for Mobile toggle filter panels
+			var mobile_func = {
+				isOpen: false,
+				showFilter: function () {
+					$('.block.block-tour-filter').css('display','block');						
+					mobile_func.isOpen = !mobile_func.isOpen;
+				},
+				hideFilter: function() {
+					$('.block.block-tour-filter').css('display','none');
+					mobile_func.isOpen = !mobile_func.isOpen;
+				}
+			};
+			
+			// Toggle when click on Mobile Signup Btn
+			$('.mobile-footer-toolbar-wrapper #signup-btn').click(function(){
+				(!mobile_func.isOpen) ? mobile_func.showFilter() : mobile_func.hideFilter();		
+			});
+			// Hide Filter when click out of box
+			$('.block.block-tour-filter').click(function(e){
+				( e.target === (this) ) ? mobile_func.hideFilter() : mobile_func.showFilter();
+			});
+		// End AnhNQ Custom
+		
 
         $('.view-search-tour .views-field-field-departure-day').each(function(){
             var today = new Date();

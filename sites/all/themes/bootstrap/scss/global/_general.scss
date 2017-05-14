@@ -97,15 +97,15 @@ $color-brand: #5ca038;
 
  /* New Styles */
 
-.ui-state-highlight,
-.ui-widget-content .ui-state-highlight,
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight, 
 .ui-widget-header .ui-state-highlight {
     border: 1px solid $color-redhightlight;
 }
 
 .block.block-tour-filter {
     width: 100% !important;
-
+	
 	.block-wapper{ padding: 0; }
 	.block-title{ display: none; }
 	.block-content .views-exposed-form .views-exposed-widgets .views-exposed-widget{ width: 14%; }
@@ -117,16 +117,14 @@ $color-brand: #5ca038;
 
 .mda-hotle .mda-hotle-img { width: 197px; }
 
-#back-top { display:none; }
-
 .block-review {
 	border:initial;
-
+	
 	.block-content{
 		padding-left: 0;
 		.slide__content{
 			padding: 10px;
-		}
+		}		
 		.views-field-title{
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -151,7 +149,7 @@ $color-brand: #5ca038;
 	.block-content:before{
 		display: none;
 	}
-
+	
 }
 
 .why-us {
@@ -187,22 +185,22 @@ $color-brand: #5ca038;
 		margin: 0 auto;
 		text-align: center;
 	}
-}
+} 
 
 #block-views-feedback-block {
 	.slide__content {
 		margin-bottom: 20px;
-
+		
 		.views-field-field-image {
 			height: 200px;
 			overflow: hidden;
 		}
-
+		
 		img {
 			height: 100% !important;
 			object-fit: cover;
 		}
-
+		
 		.views-field.views-field-title {
 			text-align: center;
 			font-weight: bold;
@@ -217,7 +215,7 @@ $color-brand: #5ca038;
 			margin-bottom: 15px;
 		}
 	}
-}
+} 
 
 #block-views-review-block,
 #block-views-feedback-block {
@@ -232,6 +230,64 @@ $color-brand: #5ca038;
 }
 
 .container-inline-date .form-item, .container-inline-date .form-item input{ width: 100%; }
+
+.tableheader-processed .btn-product-cart {
+    background-color: #e27a1a;
+    color: #ffffff;
+    text-transform: uppercase;
+	border: initial;
+}
+
+@media only screen and (max-width: 991px) {
+	.block.block-tour-filter {
+		display: none;
+		position: fixed !important;
+		margin-top: initial !important;
+		top: 0;
+		padding: 30px 20px;
+		background-color: rgba(1,1,1,0.5);
+		z-index: 5;
+	
+		.block-content .views-exposed-form .views-exposed-widgets .views-exposed-widget{ width: 100% !important; }		
+	}
+	
+	.block-tour-filter-clone {
+		.views-exposed-form .views-exposed-widget { width: 50%; }
+		.container-inline-date .date-padding { width: 100%; }
+	}
+	
+	p#copyright-text{margin-bottom: 65px;}
+	
+	.mobile-footer-toolbar {
+		.mobile-footer-toolbar-wrapper {
+			display: table;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			z-index: 5;
+			
+			a {
+				width: calc(100%/3);
+				background-color: rgba(92,160,56,1);
+				padding: 25px 0;
+				vertical-align: middle;
+				display: table-cell;
+				text-align: center;
+				color: #fff;
+				font-weight: bold;
+				border: 1px solid;
+			}
+		}
+	}
+	#back-top { display: none !important; }
+}
+@media only screen and (max-width: 480px) {
+	#back-top {
+		display: none !important;
+	}
+}
+
+.container-inline-date .form-item, .container-inline-date .form-item input{ width: 100%; }
 /*
  * Trunglh Custom Style
  */
@@ -241,14 +297,21 @@ $color-brand: #5ca038;
  /* New Styles */
 
 
- #block-system-main {
-     .view-row-content {
-       text-align: center;
-       img {
-         margin: 0 auto;
-       }
-     }
- }
+#block-system-main {
+  td.views-field-title {
+    text-align: initial;
+  }
+    .views-field-title {
+      text-align: center;
+      font-weight: bold;
+      h2 {
+        text-align: initial;
+      }
+      }
+      img {
+        margin: 15px auto;
+      }
+}
  #back-top {
 	span#button {
 		background-color: initial;
@@ -285,10 +348,16 @@ $color-brand: #5ca038;
   td {
     border: 1px solid;
   }
-    button {
-    background-color: #5ca038;
-    border-radius: 5px;
-    color: white;
+  .field-items {
+    .even a {
+      background: #e27a1a;
+      border-radius: 5px;
+      color: white;
+      padding: 5px 10px;
+      &:hover{
+        background: #5ca038
+      }
+    }
   }
   .field-label {
     margin-bottom: 10px
@@ -303,4 +372,28 @@ $color-brand: #5ca038;
     background: #e27a1a;
     border: none;
   }
+}
+li.mda-link {
+  visibility: hidden; }
+  
+ .region-header {
+  input{
+    border: 2px solid #dd4814;
+  }
+  span.block-title {
+    border: 2px solid #dd4814 !important;
+    font-weight: bold !important;
+    color: #c51f21;
+  }
+}
+.view-id-search_tour .form-actions {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.view-display-id-page_1 > .view-content {
+    display: initial;
+}
+.page-giai-thuonghtml .page-header {
+    text-align: center;
+    margin-bottom: 40px;
 }
