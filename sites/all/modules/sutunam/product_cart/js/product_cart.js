@@ -1,7 +1,7 @@
 (function($){
 
     $(function(){
-        $('.field-name-field-prices .btn-product-cart').click(function(){
+        $('.field-name-field-prices .btn-product-cart').click(function(event){
             event.preventDefault();
             var tour=$(this).attr('tour');
             var date=$(this).attr('date');
