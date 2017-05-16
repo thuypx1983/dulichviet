@@ -148,8 +148,9 @@ function render_menu_tree($menu_tree) {
         if($link['link']['link_path']) {
             $link_path = drupal_get_path_alias($link['link']['link_path']);
         }
-        print '<a href="/' . str_replace('<front>','',$link_path) . '">' . $link_title . '</a>';
-        if(count($link['below']) > 0) {
+      print '<a href="/' . str_replace('http://www.hoangviettravel.com.vn/','',str_replace('<front>','',$link_path)) . '">' . $link_title . '</a>';
+
+      if(count($link['below']) > 0) {
             render_menu_tree($link['below']);
         }
         print '</li>';
