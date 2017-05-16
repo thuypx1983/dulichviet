@@ -2187,12 +2187,15 @@ body.html .footer-3 span {
     position: fixed !important;
     margin-top: initial !important;
     top: 0;
-    padding: 30px 20px;
+    padding: 10px 20px;
     background-color: rgba(1, 1, 1, 0.5);
 	z-index: 5; }
     
 	.block.block-tour-filter .block-content .views-exposed-form .views-exposed-widgets .views-exposed-widget {
-      width: 100% !important; }
+      width: 100% !important;
+      padding: 3px 8px 0 0; }
+      .block.block-tour-filter .block-content .views-exposed-form .views-exposed-widgets .views-exposed-widget .btn {
+        margin-top: 5px !important; }
 	  
   .block-tour-filter-clone .views-exposed-form .views-exposed-widget {
     width: 50%; }
@@ -2225,6 +2228,10 @@ body.html .footer-3 span {
 @media only screen and (max-width: 480px) {
   #back-top {
     display: none !important; } }
+	
+@media only screen and (max-width: 769px) {
+  .block-weform-subcription .block-wapper {
+    width: 100%; } }
 
   /*
    * Trunglh Custom Style
