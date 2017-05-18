@@ -144,6 +144,9 @@
     .webform-component--product{
       display: none !important;
     }
+    .view-news .view-content{
+      display: block;
+    }
   </style>
 </head>
 <body<?php print $body_attributes; ?>>
