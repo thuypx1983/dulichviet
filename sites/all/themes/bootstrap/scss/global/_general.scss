@@ -431,6 +431,9 @@ li.mda-link {
   }
 }
 @media only screen and (max-width: 991px) {
+img#tawkto-img-trigger {
+    visibility: hidden;
+}
   .view-id-tours_list .view-filters #edit-field-departure-point-tid-wrapper .option {
     border: 1px solid #e27a1a;
     padding: 3px;
@@ -514,4 +517,9 @@ width: 35%}
   label[for=edit-field-departure-point-tid]{
     color: #e27a1a;
   }
+}
+ img#tawkto-img-trigger {
+    position: fixed;
+    bottom: 45px;
+    z-index: 10;
 }

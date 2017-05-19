@@ -110,7 +110,7 @@
 			});
 			
 			// Test Image chat
-			$('body').append('<a href="javascript:void(Tawk_API.toggle())"><img src="/sites/all/themes/bootstrap/images/chat.png" /></a>')
+			$('body').append('<a onclick="toggleTawkTo()"><img id="tawkto-img-trigger" src="/sites/all/themes/bootstrap/images/chat.png" /></a>')
 		// End AnhNQ Custom
 		
 

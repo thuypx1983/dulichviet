@@ -2321,6 +2321,9 @@ body.html .footer-3 span {
 	.field-type-text-with-summary table {
   width: 100%; }
   @media only screen and (max-width: 991px) {
+	  img#tawkto-img-trigger {
+    visibility: hidden;
+}
 	      .view-id-tours_list .view-filters #views-exposed-form-tours-list-page .views-exposed-widget .form-item {
       padding: 5px 15px 0px 0px; }
 	    .view-id-tours_list .view-filters #edit-field-departure-point-tid-wrapper .option {
@@ -2371,4 +2374,10 @@ body.html .footer-3 span {
   color: #e27a1a; }
 .view-id-tours_list .view-filters #edit-sort-bef-combine-wrapper {
   background-color: inherit; }
+  
+  img#tawkto-img-trigger {
+    position: fixed;
+    bottom: 45px;
+    z-index: 10;
+}
 /*# sourceMappingURL=custom_style.css.map */
