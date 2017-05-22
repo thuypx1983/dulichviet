@@ -1,4 +1,45 @@
 <?php
+
+function sutunam_menu()
+{
+
+  $items['admin/config/templates'] = array(
+    'title' => 'templates setting',
+    'discription' => 'templates setting ',
+    'type' => MENU_NORMAL_ITEM,
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('sutunam_setting_form'),
+    'access arguments' => array('access adminstration page'),
+    'weight' => 2
+  );
+
+  return $items;
+}
+
+function sutunam_setting_form($form, &$form_state)
+{
+  $form = array();
+
+  $form['backgroundimage'] = array(
+    '#type' => 'managed_file',
+    '#name' => 'backgroundimage_image',
+    '#title' => t('upload image, huh!'),
+    '#default_value' => variable_get('backgroundimage', ''),
+    '#description' => t("Here you can upload an image to the background!"),
+    '#required' => TRUE,
+    '#upload_location' => 'public://backgroundimage/'
+  );
+  $form['#submit'][] = 'sutunam_form_submit';
+  return system_settings_form($form);
+}
+
+function sutunam_form_submit($form, $form_state) {
+  $form['backgroundimage']['#file']->status = FILE_STATUS_PERMANENT;
+  file_save($form['backgroundimage']['#file']);
+}
+
+
+
 /**
 Implementation of hook_views_query_alter()
  **/

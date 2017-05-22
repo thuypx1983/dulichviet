@@ -79,7 +79,13 @@
     </div>
 </div>
 <div role="banner" id="page-header">
-  <div class="header-background" style="background-image: url('http://artkaslowdds.com/wp-content/uploads/2015/03/kaslow-background.png')">
+  <?php
+  $fid_now=variable_get('backgroundimage');
+  $file_obj = file_load($fid_now);
+
+  $bg_img_url = file_create_url($file_obj->uri);
+  ?>
+  <div class="header-background" style="background-image: url('<?php echo $bg_img_url?>')">
     <div class="container">
       <div class="row">
         <?php print render($page['header']); ?>
