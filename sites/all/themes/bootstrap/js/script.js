@@ -108,6 +108,9 @@
 			$('.block.block-tour-filter').click(function(e){
 				( e.target === (this) ) ? mobile_func.hideFilter() : mobile_func.showFilter();
 			});
+			
+			// Test Image chat
+			$('body').append('<a onclick="triggerTawkTo()"><img id="tawkto-img-trigger" src="/sites/all/themes/bootstrap/images/chat.png" /></a>');
 		// End AnhNQ Custom
 		
 

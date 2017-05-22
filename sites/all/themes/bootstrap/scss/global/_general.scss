@@ -313,13 +313,15 @@ $color-brand: #5ca038;
  /* New Styles */
 
 
-#block-system-main {
+.view-id-feedback {
   td.views-field-title {
     text-align: initial;
   }
     .views-field-title {
       text-align: center;
       font-weight: bold;
+	    max-height: 1px;
+  margin-bottom: 50px;
       h2 {
         text-align: initial;
       }
@@ -412,4 +414,112 @@ li.mda-link {
 .page-giai-thuonghtml .page-header {
     text-align: center;
     margin-bottom: 40px;
+}
+.view-tours-list{
+.views-field-title{
+    margin-top: 10px !important
+}
+.views-field-field-price {top: 45% !important;}
+}
+
+@media only screen and (max-width: 400px) {
+  .views-field-field-image {padding: 5px}
+}
+.field-type-text-with-summary {
+  table {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+img#tawkto-img-trigger {
+    visibility: hidden;
+}
+  .view-id-tours_list .view-filters #edit-field-departure-point-tid-wrapper .option {
+    border: 1px solid #e27a1a;
+    padding: 3px;
+}
+.input-signup-wrapper .input-signup-block{
+    width: 100%
+  }
+  .view-id-tours_list .view-filters #views-exposed-form-tours-list-page {
+      .views-exposed-widget .form-item {
+    padding: 5px 15px 0px 0px;
+}
+    padding-left: 30px;
+}
+  .view-tours-list{
+  .views-field-field-price {position: inherit !important;
+  transform: translate(0, -10%) !important;
+right: inherit !important;}
+  }
+  .not-front {
+    #block-views-domestic-tour-block , #block-views-domestic-tour-block-1{
+      .block-inner {
+        width: 100% !important;
+        margin: 0 auto !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .view-tours-list{
+  .views-field-view-node {position: inherit !important;
+  bottom: inherit !important;
+right: inherit !important;
+margin: auto;
+width: 35%}
+  }}
+  .view-tours-list{
+    .views-field.views-field-field-image{
+      border: inherit !important;
+    }
+  }
+  .not-front {
+    #block-views-domestic-tour-block , #block-views-domestic-tour-block-1{
+      .block-inner {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+    #block-views-domestic-tour-block-1 {
+      margin: inherit;
+    }
+  }
+  .not-front {
+    #block-views-domestic-tour-block , #block-views-domestic-tour-block-1{
+      width: 100%;
+    }
+  }
+  h1{
+    .page-header {
+      margin-bottom: 10px;
+    }
+}
+.view-id-tours_list{
+  .view-filters {
+  #edit-sort-bef-combine-wrapper {
+          background-color: inherit;
+    }
+  #edit-field-departure-point-tid-wrapper {
+      .form-control {
+    padding-left: 0px;
+    }
+  input[type=checkbox] {
+    display: none;
+}
+}
+}
+  .view-content{
+    display: inherit;
+  }
+}
+.views-exposed-form{
+  label[for=edit-field-departure-point-tid]{
+    color: #e27a1a;
+  }
+}
+ img#tawkto-img-trigger {
+    position: fixed;
+    bottom: 45px;
+    z-index: 10;
 }
