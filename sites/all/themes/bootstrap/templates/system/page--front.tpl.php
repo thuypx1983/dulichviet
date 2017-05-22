@@ -79,11 +79,13 @@
     </div>
 </div>
 <div role="banner" id="page-header">
-   <div class="container">
-       <div class="row">
-           <?php print render($page['header']); ?>
-       </div>
-   </div>
+  <div class="header-background" style="background-image: url('http://artkaslowdds.com/wp-content/uploads/2015/03/kaslow-background.png')">
+    <div class="container">
+      <div class="row">
+        <?php print render($page['header']); ?>
+      </div>
+    </div>
+  </div>
    <div class="navigation">
        <div class="container">
            <?php print render($page['navigation']); ?>
