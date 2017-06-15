@@ -9,7 +9,7 @@ function sutunam_menu()
     'type' => MENU_NORMAL_ITEM,
     'page callback' => 'drupal_get_form',
     'page arguments' => array('sutunam_setting_form'),
-    'access arguments' => array('access adminstration page'),
+    'access arguments' => array('access administration page'),
     'weight' => 2
   );
 
